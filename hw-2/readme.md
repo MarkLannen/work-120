@@ -29,7 +29,7 @@ So far I've covered:
 9. Switch statements
 10. While loops
 
-I now know what the following code does: :)
+I now know what the following code does:  :)
 ```javascript
 var i = 0;
 while(i <= 3) {
