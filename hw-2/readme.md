@@ -40,3 +40,6 @@ while(i <= 3) {
 
 ## 5.
 @ClarissaSpain mentioned that they were not able to see previews of images in their markdown file on Atom. I mentioned that the shortcut cmd + shft + m should show that preview, as long as the file path in the markdown was correct. Oddly, I've found that shortcut only works for me about 1/2 the time, and the rest of the time I need to go to Packages > Markdown Preview > Toggle preview, to get it to work. From my experience last semester I remember that Atom was sometimes fickle like that. Not sure if it is me or the program.
+
+## Screenshot of editor
+![Image of my editor](screenshot-1.png)
