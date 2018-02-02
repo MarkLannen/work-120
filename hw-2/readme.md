@@ -32,7 +32,7 @@ So far I've covered:
 I now know what the following code does: :)
 ```javascript
 var i = 0;
-while(i <= 3) {
+while(i < 5) {
   alert(i);
   i++;
 }
