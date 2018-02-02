@@ -15,7 +15,7 @@ I would be interested in hearing from the instructors why in their experience us
 - Both of these were essential for me when learning HTML and CSS.
 
 Re: anything I'd like discuss further - I'm looking forward to starting the actual coding. I'm completely new to coding, and was worried that this class was going to be a struggle for me, so over the winter break I downloaded a book called *"A Smarter Way to Learn Javascript."*  [This is the Amazon page.](https://www.amazon.com/Smarter-Way-Learn-JavaScript-technology-ebook/dp/B00H1W9I6C) The book contains 89 chapters. Each is very short and is accompanied by a web page with 20 coding exercises for each chapter. [This page is the beginning of the exercises.](https://www.amazon.com/Smarter-Way-Learn-JavaScript-technology-ebook/dp/B00H1W9I6C)
-I made it through about half the book and am glad I've put in the time as I'm familiar with a lot of the syntax and have some practice writing javascript.
+I made it through about half the book and am glad I've put in the time as I'm now somewhat familiar with a lot of the syntax and have some practice writing javascript.
 
 So far I've covered:
 1. Alerts
@@ -29,7 +29,7 @@ So far I've covered:
 9. Switch statements
 10. While loops
 
-I now know what the following code does: :)
+I now know what the following code does:  :)
 ```javascript
 var i = 0;
 while(i < 5) {
