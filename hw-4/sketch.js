@@ -96,12 +96,26 @@ function draw() {
 
   push();
 
+  /* neck */
+  push();
+  stroke('rgb(90, 90, 90)');
+  fill('rgb(254, 199, 189)');
+  quad(-185, 60, -220, 120, -100, 120, -120, 60);
+  triangle(-220, 120, -130, 170, -100, 120);
+  stroke('rgb(254, 199, 189)');
+  strokeWeight(3);
+  line(-218, 120, -102, 120);
+  pop();
+
   /*head*/
-  noStroke();
-  fill('rgb(226, 149, 135)');
+  stroke('rgb(90, 90, 90)');
+  fill('rgb(254, 199, 189)');
 
   quad(-240, -100, -225, 50, -75, 50, -60, -100);
-  quad(-225, 50, -200, 80, -110, 80, -75, 50);
+  quad(-225, 50, -180, 80, -130, 80, -75, 50);
+  stroke('rgb(254, 199, 189)');
+  strokeWeight(2);
+  line(-223, 50, -77, 50)
 
   // mouth
   stroke(100);
@@ -118,12 +132,14 @@ function draw() {
   point(-157, 0);
   point(-143, 0);
 
+  // end nose
+
   //glasses
   rect(-220, -65, 60, 50, 5, 5, 25, 25);
   rect(-140, -65, 60, 50, 5, 5, 25, 25);
   arc(-150, -55, 20, 5, PI, TWO_PI );
 
-  //eyes
+  /* eyes */
   //left eye
 
   strokeWeight(2);
@@ -142,7 +158,9 @@ function draw() {
   noFill();
   arc(-187, -45, 25, 10, PI, TWO_PI);
 
-  // hair
+  /* end eyes*/
+
+  /*hair*/
   //left part
 
   arc(-200, -95, 120, 80, radians(180), TWO_PI);
@@ -167,6 +185,8 @@ function draw() {
   arc(-82, -95, 50, 30, PI, radians(45));
   arc(-78, -95, 50, 25, PI, radians(45));
   arc(-76, -95, 50, 20, PI, radians(45));
+
+  /* end hair*/
 
 
 
