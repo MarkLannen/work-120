@@ -7,7 +7,7 @@ function setup() {
 function draw() {
 
   // background
-  background( "rgb(183, 183, 183)");
+  background( "rgb(200, 200, 200)");
 
   /***************************/
   /*main sandbox*/
@@ -100,7 +100,24 @@ function draw() {
   noStroke();
   fill('rgb(226, 149, 135)');
 
-  quad(-250, -100, -225, 50, -75, 50, -50, -100);
+  quad(-240, -100, -225, 50, -75, 50, -60, -100);
+  quad(-225, 50, -200, 80, -110, 80, -75, 50);
+
+  // mouth
+  stroke(100);
+  strokeWeight(3);
+  line(-170, 40, -140, 40);
+
+  noFill();
+  arc(-140, 25.5, 30, 30, 0, HALF_PI);
+
+  // end mouth
+
+  //nose
+
+  line(-150, -15, -150, 5);
+  point(-157, 3);
+  point(-143, 3);
 
 
 
