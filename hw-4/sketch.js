@@ -38,6 +38,10 @@ function draw() {
   line(300, -107, 400, -50);
 
   /* the 'M' */
+  pop();
+
+   translate(0, -50);
+  rotate(radians(15));
   // horizontal lines
   stroke(255);
   strokeWeight(7);
@@ -54,6 +58,8 @@ function draw() {
   //slanted lines
   line(180, 0, 210, 29);
   line(230, 0, 206, 29);
+
+  push();
 
 
 
