@@ -143,10 +143,30 @@ function draw() {
   arc(-187, -45, 25, 10, PI, TWO_PI);
 
   // hair
-  arc(-200, -95, 150, 80, radians(200), TWO_PI);
-  arc(-200, -95, 130, 80, radians(200), TWO_PI);
-  arc(-200, -95, 110, 70, radians(200), TWO_PI);
-  arc(-200, -95, 90, 60, radians(200), TWO_PI);
+  //left part
+
+  arc(-200, -95, 120, 80, radians(180), TWO_PI);
+  arc(-200, -95, 110, 80, radians(160), TWO_PI);
+  arc(-200, -95, 100, 80, radians(170), TWO_PI);
+  arc(-200, -95, 90, 70, radians(160), TWO_PI);
+  arc(-200, -95, 83, 60, radians(170), TWO_PI);
+  arc(-200, -95, 77, 50, radians(170), TWO_PI);
+  arc(-200, -95, 75, 47, radians(170), TWO_PI);
+  arc(-200, -95, 60, 40, radians(160), TWO_PI);
+  arc(-200, -95, 50, 30, radians(170), TWO_PI);
+  arc(-200, -95, 45, 23, radians(150), TWO_PI);
+
+  //right part
+
+  arc(-100, -95, 70, 70, PI, radians(15));
+  arc(-95, -95, 75, 60, PI, radians(15));
+  arc(-91, -95, 75, 60, PI, radians(15));
+  arc(-90, -95, 70, 50, PI, radians(30));
+  arc(-89, -95, 60, 40, PI, radians(45));
+  arc(-85, -95, 60, 35, PI, radians(45));
+  arc(-82, -95, 50, 30, PI, radians(45));
+  arc(-78, -95, 50, 25, PI, radians(45));
+  arc(-76, -95, 50, 20, PI, radians(45));
 
 
 
