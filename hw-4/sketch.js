@@ -142,6 +142,12 @@ function draw() {
   noFill();
   arc(-187, -45, 25, 10, PI, TWO_PI);
 
+  // hair
+  arc(-200, -95, 150, 80, radians(200), TWO_PI);
+  arc(-200, -95, 130, 80, radians(200), TWO_PI);
+  arc(-200, -95, 110, 70, radians(200), TWO_PI);
+  arc(-200, -95, 90, 60, radians(200), TWO_PI);
+
 
 
 
