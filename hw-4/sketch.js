@@ -106,7 +106,7 @@ function draw() {
   // mouth
   stroke(100);
   strokeWeight(3);
-  line(-170, 40, -140, 40);
+  line(-165, 40, -140, 40);
 
   noFill();
   arc(-140, 25.5, 30, 30, 0, HALF_PI);
@@ -115,10 +115,14 @@ function draw() {
 
   //nose
 
-  line(-150, -15, -150, 5);
-  point(-157, 3);
-  point(-143, 3);
+  line(-150, -10, -150, 10);
+  point(-157, 7);
+  point(-143, 7);
 
+  //glasses
+  rect(-220, -65, 60, 50, 5, 5, 25, 25);
+  rect(-140, -65, 60, 50, 5, 5, 25, 25);
+  arc(-150, -55, 20, 5, PI, TWO_PI );
 
 
 
