@@ -67,11 +67,31 @@ function draw() {
 
   /*Clouds*/
 
-    /*Cloud 1*/
+  /*Cloud 1*/
+  push();
 
     fill(255);
     noStroke();
-    ellipse(100, -50, 60, 40);
+    ellipse(70, -190, 60, 40);
+    ellipse(50, -180, 60, 40);
+    ellipse(90, -170, 60, 40);
+    ellipse(70, -150, 80, 40);
+    ellipse(70, -160, 80, 40);
+    ellipse(40, -160, 80, 40);
+
+  /*Cloud2*/
+
+    ellipse(290, -110, 35, 20);
+    ellipse(290, -130, 40, 25);
+    ellipse(310, -120, 35, 20);
+    ellipse(280, -120, 35, 20);
+
+
+  pop();
+
+  /*********************************/
+  // self portrait
+  /*********************************/
 
   push();
 
