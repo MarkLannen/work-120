@@ -40,11 +40,11 @@ function draw() {
   /* the 'M' */
   // horizontal lines
   stroke(255);
-  strokeWeight(4);
+  strokeWeight(7);
   strokeCap(SQUARE);
   line(170, 0, 182, 0);
-  line(229, 0, 240, 0);
-  line(220, 50, 240, 50);
+  line(228, 0, 240, 0);
+  line(223, 50, 240, 50);
   line(170, 50, 190, 50);
 
   // vertical lines
@@ -52,7 +52,8 @@ function draw() {
   line(231, 0, 231, 50);
 
   //slanted lines
-  line(180, 0, 205, 30);
+  line(180, 0, 210, 29);
+  line(230, 0, 206, 29);
 
 
 
