@@ -115,14 +115,32 @@ function draw() {
 
   //nose
 
-  line(-150, -10, -150, 10);
-  point(-157, 7);
-  point(-143, 7);
+  point(-157, 0);
+  point(-143, 0);
 
   //glasses
   rect(-220, -65, 60, 50, 5, 5, 25, 25);
   rect(-140, -65, 60, 50, 5, 5, 25, 25);
   arc(-150, -55, 20, 5, PI, TWO_PI );
+
+  //eyes
+  //left eye
+
+  strokeWeight(2);
+  fill(255);
+  ellipse(-110, -40, 30, 15);
+  fill('rgba(54, 163, 233, 0.75)');
+  ellipse(-110, -40, 17, 15);
+  fill(120);
+  ellipse(-110, -40, 5, 5);
+  strokeWeight(3);
+  line(-120, -50, -100, -57);
+
+  //right eye
+
+  line(-200, -40, -175, -40);
+  noFill();
+  arc(-187, -45, 25, 10, PI, TWO_PI);
 
 
 
