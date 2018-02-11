@@ -38,13 +38,14 @@ function draw() {
     line(300, -107, 400, -50);
 
 
-  pop();
+  pop(); // slope ends
 
   /* the 'M' */
   push();
 
-    translate(0, -50);
+    translate(100, -50);
     rotate(radians(15));
+    scale(.5, .5, .5);
     // horizontal lines
     stroke(255);
     strokeWeight(7);
@@ -87,13 +88,16 @@ function draw() {
     ellipse(280, -120, 35, 20);
 
 
-  pop();
+  pop(); //clouds end
 
   /*********************************/
   // self portrait
   /*********************************/
 
   push();
+
+  /*head*/
+
 
 
 
