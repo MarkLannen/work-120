@@ -97,6 +97,10 @@ function draw() {
   push();
 
   /*head*/
+  noStroke();
+  fill('rgb(226, 149, 135)');
+
+  quad(-250, -100, -225, 50, -75, 50, -50, -100);
 
 
 
