@@ -48,7 +48,18 @@ function draw() {
 
   //left arm
   fill('rgb(159, 218, 155)');
-  quad( -27, 260, -5, 350, 80, 90, 30, 90);
+  quad( -27, 240, -5, 310, 80, 160, 35, 160);
+  stroke('rgb(90, 90, 90)');
+  strokeWeight(1);
+  line(-75, 230, -50, 310);
+
+  //left hand
+  fill('rgb(254, 199, 189)');
+  quad(90, 125, 35, 125, 40, 155, 80, 155);
+
+  //thumb
+  quad()
+
 
   //right arm
   stroke('rgb(90, 90, 90)');
