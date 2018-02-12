@@ -42,10 +42,20 @@ function draw() {
   noStroke();
 
   // collar
-
   fill( 'rgb(81, 105, 71)');
   triangle(-220, 120, -130, 170, -150, 200);
   triangle(-130, 170, -100, 190, -100, 120);
+
+  //left arm
+  fill('rgb(159, 218, 155)');
+  quad( -27, 260, -5, 350, 80, 90, 30, 90);
+
+  //right arm
+  stroke('rgb(90, 90, 90)');
+  strokeWeight(1);
+  line(-245, 220, -270, 310);
+
+
 
 
   pop();
