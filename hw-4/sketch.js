@@ -293,7 +293,7 @@ function draw() {
 
   push();
   scale(.35);
-  translate(-195, 790);
+  translate(-205, 750);
   rotate(radians(-6));
   stroke('rgb(90, 90, 90)');
   fill('rgb(254, 199, 189)');
@@ -391,6 +391,16 @@ function draw() {
   arc(-76, -95, 18, 18, PI, radians(45));
 
   /* end hair*/
+
+  /* circle on t-shirt around head*/
+  stroke('rgb(94, 133, 185)');
+  strokeWeight(10);
+  ellipse(-155, -40, 275, 300);
+
+  /* line covering chin*/
+  stroke('rgb(254, 199, 189)');
+  strokeWeight(8);
+  line(-215, 51, -85, 48);
 
   pop();
 
