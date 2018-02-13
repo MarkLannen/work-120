@@ -420,7 +420,7 @@ function draw() {
   push();
   noStroke();
   fill('rgb(253, 184, 19)');
-  ellipse(-350, -250, 150, 150);
+  ellipse(-375, -270, 150, 150);
 
 
 
