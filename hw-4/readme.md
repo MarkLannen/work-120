@@ -9,3 +9,7 @@ I started the project by drawing out a rough sketch on photoshop just to give my
 
 #### Self-portrait
 I spent the bulk of my time writing the code for this. There were lots of challenges as basically everything was new. It was a very tedious step by step process. The first thing I did was write a translate function to put the reference point in the center of the canvas. I don't know if I'll do this again as it was easy for some things, but I often found myself having to use negative coordinates which is counter intuitive and a bit time-consuming. I found that my usual approach was to make a rough guess as to coordinates and size, etc... and then tweak the numbers from there until I got what I was looking for.
+
+The hair was the most fun as I wrote one arc function for each side of my head, split by a part, and then just copied and pasted that arc and tweaked the coordinates and size to fill out the hair.
+
+I mostly used a stroke throughout as I like that look, but ran into the issue of the stroke appearing between the joins of different shapes, suce as the face and the chin. I don't know how to remove the stroke from just one side of a shape, so I got around it by putting a line the same color as the fill of the shape ove the stroke. It's not a perfect solution as it can just slightly be seen, but I think it works well enough for now.  
