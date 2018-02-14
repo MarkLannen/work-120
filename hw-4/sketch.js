@@ -430,8 +430,8 @@ function draw() {
   fill('rgb(253, 184, 19)');
   //upper rays
   push();
-  rotate(radians(-35));
-  triangle(70, 80, 120, 122, 58, 100);
+  rotate(radians(-38));
+  triangle(65, 80, 115, 122, 55, 100);
 
   // push();
   // stroke(5);
