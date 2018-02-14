@@ -1,3 +1,11 @@
-# Empty p5 sketch.
+# Self-portrait
 
-Please replace contents of this file with appropriate readme information after finishing your p5 sketch.
+## Overall Experience
+I found this to be a *very* challenging and time consuming project. Like I assume most in the class, I am on quite a steep learning curve and my brain had to work quite hard to think through every step of every graphic element that I wanted to include in the image. I'm generally pleased with the final product, though there are a couple of issues, that I will mention later, that I would like to learn how to solve or avoid in the future.
+
+### Process
+#### Background
+I started the project by drawing out a rough sketch on photoshop just to give myself a reference in the beginning. As a first step, and in order to get myself accustomed to creating images by writing code, I started with what I thought would be the easy part and started coding out the mountain, clouds and the 'M.' It was good to give myself something relatively straightforward to begin with, though it turned out to not be particularly easy. Just getting the top of Mt Sentinel, which I drew by coding an arc, took quite a bit of trial and error to line up. There was a bit of a mismatch between the ending of the arc and the slope of the saddle, but I eventually fixed that by covering the joint with clouds. Speaking of clouds, I drew those by coding one white circle, and then copying and pasting that code and reshaping and relocating it. I drew the 'M' line by line, only to discover that there are actually functions for letters. In the future I will probably save myself time by experimenting with those. I got practice using scale and rotate on the 'M' as I needed to give it a slant and shrink it down.
+
+#### Self-portrait
+I spent the bulk of my time writing the code for this. There were lots of challenges as basically everything was new. It was a very tedious step by step process. The first thing I did was write a translate function to put the reference point in the center of the canvas. I don't know if I'll do this again as it was easy for some things, but I often found myself having to use negative coordinates which is counter intuitive and a bit time-consuming. I found that my usual approach was to make a rough guess as to coordinates and size, etc... and then tweak the numbers from there until I got what I was looking for.
