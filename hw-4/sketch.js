@@ -393,7 +393,7 @@ function draw() {
   /* end hair*/
 
   /* circle on t-shirt around head*/
-  stroke('rgb(94, 133, 185)');
+  stroke('rgb(108, 161, 231)');
   strokeWeight(10);
   ellipse(-155, -40, 275, 300);
 
@@ -420,13 +420,36 @@ function draw() {
   push();
   noStroke();
   fill('rgb(253, 184, 19)');
-  ellipse(-375, -270, 150, 150);
+  ellipse(-375, -250, 150, 150);
+  pop();
 
+  // sun rays
+  push();
+  translate(-400, -300);
+  noStroke();
+  fill('rgb(253, 184, 19)');
+  //upper rays
+  push();
+  rotate(radians(-35));
+  triangle(70, 80, 120, 122, 58, 100);
 
-
+  // push();
+  // stroke(5);
+  // rotate(radians(-30));
+  // triangle(75, 80, 125, 122, 63, 100);
+  // pop();
 
   pop();
-  push();
+
+  triangle(100, 80, 150, 122, 88, 100);
+  rotate(radians(25));
+  triangle(110, 80, 155, 127, 96, 95);
+  rotate(radians(25));
+  triangle(110, 70, 140, 117, 85, 95);
+
+
+
+
 
   pop(); // BODY END!
 
