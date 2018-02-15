@@ -105,7 +105,7 @@ function draw() {
 
     //top
     noFill();
-    rotate(radians(.1));
+    rotate(radians(0.1));
     arc(280, -85, 78, 50, radians(210), radians(320));
 
     //down slope
@@ -119,7 +119,7 @@ function draw() {
 
     translate(100, -50);
     rotate(radians(15));
-    scale(.5, .5, .5);
+    scale(0.5, 0.5, 0.5);
     // horizontal lines
     stroke(255);
     strokeWeight(7);
@@ -189,7 +189,7 @@ function draw() {
   quad(-225, 50, -180, 80, -130, 80, -75, 50);
   stroke('rgb(254, 199, 189)');
   strokeWeight(2);
-  line(-223, 50, -77, 50)
+  line(-223, 50, -77, 50);
 
   // mouth
   stroke(100);
@@ -296,7 +296,7 @@ function draw() {
 /*head*/
 
   push();
-  scale(.35);
+  scale(0.35);
   translate(-205, 750);
   rotate(radians(-6));
   stroke('rgb(90, 90, 90)');
@@ -306,7 +306,7 @@ function draw() {
   quad(-225, 50, -180, 80, -130, 80, -75, 50);
   stroke('rgb(254, 199, 189)');
   strokeWeight(2);
-  line(-223, 50, -77, 50)
+  line(-223, 50, -77, 50);
 
   // mouth
   stroke(100);

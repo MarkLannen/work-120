@@ -21,6 +21,7 @@ I had several issues/problems come up that I will bring to the Media Arts Lab (h
 1. Arcs: These seemed to work exactly the opposite of how I expected. When I enter in the starting and end points, the arc seems to be upside down from what I expect. Not sure what I'm misunderstanding.
 2. Quads: It's not clear to me if the coordinates that I put in are going to be read in a clockwise or counter clockwise direction. It seemed to happen both ways in my sketch, and I'm not sure why it is doing that.
 3. Corner radiuses: In the eyeglasses, I wanted to round the bottom radius more than the top and entered a larger number for the bottom parameters, but all 4 parameters are displaying the same. I have pasted the relevant code in to github issues to see if anyone can spot what I am doing wrong. No answers yet.
+4. I used jshint a lot to tidy up my code and learned that it is better to write '0.5' rather than '.5'
 
 ### Conclusions
 
@@ -28,4 +29,4 @@ My main takeaway is that it really is best practice to sketch out a project firs
 
 ## Final sketch
 
-![Final sketch](images/hw4-sketch.png)
+![Final sketch](..images/hw4-sketch.png)
