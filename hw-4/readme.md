@@ -29,4 +29,4 @@ My main takeaway is that it really is best practice to sketch out a project firs
 
 ## Final sketch
 
-![Final sketch](images/hw4-sketch.png)
+![Final sketch](images/hw4-sketch.PNG)
