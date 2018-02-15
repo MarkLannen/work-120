@@ -1,4 +1,4 @@
-# Self-portrait
+# Mark Lannen hw-4, section 50
 
 ## Overall Experience
 I found this to be a *very* challenging and time consuming project. Like I assume most in the class, I am on quite a steep learning curve and my brain had to work hard to think through every step of every graphic element that I wanted to include in the image. I found myself using a lot of trial and error to achieve the result I was looking for. The console window in the Chrome Developer Tools was very useful in snooping out errors. I'm generally pleased with the final product, though there are a couple of issues, that I will mention below, that I would like to learn how to solve or avoid in the future.
