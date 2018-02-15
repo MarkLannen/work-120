@@ -25,3 +25,7 @@ I had several issues/problems come up that I will bring to the Media Arts Lab (h
 ### Conclusions
 
 My main takeaway is that it really is best practise to sketch out a project first in something like Illustrator or Photoshop, and then build each section as a discrete unit. Also, I learned that too many comments are much better than too few.  :)
+
+## Final sketch
+
+![Final sketch](images/hw4-sketch.png)
