@@ -451,13 +451,6 @@ function draw() {
   rotate(radians(25));
   triangle(110, 70, 140, 117, 85, 95);
 
-
-
-
-
   pop(); // BODY END!
-
-
-
 
 }
