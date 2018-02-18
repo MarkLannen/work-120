@@ -104,6 +104,17 @@ pop();
 stroke('rgb(80, 80, 80)');
 strokeWeight(15);
 arc(windowWidth/1.989, 320, 110, 60, radians(195), radians(345));
+//handles
+stroke('rgb(80, 80, 80)');
+strokeWeight(15);
+line(windowWidth/3.15, 300, windowWidth/3.6, 290);
+push();
+translate(515, 0);
+stroke('rgb(80, 80, 80)');
+strokeWeight(15);
+line(windowWidth/3.6, 300, windowWidth/3.15, 290);
+
+pop();
 
 
 
