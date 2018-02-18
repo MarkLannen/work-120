@@ -32,12 +32,38 @@ fill('rgb(175, 146, 115)');
 ellipse(width * 0.5, height * 0.5, width * 0.6, height * 0.75);
 pop();
 
-//eyes
+/*eyes*/
+//left eye
 push();
 stroke('rgb(80)');
 strokeWeight(1);
 fill('rgb(225, 225, 225)');
 ellipse(width * 0.37, height * 0.40, 100, 60);
+
+//iris
+fill('rgb(50, 50, 255)');
+ellipse(width * 0.37, height * 0.40, 60, 60);
+
+//pupil
+stroke('rgb(40, 40, 40)');
+fill('rgb(80, 80, 80)');
+ellipse(width * 0.37, height * 0.40, 20, 20);
+
+//right eye
+stroke('rgb(80)');
+strokeWeight(1);
+fill('rgb(225, 225, 225)');
+ellipse(width * 0.60, height * 0.40, 100, 60);
+
+//iris
+fill('rgb(50, 50, 255)');
+ellipse(width * 0.60, height * 0.40, 60, 60);
+
+//pupil
+stroke('rgb(40, 40, 40)');
+fill('rgb(80, 80, 80)');
+ellipse(width * 0.60, height * 0.40, 20, 20);
+
 
 
 
