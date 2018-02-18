@@ -85,9 +85,37 @@ pupilWidth = pupilWidth % 60;
 pupilHeight = pupilHeight % 60;
 pop();
 
+// glasses
+// right frame
+push();
+noFill();
+stroke('rgb(80, 80, 80)');
+strokeWeight(15);
+rect(width * 0.32, height * 0.30, 175, 175, 5, 5, 30, 30);
+// left frame
+push();
+translate(282, 0);
+noFill();
+stroke('rgb(80, 80, 80)');
+strokeWeight(15);
+rect(width * 0.32, height * 0.30, 175, 175, 5, 5, 30, 30);
+pop();
+// bridge
+stroke('rgb(80, 80, 80)');
+strokeWeight(15);
+arc(windowWidth/1.989, 320, 110, 60, radians(195), radians(345));
+
+
+
+
+
+
+
+pop();
 /* end eyes */
 
 /* nose */
+
 
 
 }
