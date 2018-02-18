@@ -51,7 +51,8 @@ push();
 stroke('rgb(80)');
 strokeWeight(1);
 fill('rgb(225, 225, 225)');
-ellipse(width * 0.4, height * 0.40, 100, 60);
+ellipse(width * 0.4, height * 0.4, 100, 60);
+pop();
 
 //iris
 fill('rgb(50, 50, 255)');
@@ -62,17 +63,6 @@ push();
 stroke('rgb(40, 40, 40)');
 fill('rgb(80, 80, 80)');
 ellipse(width * 0.4, height * 0.40, pupilWidth, pupilHeight);
-
-//dilates pupil to max 60 px width and height
-pupilWidth = pupilWidth + 0.2;
-pupilHeight = pupilHeight + 0.2;
-pupilWidth = pupilWidth % 60;
-pupilHeight = pupilHeight % 60;
-
-
-
-pop();
-
 
 //right eye
 stroke('rgb(80)');
@@ -87,7 +77,17 @@ ellipse(width * 0.60, height * 0.40, 60, 60);
 //pupil
 stroke('rgb(40, 40, 40)');
 fill('rgb(80, 80, 80)');
-ellipse(width * 0.60, height * 0.40, 20, 20);
+ellipse(width * 0.60, height * 0.40, pupilWidth, pupilHeight);
+//dilates pupil to max 60 px width and height
+pupilWidth = pupilWidth + 0.2;
+pupilHeight = pupilHeight + 0.2;
+pupilWidth = pupilWidth % 60;
+pupilHeight = pupilHeight % 60;
+pop();
+
+/* end eyes */
+
+/* nose */
 
 
 }
