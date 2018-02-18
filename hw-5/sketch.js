@@ -20,6 +20,10 @@ var bChannel = 150;
 var pupilWidth = 1;
 var pupilHeight = 1;
 
+// mouth width and heigh variables
+var mouthWidth = 20;
+var mouthHeight = 5;
+
 
 function draw() {
 //background color will change from green to reddish-purple
@@ -87,6 +91,29 @@ pupilHeight = pupilHeight + 0.2;
 pupilWidth = pupilWidth % 60;
 pupilHeight = pupilHeight % 60;
 pop();
+
+/* nose */
+stroke('rgb(40, 40, 40)');
+fill('rgb(80, 80, 80)');
+ellipse(width * 0.485, height * 0.55, 20, 20);
+ellipse(width * 0.525, height * 0.55, 20, 20);
+/* end nose */
+
+/* mouth */
+push();
+stroke('rgb(200, 40, 40)');
+fill('rgb(80, 80, 80)');
+ellipse(635, 525, mouthWidth, mouthHeight);
+
+mouthWidth = mouthWidth + 3;
+mouthHeight = mouthHeight + 3;
+mouthWidth = mouthWidth % 100;
+mouthHeight = mouthHeight % 100;
+
+
+pop();
+/* end mouth */
+
 
 // glasses
 // right frame
