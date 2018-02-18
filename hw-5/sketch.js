@@ -1,30 +1,51 @@
+//**********************//
+//global variables
+//**********************//
+
+// background color variables
+var rChannel = 1;
+var gChannel = 255;
+var bChannel = 150;
+
 function setup() {
 createCanvas(windowWidth, 800);
 }
 
-var rChannel = 1;
-var gChannel = 255;
-var bChannel = 150;
-var stroke1 = 1;
-var stroke2 = 2;
-var stroke3 = 3;
-var stroke4 = 4;
-var stroke5 = 5;
-var ellipseW = 50;
-
-
 function draw() {
-    background(rChannel, gChannel, bChannel);
-fill(180);
-strokeWeight(stroke1 + 1);
-// ellipse (ellipseW, 10, 400, 50, 50);
-fill(255, 0, 0);
-// ellipse( ellipseW, 50, 100);
+//background color will change from green to reddish-purple
+// background(rChannel, gChannel, bChannel);
+    // background color change animation
+    rChannel = rChannel + 1;
+    gChannel = gChannel - 1;
+    rChannel = rChannel % 255;
+    gChannel = gChannel % 255;
 
-ellipseW = ellipseW + 3;
-stroke1 = stroke1 + 0.05;
-rChannel = rChannel + 0.3;
-gChannel = gChannel - 0.3;
+//**********************//
+//Face
+//**********************//
+
+//head
+push();
+stroke('rgb(120)');
+strokeWeight(0.5);
+fill('rgb(175, 146, 115)');
+ellipse(width * 0.5, height * 0.5, width * 0.6, height * 0.75);
+pop();
+
+//eyes
+push();
+stroke('rgb(80)');
+strokeWeight(1);
+fill('rgb(225, 225, 225)');
+ellipse(width * 0.37, height * 0.40, 100, 60);
+
+
+
+
+
+
+
+
 
 
 }
