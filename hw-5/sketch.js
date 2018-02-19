@@ -1,15 +1,11 @@
-//**********************//
-//global variables
-//**********************//
-
-
-
-
-
 
 function setup() {
 createCanvas(windowWidth, 800);
 }
+
+//**********************//
+//global variables
+//**********************//
 
 // background color variables
 var rChannel = 1;
@@ -21,8 +17,20 @@ var pupilWidth = 1;
 var pupilHeight = 1;
 
 // mouth width and heigh variables
-var mouthWidth = 20;
+var mouthWidth = 5;
 var mouthHeight = 5;
+
+// goatee variables
+var goateeYEnd = 590;
+var goateeX = 579;
+
+// hair variables
+var hairXstart = 380;
+var hairYstart = 190;
+var hairXEnd = 370;
+var hairYEnd = 175;
+
+//line(width/3.25, 190, width/3.35, 175);
 
 
 function draw() {
@@ -52,11 +60,21 @@ arc(width/2, 200, width/2.27, height/4.27, PI, TWO_PI);
 pop();
 /* end head */
 
+/* hair */
+push();
+stroke('rgb(74, 54, 48)');
+strokeWeight(5);
+line(hairXstart, hairYstart, hairXEnd, hairYEnd);
+
+pop();
+
+/* end hair */
+
 /*eyes*/
 //left eye
 push();
 stroke('rgb(80)');
-strokeWeight(1);
+strokeWeight(2);
 fill('rgb(225, 225, 225)');
 ellipse(width * 0.4, height * 0.4, 100, 60);
 pop();
@@ -67,13 +85,14 @@ ellipse(width * 0.4, height * 0.40, 60, 60);
 
 //pupil
 push();
-stroke('rgb(40, 40, 40)');
+strokeWeight(2);
+stroke('rgb(240, 240, 240)');
 fill('rgb(80, 80, 80)');
 ellipse(width * 0.4, height * 0.40, pupilWidth, pupilHeight);
 
 //right eye
 stroke('rgb(80)');
-strokeWeight(1);
+strokeWeight(2);
 fill('rgb(225, 225, 225)');
 ellipse(width * 0.60, height * 0.40, 100, 60);
 
@@ -82,14 +101,14 @@ fill('rgb(50, 50, 255)');
 ellipse(width * 0.60, height * 0.40, 60, 60);
 
 //pupil
-stroke('rgb(40, 40, 40)');
+stroke('rgb(240, 240, 240)');
 fill('rgb(80, 80, 80)');
 ellipse(width * 0.60, height * 0.40, pupilWidth, pupilHeight);
 //dilates pupil to max 60 px width and height
-pupilWidth = pupilWidth + 0.2;
-pupilHeight = pupilHeight + 0.2;
-pupilWidth = pupilWidth % 60;
-pupilHeight = pupilHeight % 60;
+// pupilWidth = pupilWidth + 0.2;
+// pupilHeight = pupilHeight + 0.2;
+// pupilWidth = pupilWidth % 60;
+// pupilHeight = pupilHeight % 60;
 pop();
 
 /* nose */
@@ -102,15 +121,14 @@ ellipse(width * 0.525, height * 0.55, 20, 20);
 /* mouth */
 push();
 stroke('rgb(200, 40, 40)');
+strokeWeight(5);
 fill('rgb(80, 80, 80)');
 ellipse(635, 525, mouthWidth, mouthHeight);
 
-mouthWidth = mouthWidth + 3;
-mouthHeight = mouthHeight + 3;
-mouthWidth = mouthWidth % 100;
-mouthHeight = mouthHeight % 100;
-
-
+// mouthWidth = mouthWidth + 0.5;
+// mouthHeight = mouthHeight + 0.5;
+// mouthWidth = mouthWidth % 100;
+// mouthHeight = mouthHeight % 100;
 pop();
 /* end mouth */
 
@@ -143,19 +161,35 @@ translate(515, 0);
 stroke('rgb(80, 80, 80)');
 strokeWeight(15);
 line(windowWidth/3.6, 300, windowWidth/3.15, 290);
-
 pop();
-
-
-
-
-
-
-
 pop();
 /* end eyes */
 
-/* nose */
+/* goatee */
+push();
+stroke('rgb(74, 54, 48)');
+strokeWeight(5);
+line(goateeX, height * 0.74, goateeX, goateeYEnd);
+line(goateeX + 7, height * 0.74, goateeX + 7, goateeYEnd);
+line(goateeX + 14, height * 0.74, goateeX + 14, goateeYEnd);
+line(goateeX + 21, height * 0.74, goateeX + 21, goateeYEnd);
+line(goateeX + 28, height * 0.74, goateeX + 28, goateeYEnd);
+line(goateeX + 35, height * 0.74, goateeX + 35, goateeYEnd);
+line(goateeX + 42, height * 0.74, goateeX + 42, goateeYEnd);
+line(goateeX + 49, height * 0.74, goateeX + 49, goateeYEnd);
+line(goateeX + 56, height * 0.74, goateeX + 56, goateeYEnd);
+line(goateeX + 63, height * 0.74, goateeX + 63, goateeYEnd);
+line(goateeX + 70, height * 0.74, goateeX + 70, goateeYEnd);
+line(goateeX + 77, height * 0.74, goateeX + 77, goateeYEnd);
+line(goateeX + 84, height * 0.74, goateeX + 84, goateeYEnd);
+line(goateeX + 91, height * 0.74, goateeX + 91, goateeYEnd);
+line(goateeX + 98, height * 0.74, goateeX + 98, goateeYEnd);
+
+// goateeYEnd = goateeYEnd + 0.5;
+pop();
+/* end goatee */
+
+
 
 
 
