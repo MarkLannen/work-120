@@ -36,7 +36,7 @@ var hairYEnd = 170;
 
 function draw() {
 //background color will change from green to reddish-purple
-// background(rChannel, gChannel, bChannel);
+background(rChannel, gChannel, bChannel);
     // background color change animation
     rChannel = rChannel + 1;
     gChannel = gChannel - 1;
@@ -110,7 +110,7 @@ line(hairXstart + 225, hairYstart - 75, hairXEnd + 225, hairYEnd - 70);
 
 
 // growing hair code
-hairYEnd = hairYEnd - 2;
+hairYEnd = hairYEnd - 1;
 
 
 pop();
@@ -151,11 +151,11 @@ ellipse(width * 0.60, height * 0.40, 60, 60);
 stroke('rgb(240, 240, 240)');
 fill('rgb(80, 80, 80)');
 ellipse(width * 0.60, height * 0.40, pupilWidth, pupilHeight);
-//dilates pupil to max 60 px width and height
-// pupilWidth = pupilWidth + 0.2;
-// pupilHeight = pupilHeight + 0.2;
-// pupilWidth = pupilWidth % 60;
-// pupilHeight = pupilHeight % 60;
+// dilates pupil to max 60 px width and height
+pupilWidth = pupilWidth + 0.2;
+pupilHeight = pupilHeight + 0.2;
+pupilWidth = pupilWidth % 60;
+pupilHeight = pupilHeight % 60;
 pop();
 
 /* nose */
@@ -172,10 +172,10 @@ strokeWeight(5);
 fill('rgb(80, 80, 80)');
 ellipse(635, 525, mouthWidth, mouthHeight);
 
-// mouthWidth = mouthWidth + 0.5;
-// mouthHeight = mouthHeight + 0.5;
-// mouthWidth = mouthWidth % 100;
-// mouthHeight = mouthHeight % 100;
+mouthWidth = mouthWidth + 0.5;
+mouthHeight = mouthHeight + 0.5;
+mouthWidth = mouthWidth % 100;
+mouthHeight = mouthHeight % 100;
 pop();
 /* end mouth */
 
@@ -232,7 +232,7 @@ line(goateeX + 84, height * 0.74, goateeX + 84, goateeYEnd);
 line(goateeX + 91, height * 0.74, goateeX + 91, goateeYEnd);
 line(goateeX + 98, height * 0.74, goateeX + 98, goateeYEnd);
 
-// goateeYEnd = goateeYEnd + 0.5;
+goateeYEnd = goateeYEnd + 0.5;
 pop();
 /* end goatee */
 
