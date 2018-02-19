@@ -62,7 +62,33 @@ pop();
 /* end head */
 
 /* hair */
+// right side hair
 push();
+stroke('rgb(74, 54, 48)');
+strokeWeight(10);
+line(hairXstart, hairYstart, hairXEnd, hairYEnd);
+line(hairXstart + 15, hairYstart - 5, hairXEnd + 15, hairYEnd);
+line(hairXstart + 30, hairYstart - 10, hairXEnd + 30, hairYEnd);
+line(hairXstart + 45, hairYstart - 15, hairXEnd + 45, hairYEnd);
+line(hairXstart + 60, hairYstart - 20, hairXEnd + 60, hairYEnd);
+line(hairXstart + 75, hairYstart - 25, hairXEnd + 75, hairYEnd);
+line(hairXstart + 90, hairYstart - 30, hairXEnd + 90, hairYEnd - 15);
+line(hairXstart + 105, hairYstart - 35, hairXEnd + 105, hairYEnd - 20);
+line(hairXstart + 120, hairYstart - 40, hairXEnd + 120, hairYEnd - 25);
+line(hairXstart + 135, hairYstart - 45, hairXEnd + 135, hairYEnd - 30);
+line(hairXstart + 150, hairYstart - 50, hairXEnd + 150, hairYEnd - 35);
+line(hairXstart + 165, hairYstart - 55, hairXEnd + 165, hairYEnd - 40);
+line(hairXstart + 180, hairYstart - 60, hairXEnd + 180, hairYEnd - 45);
+line(hairXstart + 195, hairYstart - 65, hairXEnd + 195, hairYEnd - 60);
+line(hairXstart + 210, hairYstart - 70, hairXEnd + 210, hairYEnd - 65);
+line(hairXstart + 225, hairYstart - 75, hairXEnd + 225, hairYEnd - 70);
+pop();
+
+// left side hairXEnd
+
+push();
+translate( windowWidth/1.02, 0);
+scale( -1, 1 );
 stroke('rgb(74, 54, 48)');
 strokeWeight(10);
 line(hairXstart, hairYstart, hairXEnd, hairYEnd);
