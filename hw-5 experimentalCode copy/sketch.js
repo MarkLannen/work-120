@@ -21,14 +21,14 @@ var mouthWidth = 5;
 var mouthHeight = 5;
 
 // goatee variables
-var goateeYEnd = 590;
-var goateeX = 579;
+var goateeYEnd = 435;
+var goateeX = 350;
 
 // hair variables
-var hairXstart = 380;
-var hairYstart = 190;
-var hairXEnd = 380;
-var hairYEnd = 170;
+var hairXstart = 260;
+var hairYstart = 130;
+var hairXEnd = 260;
+var hairYEnd = 120;
 
 // eye rotation variables
 var eyeAngle = 0;
@@ -72,14 +72,14 @@ pop();
 // right side hair
 push();
 stroke('rgb(74, 54, 48)');
-strokeWeight(10);
+strokeWeight(7);
 line(hairXstart, hairYstart, hairXEnd, hairYEnd);
-line(hairXstart + 15, hairYstart - 5, hairXEnd + 15, hairYEnd);
-line(hairXstart + 30, hairYstart - 10, hairXEnd + 30, hairYEnd);
-line(hairXstart + 45, hairYstart - 15, hairXEnd + 45, hairYEnd);
-line(hairXstart + 60, hairYstart - 20, hairXEnd + 60, hairYEnd);
-line(hairXstart + 75, hairYstart - 25, hairXEnd + 75, hairYEnd);
-line(hairXstart + 90, hairYstart - 30, hairXEnd + 90, hairYEnd - 15);
+line(hairXstart + 10, hairYstart - 10, hairXEnd + 10, hairYEnd);
+line(hairXstart + 20, hairYstart - 10, hairXEnd + 20, hairYEnd);
+line(hairXstart + 30, hairYstart - 15, hairXEnd + 30, hairYEnd);
+line(hairXstart + 40, hairYstart - 20, hairXEnd + 40, hairYEnd);
+line(hairXstart + 50, hairYstart - 25, hairXEnd + 50, hairYEnd);
+line(hairXstart + 60, hairYstart - 30, hairXEnd + 60, hairYEnd - 15);
 line(hairXstart + 105, hairYstart - 35, hairXEnd + 105, hairYEnd - 20);
 line(hairXstart + 120, hairYstart - 40, hairXEnd + 120, hairYEnd - 25);
 line(hairXstart + 135, hairYstart - 45, hairXEnd + 135, hairYEnd - 30);
@@ -97,7 +97,7 @@ push();
 translate( windowWidth/1.02, 0);
 scale( -1, 1 );
 stroke('rgb(74, 54, 48)');
-strokeWeight(10);
+strokeWeight(7);
 line(hairXstart, hairYstart, hairXEnd, hairYEnd);
 line(hairXstart + 15, hairYstart - 5, hairXEnd + 15, hairYEnd);
 line(hairXstart + 30, hairYstart - 10, hairXEnd + 30, hairYEnd);
@@ -229,21 +229,21 @@ pop();
 push();
 stroke('rgb(74, 54, 48)');
 strokeWeight(5);
-line(goateeX, height * 0.74, goateeX, goateeYEnd);
-line(goateeX + 7, height * 0.74, goateeX + 7, goateeYEnd);
-line(goateeX + 14, height * 0.74, goateeX + 14, goateeYEnd);
-line(goateeX + 21, height * 0.74, goateeX + 21, goateeYEnd);
-line(goateeX + 28, height * 0.74, goateeX + 28, goateeYEnd);
-line(goateeX + 35, height * 0.74, goateeX + 35, goateeYEnd);
-line(goateeX + 42, height * 0.74, goateeX + 42, goateeYEnd);
-line(goateeX + 49, height * 0.74, goateeX + 49, goateeYEnd);
-line(goateeX + 56, height * 0.74, goateeX + 56, goateeYEnd);
-line(goateeX + 63, height * 0.74, goateeX + 63, goateeYEnd);
-line(goateeX + 70, height * 0.74, goateeX + 70, goateeYEnd);
-line(goateeX + 77, height * 0.74, goateeX + 77, goateeYEnd);
-line(goateeX + 84, height * 0.74, goateeX + 84, goateeYEnd);
-line(goateeX + 91, height * 0.74, goateeX + 91, goateeYEnd);
-line(goateeX + 98, height * 0.74, goateeX + 98, goateeYEnd);
+line(goateeX, height * 0.72, goateeX, goateeYEnd);
+line(goateeX + 7, height * 0.72, goateeX + 7, goateeYEnd);
+line(goateeX + 14, height * 0.72, goateeX + 14, goateeYEnd);
+line(goateeX + 21, height * 0.72, goateeX + 21, goateeYEnd);
+line(goateeX + 28, height * 0.72, goateeX + 28, goateeYEnd);
+line(goateeX + 35, height * 0.72, goateeX + 35, goateeYEnd);
+line(goateeX + 42, height * 0.72, goateeX + 42, goateeYEnd);
+line(goateeX + 49, height * 0.72, goateeX + 49, goateeYEnd);
+line(goateeX + 56, height * 0.72, goateeX + 56, goateeYEnd);
+line(goateeX + 63, height * 0.72, goateeX + 63, goateeYEnd);
+line(goateeX + 70, height * 0.72, goateeX + 70, goateeYEnd);
+line(goateeX + 77, height * 0.72, goateeX + 77, goateeYEnd);
+line(goateeX + 84, height * 0.72, goateeX + 84, goateeYEnd);
+line(goateeX + 91, height * 0.72, goateeX + 91, goateeYEnd);
+line(goateeX + 98, height * 0.72, goateeX + 98, goateeYEnd);
 
 goateeYEnd = goateeYEnd + 0.1;
 pop();
