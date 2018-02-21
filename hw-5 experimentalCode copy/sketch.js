@@ -25,21 +25,18 @@ var goateeYEnd = 435;
 var goateeX = 350;
 
 // hair variables
-var hairXstart = 240;
+var hairXstart = 255;
 var hairYstart = 130;
-var hairXEnd = 240;
+var hairXEnd = 255;
 var hairYEnd = 120;
 
 // eye rotation variables
 var eyeAngle = 0;
 var eyeRotationRate = 0;
 
-//line(width/3.25, 190, width/3.35, 175);
-
-
 function draw() {
 //background color will change from green to reddish-purple
-// background(rChannel, gChannel, bChannel);
+background(rChannel, gChannel, bChannel);
     // background color change animation
     rChannel = rChannel + 1;
     gChannel = gChannel - 1;
@@ -128,7 +125,7 @@ pop();
 //left eye
 push();
 translate(width * 0.4, height * 0.4);
-// rotate(radians(eyeAngle));
+rotate(radians(eyeAngle));
 stroke('rgb(80)');
 strokeWeight(2);
 fill('rgb(225, 225, 225)');
@@ -149,7 +146,7 @@ ellipse(width * 0.4, height * 0.40, pupilWidth, pupilHeight);
 //right eye
 push();
 translate(width * 0.6, height * 0.4);
-// rotate(radians(eyeAngle));
+rotate(radians(eyeAngle));
 stroke('rgb(80)');
 strokeWeight(2);
 fill('rgb(225, 225, 225)');
@@ -165,8 +162,8 @@ stroke('rgb(240, 240, 240)');
 fill('rgb(80, 80, 80)');
 ellipse(width * 0.60, height * 0.40, pupilWidth, pupilHeight);
 // dilates pupil to max 60 px width and height
-// pupilWidth = pupilWidth + 0.2;
-// pupilHeight = pupilHeight + 0.2;
+pupilWidth = pupilWidth + 0.2;
+pupilHeight = pupilHeight + 0.2;
 pupilWidth = pupilWidth % 60;
 pupilHeight = pupilHeight % 60;
 pop();
@@ -185,10 +182,12 @@ strokeWeight(5);
 fill('rgb(80, 80, 80)');
 ellipse(400, 390, mouthWidth, mouthHeight);
 
-// mouthWidth = mouthWidth + 0.5;
-// mouthHeight = mouthHeight + 0.5;
-// mouthWidth = mouthWidth % 100;
-// mouthHeight = mouthHeight % 100;
+
+// animation that widens mouth and stops when it it 60 x 60 px
+mouthWidth = mouthWidth + 0.3;
+mouthHeight = mouthHeight + 0.3;
+mouthWidth = mouthWidth % 60;
+mouthHeight = mouthHeight % 60;
 pop();
 /* end mouth */
 
