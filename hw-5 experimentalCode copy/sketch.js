@@ -217,10 +217,10 @@ stroke('rgb(80, 80, 80)');
 strokeWeight(6);
 line(windowWidth/5.75, 200, windowWidth/5, 220);
 push();
-translate(515, 0);
+// translate(515, 0);
 stroke('rgb(80, 80, 80)');
-strokeWeight(15);
-line(windowWidth/3.6, 300, windowWidth/3.15, 290);
+strokeWeight(6);
+line(windowWidth/2.35, 220, windowWidth/2.21, 200);
 pop();
 pop();
 /* end eyes */
