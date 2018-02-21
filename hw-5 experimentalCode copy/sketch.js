@@ -25,9 +25,9 @@ var goateeYEnd = 435;
 var goateeX = 350;
 
 // hair variables
-var hairXstart = 260;
+var hairXstart = 240;
 var hairYstart = 130;
-var hairXEnd = 260;
+var hairXEnd = 240;
 var hairYEnd = 120;
 
 // eye rotation variables
@@ -74,47 +74,47 @@ push();
 stroke('rgb(74, 54, 48)');
 strokeWeight(7);
 line(hairXstart, hairYstart, hairXEnd, hairYEnd);
-line(hairXstart + 10, hairYstart - 10, hairXEnd + 10, hairYEnd);
-line(hairXstart + 20, hairYstart - 10, hairXEnd + 20, hairYEnd);
-line(hairXstart + 30, hairYstart - 15, hairXEnd + 30, hairYEnd);
-line(hairXstart + 40, hairYstart - 20, hairXEnd + 40, hairYEnd);
-line(hairXstart + 50, hairYstart - 25, hairXEnd + 50, hairYEnd);
-line(hairXstart + 60, hairYstart - 30, hairXEnd + 60, hairYEnd - 15);
-line(hairXstart + 70, hairYstart - 35, hairXEnd + 70, hairYEnd - 20);
-line(hairXstart + 80, hairYstart - 40, hairXEnd + 80, hairYEnd - 25);
-line(hairXstart + 90, hairYstart - 45, hairXEnd + 90, hairYEnd - 30);
-line(hairXstart + 90, hairYstart - 50, hairXEnd + 90, hairYEnd - 35);
-line(hairXstart + 100, hairYstart - 55, hairXEnd + 100, hairYEnd - 40);
-line(hairXstart + 110, hairYstart - 60, hairXEnd + 110, hairYEnd - 45);
-line(hairXstart + 120, hairYstart - 65, hairXEnd + 120, hairYEnd - 60);
-line(hairXstart + 130, hairYstart - 70, hairXEnd + 130, hairYEnd - 65);
-line(hairXstart + 140, hairYstart - 75, hairXEnd + 140, hairYEnd - 70);
+line(hairXstart + 10, hairYstart - 3, hairXEnd + 10, hairYEnd);
+line(hairXstart + 20, hairYstart - 6, hairXEnd + 20, hairYEnd);
+line(hairXstart + 30, hairYstart - 9, hairXEnd + 30, hairYEnd);
+line(hairXstart + 40, hairYstart - 12, hairXEnd + 40, hairYEnd);
+line(hairXstart + 50, hairYstart - 15, hairXEnd + 50, hairYEnd);
+line(hairXstart + 60, hairYstart - 18, hairXEnd + 60, hairYEnd - 10);
+line(hairXstart + 70, hairYstart - 21, hairXEnd + 70, hairYEnd - 13);
+line(hairXstart + 80, hairYstart - 24, hairXEnd + 80, hairYEnd - 16);
+line(hairXstart + 90, hairYstart - 27, hairXEnd + 90, hairYEnd - 19);
+line(hairXstart + 90, hairYstart - 30, hairXEnd + 90, hairYEnd - 22);
+line(hairXstart + 100, hairYstart - 33, hairXEnd + 100, hairYEnd - 25);
+line(hairXstart + 110, hairYstart - 36, hairXEnd + 110, hairYEnd - 28);
+line(hairXstart + 120, hairYstart - 39, hairXEnd + 120, hairYEnd - 31);
+line(hairXstart + 130, hairYstart - 42, hairXEnd + 130, hairYEnd - 34);
+line(hairXstart + 140, hairYstart - 45, hairXEnd + 140, hairYEnd - 37);
 pop();
 
 // left side hairXEnd
 
 push();
-translate( windowWidth/1.02, 0);
+translate( windowWidth/1.6, 0);
 scale( -1, 1 );
 stroke('rgb(74, 54, 48)');
 strokeWeight(7);
-line(hairXstart, hairYstart, hairXEnd, hairYEnd);
-line(hairXstart + 15, hairYstart - 5, hairXEnd + 15, hairYEnd);
-line(hairXstart + 30, hairYstart - 10, hairXEnd + 30, hairYEnd);
-line(hairXstart + 45, hairYstart - 15, hairXEnd + 45, hairYEnd);
-line(hairXstart + 60, hairYstart - 20, hairXEnd + 60, hairYEnd);
-line(hairXstart + 75, hairYstart - 25, hairXEnd + 75, hairYEnd);
-line(hairXstart + 90, hairYstart - 30, hairXEnd + 90, hairYEnd - 15);
-line(hairXstart + 105, hairYstart - 35, hairXEnd + 105, hairYEnd - 20);
-line(hairXstart + 120, hairYstart - 40, hairXEnd + 120, hairYEnd - 25);
-line(hairXstart + 135, hairYstart - 45, hairXEnd + 135, hairYEnd - 30);
-line(hairXstart + 150, hairYstart - 50, hairXEnd + 150, hairYEnd - 35);
-line(hairXstart + 165, hairYstart - 55, hairXEnd + 165, hairYEnd - 40);
-line(hairXstart + 180, hairYstart - 60, hairXEnd + 180, hairYEnd - 45);
-line(hairXstart + 195, hairYstart - 65, hairXEnd + 195, hairYEnd - 60);
-line(hairXstart + 210, hairYstart - 70, hairXEnd + 210, hairYEnd - 65);
-line(hairXstart + 225, hairYstart - 75, hairXEnd + 225, hairYEnd - 70);
 
+line(hairXstart, hairYstart, hairXEnd, hairYEnd);
+line(hairXstart + 10, hairYstart - 3, hairXEnd + 10, hairYEnd);
+line(hairXstart + 20, hairYstart - 6, hairXEnd + 20, hairYEnd);
+line(hairXstart + 30, hairYstart - 9, hairXEnd + 30, hairYEnd);
+line(hairXstart + 40, hairYstart - 12, hairXEnd + 40, hairYEnd);
+line(hairXstart + 50, hairYstart - 15, hairXEnd + 50, hairYEnd);
+line(hairXstart + 60, hairYstart - 18, hairXEnd + 60, hairYEnd - 10);
+line(hairXstart + 70, hairYstart - 21, hairXEnd + 70, hairYEnd - 13);
+line(hairXstart + 80, hairYstart - 24, hairXEnd + 80, hairYEnd - 16);
+line(hairXstart + 90, hairYstart - 27, hairXEnd + 90, hairYEnd - 19);
+line(hairXstart + 90, hairYstart - 30, hairXEnd + 90, hairYEnd - 22);
+line(hairXstart + 100, hairYstart - 33, hairXEnd + 100, hairYEnd - 25);
+line(hairXstart + 110, hairYstart - 36, hairXEnd + 110, hairYEnd - 28);
+line(hairXstart + 120, hairYstart - 39, hairXEnd + 120, hairYEnd - 31);
+line(hairXstart + 130, hairYstart - 42, hairXEnd + 130, hairYEnd - 34);
+line(hairXstart + 140, hairYstart - 45, hairXEnd + 140, hairYEnd - 37);
 
 // growing hair code
 hairYEnd = hairYEnd - 0.1;
