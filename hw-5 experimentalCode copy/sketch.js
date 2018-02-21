@@ -1,6 +1,6 @@
 
 function setup() {
-createCanvas(windowWidth, 800);
+createCanvas(800, 600);
 }
 
 //**********************//
@@ -39,7 +39,7 @@ var eyeRotationRate = 0;
 
 function draw() {
 //background color will change from green to reddish-purple
-background(rChannel, gChannel, bChannel);
+// background(rChannel, gChannel, bChannel);
     // background color change animation
     rChannel = rChannel + 1;
     gChannel = gChannel - 1;
@@ -64,7 +64,7 @@ quad(width * 0.28, height * 0.25, width * 0.72, height * 0.25, width * 0.68, hei
 //chin
 quad(width * 0.33, height * 0.65, width * 0.68, height * 0.65, width * 0.55, height * 0.75, width * 0.45, height * 0.75);
 //forehead
-arc(width/2, 200, width/2.27, height/4.27, PI, TWO_PI);
+arc(width/2, 150, width/2.27, height/4.27, PI, TWO_PI);
 pop();
 /* end head */
 
@@ -128,7 +128,7 @@ pop();
 //left eye
 push();
 translate(width * 0.4, height * 0.4);
-rotate(radians(eyeAngle));
+// rotate(radians(eyeAngle));
 stroke('rgb(80)');
 strokeWeight(2);
 fill('rgb(225, 225, 225)');
@@ -149,7 +149,7 @@ ellipse(width * 0.4, height * 0.40, pupilWidth, pupilHeight);
 //right eye
 push();
 translate(width * 0.6, height * 0.4);
-rotate(radians(eyeAngle));
+// rotate(radians(eyeAngle));
 stroke('rgb(80)');
 strokeWeight(2);
 fill('rgb(225, 225, 225)');
@@ -165,8 +165,8 @@ stroke('rgb(240, 240, 240)');
 fill('rgb(80, 80, 80)');
 ellipse(width * 0.60, height * 0.40, pupilWidth, pupilHeight);
 // dilates pupil to max 60 px width and height
-pupilWidth = pupilWidth + 0.2;
-pupilHeight = pupilHeight + 0.2;
+// pupilWidth = pupilWidth + 0.2;
+// pupilHeight = pupilHeight + 0.2;
 pupilWidth = pupilWidth % 60;
 pupilHeight = pupilHeight % 60;
 pop();
@@ -174,8 +174,8 @@ pop();
 /* nose */
 stroke('rgb(40, 40, 40)');
 fill('rgb(80, 80, 80)');
-ellipse(width * 0.485, height * 0.55, 20, 20);
-ellipse(width * 0.525, height * 0.55, 20, 20);
+ellipse(width * 0.48, height * 0.55, 15, 15);
+ellipse(width * 0.525, height * 0.55, 15, 15);
 /* end nose */
 
 /* mouth */
@@ -183,12 +183,12 @@ push();
 stroke('rgb(200, 40, 40)');
 strokeWeight(5);
 fill('rgb(80, 80, 80)');
-ellipse(635, 525, mouthWidth, mouthHeight);
+ellipse(400, 390, mouthWidth, mouthHeight);
 
-mouthWidth = mouthWidth + 0.5;
-mouthHeight = mouthHeight + 0.5;
-mouthWidth = mouthWidth % 100;
-mouthHeight = mouthHeight % 100;
+// mouthWidth = mouthWidth + 0.5;
+// mouthHeight = mouthHeight + 0.5;
+// mouthWidth = mouthWidth % 100;
+// mouthHeight = mouthHeight % 100;
 pop();
 /* end mouth */
 
@@ -198,24 +198,24 @@ pop();
 push();
 noFill();
 stroke('rgb(80, 80, 80)');
-strokeWeight(15);
-rect(width * 0.32, height * 0.30, 175, 175, 5, 5, 30, 30);
+strokeWeight(7);
+rect(width * 0.32, height * 0.30, 120, 120, 5, 5, 30, 30);
 // left frame
 push();
 translate(282, 0);
 noFill();
 stroke('rgb(80, 80, 80)');
-strokeWeight(15);
-rect(width * 0.32, height * 0.30, 175, 175, 5, 5, 30, 30);
+strokeWeight(7);
+rect(width * 0.175, height * 0.30, 120, 120, 5, 5, 30, 30);
 pop();
 // bridge
 stroke('rgb(80, 80, 80)');
-strokeWeight(15);
-arc(windowWidth/1.989, 320, 110, 60, radians(195), radians(345));
+strokeWeight(6);
+arc(windowWidth/3.2, 230, 70, 30, radians(195), radians(345));
 //handles
 stroke('rgb(80, 80, 80)');
-strokeWeight(15);
-line(windowWidth/3.15, 300, windowWidth/3.6, 290);
+strokeWeight(6);
+line(windowWidth/5.75, 200, windowWidth/5, 220);
 push();
 translate(515, 0);
 stroke('rgb(80, 80, 80)');
