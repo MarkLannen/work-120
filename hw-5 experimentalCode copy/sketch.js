@@ -245,6 +245,7 @@ line(goateeX + 91, height * 0.72, goateeX + 91, goateeYEnd);
 line(goateeX + 98, height * 0.72, goateeX + 98, goateeYEnd);
 
 goateeYEnd = goateeYEnd + 0.1;
+// goateeYEnd = goateeYEnd % 100;
 pop();
 /* end goatee */
 
