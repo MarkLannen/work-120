@@ -92,7 +92,7 @@ pop();
 // left side hairXEnd
 
 push();
-translate( windowWidth/2.4, 0);
+translate( 800, 0);
 scale( -1, 1 );
 stroke('rgb(74, 54, 48)');
 strokeWeight(7);
