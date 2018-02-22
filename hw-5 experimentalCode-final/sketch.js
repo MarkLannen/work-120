@@ -91,7 +91,7 @@ pop();
 // left side hairXEnd
 
 push();
-translate( windowWidth/1.6, 0);
+translate( windowWidth/2.4, 0);
 scale( -1, 1 );
 stroke('rgb(74, 54, 48)');
 strokeWeight(7);
@@ -210,16 +210,19 @@ pop();
 // bridge
 stroke('rgb(80, 80, 80)');
 strokeWeight(6);
-arc(windowWidth/3.2, 230, 70, 30, radians(195), radians(345));
-//handles
+arc(windowWidth/4.8, 230, 70, 30, radians(195), radians(345));
+/*handles*/
+// right handle
 stroke('rgb(80, 80, 80)');
 strokeWeight(6);
-line(windowWidth/5.75, 200, windowWidth/5, 220);
+line(windowWidth/8.75, 200, windowWidth/7.25, 220);
 push();
+
+//left handle
 // translate(515, 0);
 stroke('rgb(80, 80, 80)');
 strokeWeight(6);
-line(windowWidth/2.35, 220, windowWidth/2.21, 200);
+line(windowWidth/3.6, 220, windowWidth/3.3, 200);
 pop();
 pop();
 /* end eyes */
