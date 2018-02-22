@@ -43,9 +43,10 @@ background(rChannel, gChannel, bChannel);
     rChannel = rChannel % 255;
     gChannel = gChannel % 255;
 
-/* change to eye rotation variable */
-eyeRotationRate = (mouseY * 0.1) - 20;
-eyeAngle = eyeAngle + eyeRotationRate;
+    /* change to eye rotation variable */
+    eyeRotationRate = (mouseY * 0.05) - 10;
+    eyeAngle = eyeAngle + eyeRotationRate;
+
 
 //**********************//
 //Face
@@ -166,6 +167,24 @@ pupilWidth = pupilWidth + 0.2;
 pupilHeight = pupilHeight + 0.2;
 pupilWidth = pupilWidth % 60;
 pupilHeight = pupilHeight % 60;
+pop();
+
+/* Ears */
+// left ear
+push();
+// translate(300, 300);
+// rotate(radians(earAngle));
+fill('rgb(74, 54, 48)');
+quad(width * 0.295, height * 0.34, width * 0.312, height * 0.5, width * 0.27, height * 0.49, width * 0.23, height * 0.35, 10 );
+pop();
+
+//right ear
+push();
+translate(805 , 0);
+scale( -1, 1);
+fill('rgb(74, 54, 48)');
+quad(width * 0.295, height * 0.34, width * 0.312, height * 0.5, width * 0.27, height * 0.49, width * 0.23, height * 0.35, 10 );
+
 pop();
 
 /* nose */
