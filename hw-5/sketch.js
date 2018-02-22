@@ -229,19 +229,19 @@ pop();
 // bridge
 stroke('rgb(80, 80, 80)');
 strokeWeight(6);
-arc(windowWidth/4.8, 230, 70, 30, radians(195), radians(345));
+arc(400, 230, 70, 30, radians(195), radians(345));
 /*handles*/
 // right handle
 stroke('rgb(80, 80, 80)');
 strokeWeight(6);
-line(windowWidth/8.75, 200, windowWidth/7.25, 220);
+line(230, 200, 265, 220);
 push();
 
 //left handle
 // translate(515, 0);
 stroke('rgb(80, 80, 80)');
 strokeWeight(6);
-line(windowWidth/3.6, 220, windowWidth/3.3, 200);
+line(535, 220, 575, 200);
 pop();
 pop();
 /* end eyes */
