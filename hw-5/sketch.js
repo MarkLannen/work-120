@@ -56,7 +56,7 @@ background(rChannel, gChannel, bChannel);
 push();
 noStroke();
 // strokeWeight(0.5);
-fill('rgb(175, 146, 115)');
+fill('rgb(57, 156, 237)');
 // top of head
 quad(width * 0.28, height * 0.25, width * 0.72, height * 0.25, width * 0.68, height * 0.65, width * 0.33, height * 0.65);
 //chin
@@ -69,7 +69,7 @@ pop();
 /* hair */
 // right side hair
 push();
-stroke('rgb(74, 54, 48)');
+stroke('rgb(222, 58, 58)');
 strokeWeight(7);
 line(hairXstart, hairYstart, hairXEnd, hairYEnd);
 line(hairXstart + 10, hairYstart - 3, hairXEnd + 10, hairYEnd);
@@ -248,7 +248,7 @@ pop();
 
 /* goatee */
 push();
-stroke('rgb(74, 54, 48)');
+stroke('rgb(38, 232, 63)');
 strokeWeight(5);
 line(goateeX, height * 0.72, goateeX, goateeYEnd);
 line(goateeX + 7, height * 0.72, goateeX + 7, goateeYEnd);

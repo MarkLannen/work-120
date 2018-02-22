@@ -56,7 +56,7 @@ background(rChannel, gChannel, bChannel);
 push();
 noStroke();
 // strokeWeight(0.5);
-fill('rgb(175, 146, 115)');
+fill('rgb(99, 198, 247)');
 // top of head
 quad(width * 0.28, height * 0.25, width * 0.72, height * 0.25, width * 0.68, height * 0.65, width * 0.33, height * 0.65);
 //chin
