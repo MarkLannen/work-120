@@ -42,3 +42,6 @@ I've found that it's almost more frustrating when something unexpectedly starts 
 
 ## Conclusions
 Interesting project and I think I've got a good handle on the fundamental logic of how animation in p5.js works. Looking forward to learning how to do more than just simple animations.
+
+## Live sketch
+[Homework 5 live sketch](https://marklannenum.github.io/work-120/hw-5/)
