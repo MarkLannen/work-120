@@ -43,10 +43,9 @@ background(rChannel, gChannel, bChannel);
     rChannel = rChannel % 255;
     gChannel = gChannel % 255;
 
-    /* change to eye rotation variable */
-    eyeRotationRate = (mouseY * 0.05) - 10;
-    eyeAngle = eyeAngle + eyeRotationRate;
-
+/* change to eye rotation variable */
+eyeRotationRate = (mouseY * 0.1) - 20;
+eyeAngle = eyeAngle + eyeRotationRate;
 
 //**********************//
 //Face
@@ -92,7 +91,7 @@ pop();
 // left side hairXEnd
 
 push();
-translate( windowWidth/2.4, 0);
+translate( windowWidth/1.6, 0);
 scale( -1, 1 );
 stroke('rgb(74, 54, 48)');
 strokeWeight(7);
@@ -169,24 +168,6 @@ pupilWidth = pupilWidth % 60;
 pupilHeight = pupilHeight % 60;
 pop();
 
-/* Ears */
-// left ear
-push();
-// translate(300, 300);
-// rotate(radians(earAngle));
-fill('rgb(74, 54, 48)');
-quad(width * 0.295, height * 0.34, width * 0.312, height * 0.5, width * 0.27, height * 0.49, width * 0.23, height * 0.35, 10 );
-pop();
-
-//right ear
-push();
-translate(805 , 0);
-scale( -1, 1);
-fill('rgb(74, 54, 48)');
-quad(width * 0.295, height * 0.34, width * 0.312, height * 0.5, width * 0.27, height * 0.49, width * 0.23, height * 0.35, 10 );
-
-pop();
-
 /* nose */
 stroke('rgb(40, 40, 40)');
 fill('rgb(80, 80, 80)');
@@ -229,19 +210,16 @@ pop();
 // bridge
 stroke('rgb(80, 80, 80)');
 strokeWeight(6);
-arc(windowWidth/4.8, 230, 70, 30, radians(195), radians(345));
-/*handles*/
-// right handle
+arc(windowWidth/3.2, 230, 70, 30, radians(195), radians(345));
+//handles
 stroke('rgb(80, 80, 80)');
 strokeWeight(6);
-line(windowWidth/8.75, 200, windowWidth/7.25, 220);
+line(windowWidth/5.75, 200, windowWidth/5, 220);
 push();
-
-//left handle
 // translate(515, 0);
 stroke('rgb(80, 80, 80)');
 strokeWeight(6);
-line(windowWidth/3.6, 220, windowWidth/3.3, 200);
+line(windowWidth/2.35, 220, windowWidth/2.21, 200);
 pop();
 pop();
 /* end eyes */
