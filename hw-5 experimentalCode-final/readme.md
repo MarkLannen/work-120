@@ -14,19 +14,19 @@ I then drew out a self portrait of myself, just my head, and set about animating
 
 3. The most challenging element to animate was the eyes. I liked what Dr Musick had done with the head of his spinning man, and wanted to do the same thing with my character's eyes. So I used his code as a starting point and changed the names of the variables to accurately reflect what they referred to in my project. However, it took me quite a long time to get my eyes to spin as I wanted them to as initially they were spinning around the wrong axes, and then they weren't spinning based on mouseX, which is what I wanted. Through a lot of trial and error and really thinking through the logic of exactly what each element of the code was doing, I was able to get the effect I wanted.
 
-The key bit of code is here:
-translate(width * 0.4, height * 0.4);
-rotate(radians(eyeAngle));
+The key bit of code in the draw function is here:
+`translate(width * 0.4, height * 0.4);
+rotate(radians(eyeAngle))`
 
-The key was to set the variables up so that the rotate function would cause the eye to spin around it's own center point rather than some other part of the canvas. Also, I had to understand how setting up the variable called eyeRotationRate to equal the position of the mouse on the Y axis. That part of the code is here:
+The most complicated part was setting up the variables up so that the rotate function would cause the eye to spin around it's own center point rather than some other part of the canvas. Also, I had to understand how to set up the variable called eyeRotationRate to equal the position of the mouse on the Y axis. That part of the code is here:
 
-// eye rotation variables
+`// eye rotation variables
 var eyeAngle = 0;
-var eyeRotationRate = 0;
+var eyeRotationRate = 0;`
 
-/* change to eye rotation variable */
+`/* change to eye rotation variable */
 eyeRotationRate = (mouseY * 0.1) - 20;
-eyeAngle = eyeAngle + eyeRotationRate;
+eyeAngle = eyeAngle + eyeRotationRate;`
 
 
 
