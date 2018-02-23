@@ -115,7 +115,7 @@ line(hairXstart + 130, hairYstart - 42, hairXEnd + 130, hairYEnd - 34);
 line(hairXstart + 140, hairYstart - 45, hairXEnd + 140, hairYEnd - 37);
 
 // growing hair code
-hairYEnd = hairYEnd - 0.1;
+hairYEnd = hairYEnd - 0.15;
 
 
 pop();
@@ -266,7 +266,7 @@ line(goateeX + 84, height * 0.72, goateeX + 84, goateeYEnd);
 line(goateeX + 91, height * 0.72, goateeX + 91, goateeYEnd);
 line(goateeX + 98, height * 0.72, goateeX + 98, goateeYEnd);
 
-goateeYEnd = goateeYEnd + 0.1;
+goateeYEnd = goateeYEnd + 0.2;
 // goateeYEnd = goateeYEnd % 100;
 pop();
 /* end goatee */
