@@ -1,9 +1,15 @@
 //global variables
-var bub = {};
-bub.x1 = 50;
-bub.y1 = 50;
-bub.w = 25;
-bub.h = 25;
+var bub1 = {};
+bub1.x1 = 50;
+bub1.y1 = 50;
+bub1.w = 25;
+bub1.h = 25;
+
+var bub2 = {};
+bub2.x1 = 50;
+bub2.y1 = constrain(height * 0.5, height);
+bub2.w = 25;
+bub2.h = 25;
 
 //color variables
 var rfill = 100;
@@ -24,22 +30,41 @@ background('rgb(158, 209, 251)');
 
 function draw() {
 
-// draw bubble
+// draw bubble 1
 strokeWeight(strW);
 stroke( 'rgba(rfill, gfill, bfill, afill)');
+// stroke('red');
 fill ( 'rgba(rfill - 50, gfill, bfill + 50, afill)');
-ellipse( bub.x1, bub.y1, bub.w, bub.h);
+ellipse( bub1.x1, bub1.y1, bub1.w, bub1.h);
 
-// generate random bubbles
-bub.x1 = random(0, width);
-bub.y1 = random(0, height);
-bub.w = random(5, 25);
-bub.h = random(5, 25);
+// draw bubble 2
+ellipse( bub2.x1, bub2.y1, bub2.w, bub2.h);
+
+// generate random bubbles - bub1
+bub1.x1 = random(0, width);
+bub1.y1 = random(0, height * 0.5);
+bub1.w = random(2, 5);
+bub1.h = random(2, 5);
+
+// generate random bubbles - bub2
+bub2.x1 = random(0, width);
+bub2.y1 = random();
+bub2.w = random(2, 5);
+bub2.h = random(2, 5);
+
+// generate different stroke colors
+rfill = rfill % 3;
+gfill = gfill % 6;
+bfill = bfill % 9;
+
+// generates different fill colors
+rfill = rfill % 3;
+gfill = gfill % 6;
+bfill = bfill % 9;
 
 
 
-
-
+strW = constrain(2, 1, 5);
 
 
 
