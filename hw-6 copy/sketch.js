@@ -69,8 +69,8 @@ bub1.h = random(2, 50);
 // generate random bubbles - bub2
 bub2.x1 = random(width * 0.5, width);
 bub2.y1 = random(height/2, height);
-bub2.w = random(2, 10);
-bub2.h = random(2, 10);
+bub2.w = random(2, bub2.w * 1.1 - 10);
+bub2.h = random(2, 15);
 
 
 
