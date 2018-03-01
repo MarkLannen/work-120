@@ -141,8 +141,8 @@ rect1.h = random (2, 20);
 // generate random rectangles for rect2
 rect2.x1 = random((width * 0.5) + 50, width);
 rect2.y1 = random((height * 0.5) + 50, height);
-rect2.w = random(2, 50);
-rect2.h = random (2, 50);
+rect2.w = map(rect2.x1, width, width/2, 50, 2);
+rect2.h = map(rect2.y1, width, width/2, 60, 2);
 
 
 
