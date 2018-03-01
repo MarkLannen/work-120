@@ -30,6 +30,16 @@ var rect2 = {
     h: 50
 };
 
+// triangle variables
+var tri1 = {
+    x1: 50,
+    y1: 50,
+    x2: 55,
+    y2: 55,
+    x3: 25,
+    y3: 50
+};
+
 
 //fill color variables
 var rfill = 255;
@@ -56,23 +66,10 @@ function setup() {
 
 function draw() {
 // draw bubble 1
-// push();
 stroke(rst, gst, bst, ast);
 strokeWeight(strW);
 fill (rfill, gfill, bfill, afill);
 ellipse( bub1.x1, bub1.y1, bub1.w, bub1.h);
-
-// change fill and stroke colors
-rfill = random(0, 255);
-rfill = constrain(rfill * 10, 0, 255);
-gfill = random(0, 255);
-gfill = constrain(gfill * 2, 0, 255);
-bfill = random(0, 255);
-bfill = constrain(bfill/2, 0, 255);
-afill = random(0, 255);
-strW = random(strW/2, 1);
-
-// pop();
 
 // draw bubble 2
 stroke(rst, gst, bst, ast);
@@ -91,6 +88,31 @@ stroke(rst, gst, bst, ast);
 strokeWeight(strW);
 fill (rfill, gfill, bfill, afill);
 rect (rect2.x1, rect2.y1, rect2.w, rect2.h);
+
+// draw moving triangle
+stroke(rst, gst, bst, ast);
+strokeWeight(strW);
+fill (rfill, gfill, bfill, afill * 0.9);
+triangle (tri1.x1, tri1.y1, tri1.x2, tri1.y2, tri1.x3, tri1.y3);
+
+//animate triangle
+tri1.x1 += 5;
+// tri1.y1 += 5;
+tri1.x2 += 5;
+// tri1.y2 += 5;
+tri1.x3 += 5;
+// tri1.y3 += 5;
+
+
+// change fill and stroke colors
+rfill = random(0, 255);
+rfill = constrain(rfill * 10, 0, 255);
+gfill = random(0, 255);
+gfill = constrain(gfill * 2, 0, 255);
+bfill = random(0, 255);
+bfill = constrain(bfill/2, 0, 255);
+afill = random(0, 255);
+strW = random(strW/2, 1);
 
 
 // generate random bubbles - bub1
