@@ -121,26 +121,26 @@ strW = random(strW/2, 1);
 
 
 // generate random bubbles - bub1
-bub1.x1 = random(0, (width * 0.5) - 20);
-bub1.y1 = random(0, (height * 0.5) - 10);
+bub1.x1 = random(0, (width * 0.5) - 50);
+bub1.y1 = random(0, (height * 0.5) - 50);
 bub1.w = random(2, 50);
 bub1.h = random(2, 50);
 
 // generate random bubbles - bub2
-bub2.x1 = random((width * 0.5) + 20, width);
-bub2.y1 = random(0, (height/2) - 10);
+bub2.x1 = random((width * 0.5) + 50, width);
+bub2.y1 = random(0, (height/2) - 50);
 bub2.w = random(2, bub2.w * 1.1 - 10);
 bub2.h = random(2, 15);
 
 // generate random rectangles for rect1
-rect1.x1 = random(0, (width * 0.5) - 30);
-rect1.y1 = random((height * 0.5) + 10, height);
+rect1.x1 = random(0, (width * 0.5) - 50);
+rect1.y1 = random((height * 0.5) + 50, height);
 rect1.w = random(2, 20);
 rect1.h = random (2, 20);
 
 // generate random rectangles for rect2
-rect2.x1 = random((width * 0.5) + 30, width);
-rect2.y1 = random((height * 0.5) + 10, height);
+rect2.x1 = random((width * 0.5) + 50, width);
+rect2.y1 = random((height * 0.5) + 50, height);
 rect2.w = random(2, 50);
 rect2.h = random (2, 50);
 
