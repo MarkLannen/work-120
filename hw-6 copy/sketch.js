@@ -124,7 +124,7 @@ strW = random(strW/2, 1);
 bub1.x1 = random(0, (width * 0.5) - 50);
 bub1.y1 = random(0, (height * 0.5) - 50);
 bub1.w = map(bub1.x1, 0, width/2, 50, 7);
-bub1.h = map(bub1.y1, 0, width/2, 35, 1);
+bub1.h = map(bub1.y1, 0, width/1.8, 35, 1);
 
 // generate random bubbles - bub2
 bub2.x1 = random((width * 0.5) + 50, width);
@@ -134,7 +134,7 @@ bub2.h = random(2, 15);
 
 // generate random rectangles for rect1
 rect1.x1 = random(0, (width * 0.5) - 50);
-rect1.y1 = random((height * 0.5) + 50, height);
+rect1.y1 = random((height * 0.5) + 30, height);
 rect1.w = random(2, 20);
 rect1.h = random (2, 20);
 
@@ -142,7 +142,7 @@ rect1.h = random (2, 20);
 rect2.x1 = random((width * 0.5) + 50, width);
 rect2.y1 = random((height * 0.5) + 50, height);
 rect2.w = map(rect2.x1, width, width/2, 50, 2);
-rect2.h = map(rect2.y1, width, width/2, 60, 2);
+rect2.h = map(rect2.y1, width, width/2.1, 60, 2);
 
 
 
