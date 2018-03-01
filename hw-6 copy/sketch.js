@@ -102,11 +102,11 @@ tri_pos = (tri1.x1, tri1.y1, tri1.x2, tri1.y2, tri1.x3, tri1.y3);
 
 //animate triangle
 tri1.x1 = width * 0.5;
-tri1.y1 += 9 % (height - 50);
+tri1.y1 = (tri1.y1 + 50) % height;
 tri1.x2 = width * 0.505;
-tri1.y2 += 8 % (height - 50);
+tri1.y2 = (tri1.y2 + 50) % height;
 tri1.x3 = width * 0.495;
-tri1.y3 += 7 % (height - 50) ;
+tri1.y3 = (tri1.y3 + 50) % height;
 
 
 // change fill and stroke colors
@@ -123,8 +123,8 @@ strW = random(strW/2, 1);
 // generate random bubbles - bub1
 bub1.x1 = random(0, (width * 0.5) - 50);
 bub1.y1 = random(0, (height * 0.5) - 50);
-bub1.w = random(2, 50);
-bub1.h = random(2, 50);
+bub1.w = map(bub1.x1, 0, width/2, 50, 7);
+bub1.h = map(bub1.y1, 0, width/2, 35, 1);
 
 // generate random bubbles - bub2
 bub2.x1 = random((width * 0.5) + 50, width);
