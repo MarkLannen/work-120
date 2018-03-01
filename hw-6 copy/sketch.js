@@ -50,8 +50,8 @@ var strW = 1;
 
 
 function setup() {
-createCanvas(windowWidth, 600);
-background(158, 209, 251);
+  createCanvas(windowWidth, 600);
+  background(141, 221, 255);
 }
 
 function draw() {
@@ -69,6 +69,7 @@ gfill = random(0, 255);
 gfill = constrain(gfill * 2, 0, 255);
 bfill = random(0, 255);
 bfill = constrain(bfill/2, 0, 255);
+afill = random(0, 255);
 strW = random(strW/2, 1);
 
 pop();
