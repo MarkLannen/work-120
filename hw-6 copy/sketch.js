@@ -40,6 +40,8 @@ var tri1 = {
     y3: 50
 };
 
+// triangle position
+var tri_pos;
 
 //fill color variables
 var rfill = 255;
@@ -95,13 +97,16 @@ strokeWeight(strW);
 fill (rfill, gfill, bfill, afill * 0.9);
 triangle (tri1.x1, tri1.y1, tri1.x2, tri1.y2, tri1.x3, tri1.y3);
 
+// move triangle back and forth across the screen
+tri_pos = (tri1.x1, tri1.y1, tri1.x2, tri1.y2, tri1.x3, tri1.y3);
+
 //animate triangle
-tri1.x1 += 5;
-// tri1.y1 += 5;
-tri1.x2 += 5;
-// tri1.y2 += 5;
-tri1.x3 += 5;
-// tri1.y3 += 5;
+tri1.x1 = width * 0.5;
+tri1.y1 += 5 % 3;
+tri1.x2 = width * 0.51;
+tri1.y2 += 5 % 3;
+tri1.x3 = width * 0.492;
+tri1.y3 += 5 % 3;
 
 
 // change fill and stroke colors
