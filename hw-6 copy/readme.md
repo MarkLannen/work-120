@@ -9,6 +9,12 @@ I found this the most challenging project to date. The main issue for me was tha
 3. Lastly, I used the map function to increase and decrease the size of the elements based on how near or far they were from the centre of the canvas.
 4. The map function turned out to be the most complicated part of the sketch and I had to consult with Stephanie and Dr. Musick to finally get it to work.  Below is the code:
 
+// generate random bubbles - bub1
+bub1.x1 = random(0, (width * 0.5) - 50);
+bub1.y1 = random(0, (height * 0.5) - 50);
+bub1.w = map(bub1.x1, 0, width/2, 50, 7);
+bub1.h = map(bub1.y1, 0, width/1.8, 35, 1);
+
 
 5. A second issue was understanding modulo and finding a way to incorporate it into my sketch. I finally decided to use it to vary the frame rate.
 
