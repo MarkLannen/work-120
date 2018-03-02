@@ -26,4 +26,4 @@ I posted what I had learned on the github issues board. I'm hoping that I explai
 
 ## Below is a capture of the sketch after it has been running for several minutes.
 
-!(Capture.JPG)
+![](Capture.JPG)
