@@ -22,6 +22,8 @@ bub1.h = map(bub1.y1, 0, width/1.8, 35, 1);`
 ## issues
 The biggest issue I encountered, apart from making effective use of the more complicated math functions, was that I used some p5 functions in my global variables (declared before draw and setup) and could not understand why they weren't working. I took the issue to Quinn in the lab and he pointed out that draw or setup needed to be declared before the computer knew that it was p5 code. This meant that if those p5 functions were declared outside of draw or setup that the computer would not 'know' to look in the p5_lib folder, which is where it would get the code to make the p5 functions work.
 
+[Live sketch link](https://marklannenum.github.io/work-120/hw-6/)
+
 I posted what I had learned on the github issues board. I'm hoping that I explained it correctly.  :)
 
 [Live sketch link](https://marklannenum.github.io/work-120/hw-6/)
