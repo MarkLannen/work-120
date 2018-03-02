@@ -119,6 +119,9 @@ bfill = constrain(bfill/2, 0, 255);
 afill = random(0, 255);
 strW = random(strW/2, 1);
 
+//alter stroke strokeWeight
+strW = random(sqrt(1), sqrt(4)/2);
+
 
 // generate random bubbles - bub1
 bub1.x1 = random(0, (width * 0.5) - 50);
