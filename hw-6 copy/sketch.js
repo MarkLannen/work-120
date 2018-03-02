@@ -101,12 +101,12 @@ triangle (tri1.x1, tri1.y1, tri1.x2, tri1.y2, tri1.x3, tri1.y3);
 tri_pos = (tri1.x1, tri1.y1, tri1.x2, tri1.y2, tri1.x3, tri1.y3);
 
 //animate triangle
-tri1.x1 = width * 0.5;
-tri1.y1 = (tri1.y1 + 50) % height;
-tri1.x2 = width * 0.505;
-tri1.y2 = (tri1.y2 + 50) % height;
-tri1.x3 = width * 0.495;
-tri1.y3 = (tri1.y3 + 50) % height;
+tri1.x1 = width * 0.49;
+tri1.y1 = (tri1.y1 + 48) % height;
+tri1.x2 = width * 0.49;
+tri1.y2 = (tri1.y2 + 49) % height;
+tri1.x3 = width * 0.51;
+tri1.y3 = (tri1.y3 + 51) % height;
 
 
 // change fill and stroke colors
