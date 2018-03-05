@@ -9,22 +9,22 @@ Your Name, Your Section Number
 
 <!--
 let ball = {};  // declares object called 'ball.'
-ball.width = 40;  // sets the width of the ball to 40 px.
+ball.width = 40;  // sets the width of the ball to 40 pixels.
 ball.x = 10;  // sets the starting x position of the ball to 10.
 ball.y = 10; // sets the starting y position of the ball to 10.
-ball.delta_x = 1;  sets the direction of the balls trajectory on the x axis.
-ball.delta_y = 1;  sets the direction of the balls trajectory on the y axis.
-ball.scale_x = 1;
-ball.scale_y = 1;
+ball.delta_x = 1;  //sets the direction of the balls trajectory on the x axis.
+ball.delta_y = 1;  //sets the direction of the balls trajectory on the y axis.
+ball.scale_x = 1;  //??
+ball.scale_y = 1;  //??
 
-function setup() {
-    createCanvas(windowWidth, 400);
-    background(255);
+function setup() {  // tells the browser that this is a p5.js document and to look for the p5 lib file
+    createCanvas(windowWidth, 400);  // creates canvas that is the width of the browser window and 400 pixels high.
+    background(255); // sets the background color to black.
 }
 
 
 
-function draw() {
+function draw() {  // calls all code included in block in a continuous loop. 
 
     ball.x += ball.delta_x * ball.scale_x;
     ball.y += ball.delta_y * ball.scale_y;
