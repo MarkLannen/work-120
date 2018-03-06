@@ -6,8 +6,8 @@ ball.x = 10;
 ball.y = 10;
 ball.delta_x = 1;
 ball.delta_y = 1;
-ball.scale_x = 1;
-ball.scale_y = 1;
+ball.scale_x = 10;
+ball.scale_y = 10;
 
 function setup() {
     createCanvas(windowWidth, 400);
