@@ -26,24 +26,27 @@ function setup() {  // tells the browser that this is a p5.js document and to lo
 
 function draw() {  // calls all code included in block in a continuous loop.
 
-    ball.x += ball.delta_x * ball.scale_x;  // moves the ball 1 pixel to the right along the x axis each loop.
-    ball.y += ball.delta_y * ball.scale_y;  // moves the ball 1 pixel down along the y axis each loop.
+    ball.x += ball.delta_x * ball.scale_x;  //  sets the new x location on each loop by multiplying the current x location represented by the variable:'ball.delta_x' by the
+         variable: 'ball.scale_x'.
+    ball.y += ball.delta_y * ball.scale_y;  // sets the new y location on each loop by multiplying the current y location represented by the variable:'ball.delta_y' by the
+         variable: 'ball.scale_y'.
 
 
-    if (ball.x >= width || ball.x <= 0) {
+    if (ball.x >= width || ball.x <= 0) { // function that sets parameters as x coordinates between the left and right edge of the canvas.
         ball.delta_x = -1 * ball.delta_x;  // reverses the direction of the ball along the x axis when the ball reaches the edge of the canvas.
     }
-    if (ball.y >= height || ball.y <= 0) {
+    if (ball.y >= height || ball.y <= 0) { // function that sets parameters as y coordinates between the top and bottom edge of the canvas.
         ball.delta_y = -1 * ball.delta_y; // reverses the direction of the ball along the y axis when the ball reaches the edge of the canvas.
     }
 
-    fill(255);
-    ellipse(ball.x, ball.y, ball.width, ball.width);
+    fill(255); // sets fill color of ball to black.
+    ellipse(ball.x, ball.y, ball.width, ball.width); // creates an ellipse x position at pixel 10, y position at pixel 10, and width and height at 40 pixels.
 }
 
 function mousePressed() {
-    ball.scale_x = map(mouseX, 0, width, 0.5, 10);
-    ball.scale_y = map(mouseY, 0, height, 0.5, 10);
+    ball.scale_x = map(mouseX, 0, width, 0.5, 10); // changes the direction of the ball along the x axis with a mouse click. Maps MouseX coordinate from 0 to width of the canvas on to the range 0.5 and 10.
+
+    ball.scale_y = map(mouseY, 0, height, 0.5, 10); changes the direction of the ball along the y axis with a mouse click. Maps MouseY coordinate from 0 to width of the canvas on to the range 0.5 and 10.
 }
 
 -->
