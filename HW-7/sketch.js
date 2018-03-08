@@ -9,6 +9,7 @@ ball.delta_y = 1;
 ball.scale_x = 10;
 ball.scale_y = 10;
 
+
 var r = 0;
 var g = 0;
 var b = 0;
@@ -32,6 +33,8 @@ function setup() {
 
 function draw() {
 
+    frameRate(20);
+
     ball.x += ball.delta_x * ball.scale_x;
     ball.y += ball.delta_y * ball.scale_y;
 
@@ -43,13 +46,16 @@ function draw() {
         ball.delta_y = -1 * ball.delta_y;
     }
 
+    // conditional statement that says if ball gets halfway
+    //across canvas width, increment size by 1 each frame.
+    //Decrement size by 1 each frame when it is on the other side of the canvas.
     if (ball.x >= width/2) {
         ball.width ++;
-    }else {
+    }else{
         ball.width --;
-        ball.width = constrain(ball.width, 5, 10);
     }
 
+    ball.width = constrain(ball.width, 5, 50);
 
 
 
