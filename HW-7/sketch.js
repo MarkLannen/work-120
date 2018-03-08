@@ -13,6 +13,10 @@ var r = 0;
 var g = 0;
 var b = 0;
 
+var br = 50;
+var bg = 50;
+var bb = 50;
+
 // var shapeEllipse = ellipse;
 // var shapeRectangle = rect
 
@@ -20,15 +24,13 @@ var sW = 5;
 
 function setup() {
     createCanvas(windowWidth, 400);
-    background(r, g, b);
+    background(br, bg, bb);
 
 }
 
 
 
 function draw() {
-
-
 
     ball.x += ball.delta_x * ball.scale_x;
     ball.y += ball.delta_y * ball.scale_y;
@@ -40,6 +42,15 @@ function draw() {
     if (ball.y >= height || ball.y <= 0) {
         ball.delta_y = -1 * ball.delta_y;
     }
+
+    if (ball.x >= width/2) {
+        ball.width ++;
+    }else {
+        ball.width --;
+        ball.width = constrain(ball.width, 5, 10);
+    }
+
+
 
 
     fill(r*2, g/2, b*2);
