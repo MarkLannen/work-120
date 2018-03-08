@@ -55,7 +55,7 @@ function draw() {
         ball.width --;
     }
 
-    ball.width = constrain(ball.width, 2, 50);
+    ball.width = constrain(ball.width, 2, 35);
 
     fill(r*2, g/2, b*2);
     stroke(r, g, b);
