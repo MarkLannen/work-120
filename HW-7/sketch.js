@@ -35,8 +35,8 @@ function draw() {
 
     frameRate(20);
 
-    ball.x += ball.delta_x * ball.scale_x;
-    ball.y += ball.delta_y * ball.scale_y;
+    ball.x += ball.delta_x * ball.scale_x * 1.2;
+    ball.y += ball.delta_y * ball.scale_y * 1.2;
 
 
     if (ball.x >= width || ball.x <= 0) {
@@ -56,8 +56,6 @@ function draw() {
     }
 
     ball.width = constrain(ball.width, 5, 50);
-
-
 
     fill(r*2, g/2, b*2);
     stroke(r, g, b);
