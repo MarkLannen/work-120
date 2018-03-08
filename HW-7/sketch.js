@@ -64,7 +64,7 @@ function draw() {
     r = random(255);
     g = random(255);
     b = random(255);
-    sW = map(mouseX, 0, width, 1, 5);
+    sW = map(mouseX, 0, width, 1, 4);
 
 }
 
