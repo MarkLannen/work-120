@@ -56,6 +56,7 @@ function mousePressed() {
 
 <!--
 Please describe how and why you changed the sketch?
+1. Declared variables for r, g and b so that I can randomly change the colors in the shape(s) and background.
 
-1. 
+1.
 -->
