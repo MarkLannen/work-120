@@ -33,7 +33,7 @@ function setup() {
 
 function draw() {
 
-    frameRate(20);
+    frameRate(60);
 
     ball.x += ball.delta_x * ball.scale_x * 1.2;
     ball.y += ball.delta_y * ball.scale_y * 1.2;
@@ -49,7 +49,7 @@ function draw() {
     // conditional statement that says if ball gets halfway
     //across canvas width, increment size by 1 each frame.
     //Decrement size by 1 each frame when it is on the other side of the canvas.
-    if (ball.x >= width/2) {
+    if (ball.x >= width * 0.25) {
         ball.width ++;
     }else{
         ball.width --;
@@ -70,5 +70,5 @@ function draw() {
 
 function mousePressed() {
     ball.scale_x = map(mouseX, 0, width, 0.5, 10);
-    ball.scale_y = map(mouseY, 0, height, 0.5, 10);
+    ball.scale_y = map(mouseY, 0, height, 1, 20);
 }
