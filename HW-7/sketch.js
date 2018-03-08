@@ -46,16 +46,16 @@ function draw() {
         ball.delta_y = -1 * ball.delta_y;
     }
 
-    // conditional statement that says if ball gets halfway
+    // conditional statement that says if ball gets 25%
     //across canvas width, increment size by 1 each frame.
-    //Decrement size by 1 each frame when it is on the other side of the canvas.
-    if (ball.x >= width * 0.25) {
+
+    if (ball.x <= width * 0.25 || ball.x >= width * 0.75) {
         ball.width ++;
-    }else{
+    } else{
         ball.width --;
     }
 
-    ball.width = constrain(ball.width, 5, 50);
+    ball.width = constrain(ball.width, 2, 50);
 
     fill(r*2, g/2, b*2);
     stroke(r, g, b);
