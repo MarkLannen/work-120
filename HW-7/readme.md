@@ -56,13 +56,16 @@ function mousePressed() {
 
 <!--
 Please describe how and why you changed the sketch?
+
 1. Declared variables for r, g and b and set them to 0 so that I can randomly change the colors in the shape(s) and background randomly and when the mouse is clicked.
 2. set stroke color of the ellipse to variables r, g and b and then randomized them for each loop.
 3. set variable for stroke weight and then randomized it using the mapping function. The closer one clicks the mouse on the right side of the canvas, the larger the strok will be.
 4. Created an if else statement to increment and decrement the size of the ball based on it's position along the x axis.
 5. Wrote a constrain function that constrains the dimension of the ball between 5 and 50 pixels.
 6. Changed ball.x assignment on line 38 and 39. Multiplied ball.scale_x by 1.2
-7. I changed the variable ball.delta.y from 1 to 2 so that the ball could take a more horizontal path than before if the mouse is clicked in the correct place. 
+7. I changed the variable ball.delta.y from 1 to 2 so that the ball could take a more horizontal path than before if the mouse is clicked in the correct place.
+8. Increased the maximun stroke width to 15 px so that when the ball is very small, the shape appears to be a diaomond.
+9. I had wanted to set an if else statement that transformed the ball to a rectangle based on MouseY, but after much experimenting I could not make it happen.  :(
 
 
 -->
