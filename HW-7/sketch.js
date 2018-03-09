@@ -5,7 +5,7 @@ ball.width = 40;
 ball.x = 10;
 ball.y = 10;
 ball.delta_x = 1;
-ball.delta_y = 1;
+ball.delta_y = 2
 ball.scale_x = 10;
 ball.scale_y = 10;
 
@@ -21,7 +21,7 @@ var bb = 50;
 // var shapeEllipse = ellipse;
 // var shapeRectangle = rect
 
-var sW = 5;
+var sW = 15;
 
 function setup() {
     createCanvas(windowWidth, 400);
@@ -46,7 +46,7 @@ function draw() {
         ball.delta_y = -1 * ball.delta_y;
     }
 
-    // conditional statement that says if ball gets 25%
+    // conditional statement that says if ball gets 20%
     //across canvas width, increment size by 1 each frame.
 
     if (ball.x <= width * 0.20 || ball.x >= width * 0.80) {

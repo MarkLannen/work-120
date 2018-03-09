@@ -62,6 +62,7 @@ Please describe how and why you changed the sketch?
 4. Created an if else statement to increment and decrement the size of the ball based on it's position along the x axis.
 5. Wrote a constrain function that constrains the dimension of the ball between 5 and 50 pixels.
 6. Changed ball.x assignment on line 38 and 39. Multiplied ball.scale_x by 1.2
+7. I changed the variable ball.delta.y from 1 to 2 so that the ball could take a more horizontal path than before if the mouse is clicked in the correct place. 
 
 
 -->
