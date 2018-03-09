@@ -49,7 +49,7 @@ function draw() {
     // conditional statement that says if ball gets 25%
     //across canvas width, increment size by 1 each frame.
 
-    if (ball.x <= width * 0.25 || ball.x >= width * 0.75) {
+    if (ball.x <= width * 0.20 || ball.x >= width * 0.80) {
         ball.width ++;
     } else{
         ball.width --;
