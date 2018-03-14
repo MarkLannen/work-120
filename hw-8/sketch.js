@@ -25,16 +25,22 @@ function draw() {
             arc( x, y, 50, 50, radians(random(x, y)), radians(random(x, y)));
         }
     }
-
-
-
 // if ()
 
+// Create ellipses that fill the top lef quarter of the screen
     fill('rgba( 200, 50, 100, 0.2)');
-    for (let x = 50; x <= width; x += 50) {
-        for (let y = 50; y <= height-50; y += 50) {
+    for (let x = 50; x <= width/2; x += 50) {
+        for (let y = 50; y <= height/2; y += 50) {
             ellipse( x, y, 50, 50);
         }
     }
+
+// Create rectangles that fill top right corner of screen    
+
+
+
+
+
+
 
 }
