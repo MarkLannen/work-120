@@ -5,12 +5,14 @@ function setup() {
 
 function draw() {
     background(150, 225, 150);
+    frameRate(5);
     console.log(width);
+
 
     for (let x = 50; x <= width; x += 50) {
      for (let y = 50; y <= height-50; y+=50) {
-         arc( x, y, 50, 50, radians(155), radians(238));
-       
+         arc( x, y, 50, 50, radians(random(50, 250)), radians(random(0, 238)));
+
      }
    }
 }
