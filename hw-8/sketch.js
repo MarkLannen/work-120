@@ -29,13 +29,21 @@ function draw() {
 
 // Create ellipses that fill the top lef quarter of the screen
     fill('rgba( 200, 50, 100, 0.2)');
+    stroke( 'rgba( 200, 200, 200, 0.5)')
     for (let x = 50; x <= width/2; x += 50) {
         for (let y = 50; y <= height/2; y += 50) {
             ellipse( x, y, 50, 50);
         }
     }
 
-// Create rectangles that fill top right corner of screen    
+// Create rectangles that fill top right corner of screen
+    fill('rgba( 100, 50, 200, 0.2)');
+    for (let x = width/2 + 15; x <= width; x += 50 ) {
+      for (let y = height/2 + 24; y <= height; y += 50) {
+        rect( x, y, 50, 50);
+      }
+    }
+
 
 
 
