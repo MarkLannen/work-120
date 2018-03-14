@@ -5,10 +5,11 @@ function setup() {
 
 function draw() {
     background(150, 225, 150);
+    console.log(width);
 
-    for (let x = 1; x <= width; x++) {
-        for (let y = 1; y<= height; y++) {
-        }
-    arc(x, y, 50, 50, radians(160), radians(280));
-}
+    for (let x = 50; x <= width; x += 50) {
+     for (let y = 50; y <= height-50; y+=50) {
+       ellipse(x, y, 40, 40);
+     }
+   }
 }
