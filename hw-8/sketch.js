@@ -17,8 +17,13 @@ function draw() {
     if ( mouseX < width * 0.5 && mouseY < height * 0.5) {
         fill( 'rgba(250, 100, 50, 0.5)' );
     }
+
     else if (mouseX > width * 0.5 && mouseY < height * 0.5) {
         fill( 'rgba(50, 100, 250, 0.5)' );
+
+      else if (mouseX < width * 0.5 && mouseY> height * 0.5) {
+        fill( 'rgba(100, 250, 50, 0.5)');
+      }
     }
 
 // Create arcs
