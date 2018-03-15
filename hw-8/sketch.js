@@ -1,9 +1,3 @@
-
-// let r = 250;
-// let g = 100;
-// let b = 50;
-// let a = 0.5;
-
 function setup() {
     createCanvas( windowWidth, 600 );
 }
@@ -14,19 +8,21 @@ function draw() {
     console.log(width);
 
     // if else statements that change the colors of the shapes depending on where the mouse is.
+
+    //Changes color in top left quadrant
     if ( mouseX < width * 0.5 && mouseY < height * 0.5) {
         fill( 'rgba(250, 100, 50, 0.5)' );
     }
-
+    // Changes color in top right quadrant
     else if (mouseX > width * 0.5 && mouseY < height * 0.5) {
         fill( 'rgba(50, 100, 250, 0.5)' );
     }
-
+    // changes color in bottom left quadrant
     else if (mouseX < width * 0.5 && mouseY > height * 0.5) {
         fill( 'rgba(100, 150, 50, 0.5)');
     }
-
-    else if (mouseX > width * 0.5 && mouseY > height * 0.5) {
+    // changes color in bottom right quadrant and if the mouse is off the canvas window
+        else {
         fill( 'rgba(255, 50, 50, 0.5)');
     }
 
@@ -56,9 +52,4 @@ stroke( 200, 200, 200 )
         rect( x, y, 50, 50);
       }
     }
-
-
-
-
-
 }
