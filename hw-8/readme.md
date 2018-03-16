@@ -12,3 +12,7 @@ Another issue was trying to use variables for an rgba value. I couldn't get them
 ## Conclusions
 
 I was pleased that I eventually managed to get the if else statements and nested for loops to work, even if it was only a relatively simple sketch. My next homework assignment I would like to try a piece of generative art, as I only have a tenuous understanding of how the examples in the course so far are working.
+
+## Final sketch
+
+[Final Sketch](https://marklannenum.github.io/work-120/hw-8/)
