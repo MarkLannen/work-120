@@ -4,6 +4,8 @@ function setup() {
     // define array for line (growth) parameters
     let growth = [x1, y1, x2, y2];
 
+    // comments
+
 
 
 }
