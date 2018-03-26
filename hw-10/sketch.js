@@ -29,3 +29,7 @@ function moveLine() {
     x1 = x1 + random(2);
     y1 = y1 + random(2);
 }
+
+function empytFunc() {
+
+}
