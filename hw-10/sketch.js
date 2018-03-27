@@ -37,7 +37,7 @@ function draw() {
 
 
 function drawLine() {
-    strokeWeight(5);
+    strokeWeight(random(5));
     stroke(random(255), random(255), random(255));
     line(x1, y1, x1 + random(50), y1 + random(50));
 }
