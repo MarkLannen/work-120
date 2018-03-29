@@ -4,6 +4,8 @@
 3. After calling the draw functions I wrote an if statement to try and bounce the lines off the edge of the canvas.
 4. I then set a constraint on the x and y values so that they would stay within the confines of the canvas.
 5. Lastly, I defined the two functions outside of the draw function. I randomized both the colors of the lines and the x1 and y1 values.
+6. I actually spent most of my time this week trying to understand Dr. Musick's homework example. It was quite complex (for me) and I spent a couple hours going through it line by line trying to understand why everything was working the way it did.
+
 
 ## Issues
 
@@ -14,8 +16,9 @@ The biggest frustration I had was trying to get the lines to bounce off the edge
 
 ## Conclusions
 
-I was pleased that I eventually managed to get the if else statements and nested for loops to work, even if it was only a relatively simple sketch. My next homework assignment I would like to try a piece of generative art, as I only have a tenuous understanding of how the examples in the course so far are working.
+Unfortunately, I was largely disappointed with my sketch this week. What I really wanted to have it do was to have these lines grow and move around the screen as if they were a bush growing or something like that, but I'm afraid writing code for something like that is beyond me at the moment. I'm hoping next week's content on objects and classes will help me make something like that work. 
+
 
 ## Final sketch
 
-[Final Sketch](https://marklannenum.github.io/work-120/hw-8/)
+[Final Sketch](https://marklannenum.github.io/work-120/hw-10/)
