@@ -3,13 +3,14 @@
 2. I then called two functions which I defined outside of the draw loop. O.ne function generated the lines, and the second function moved their starting point for the next frame so that they would 'grow' across the screen
 3. After calling the draw functions I wrote an if statement to try and bounce the lines off the edge of the canvas.
 4. I then set a constraint on the x and y values so that they would stay within the confines of the canvas.
-5. 
+5. Lastly, I defined the two functions outside of the draw function. I randomized both the colors of the lines and the x1 and y1 values.
 
 ## Issues
 
-The biggest obstacle I encountered was a merge conflict in github. I asked for help on the github issues board, and despite a few useful suggestions I was not able to resolve it myself. So I went to the lab and spoke to Quinn who managed to solve the problem. I understand in general what causes these merge conflicts, but I didn't really understand the details of what he did to solve it. I will have to put some time in to really understanding git and github.
+I had another issue with a github merge conflict that Quinn helped me with several times. We 'might' have gotten the problem solved, but I may need to take it to Dr. Musick for final resolution.
 
-Another issue was trying to use variables for an rgba value. I couldn't get them to work, and spent some time with Emily in the lab but neither of us could figure it out. My guess is that something in the fact that rgba is a string in p5 is causing my attempts to pass variables to a fill that is causing the problem. When I get a chance I will talk to Stephanie and see if she can clear it up for me.
+The biggest frustration I had was trying to get the lines to bounce off the edge of the screens with my if statement. As far as I can tell it should work, but all that it does is start a new series of lines from the top of the window after they reach the bottom of the window. I put the issue on the github issues board, and did get one helpful response, but that did not entirely solve my problem. I did not receive any other suggestions from the class or instructors, and in spite of my best efforts to find a solution online I was unable to get the sketch to behave exactly as I wanted.
+
 
 ## Conclusions
 
