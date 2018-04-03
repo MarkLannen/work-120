@@ -11,7 +11,7 @@ function setup() {
     createCanvas( windowWidth, 600 );
     frameRate(30);
 
-    background(150, 225, 150);
+    background(221, 244, 251);
 
     for (var i = 0; i < 10; i++) {
         lines.push(
