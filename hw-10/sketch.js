@@ -12,8 +12,6 @@ function setup() {
     frameRate(30);
 
     background(150, 225, 150);
-    // for ( let i = 0; i < 10; i++) {
-    // }
 
     for (var i = 0; i < 10; i++) {
         lines.push(
