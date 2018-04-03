@@ -18,8 +18,8 @@ function setup() {
             {
                 x: 0,
                 y: 0,
-                dx: 1,
-                dy: 1,
+                dx: 2,
+                dy: 3,
                 color: color(random(255), random(255), random(255))
             }
         );
@@ -40,13 +40,16 @@ function draw() {
 // define drawLine function
 function drawLine(idx) {
     let temp_x, temp_y;
-
+    //declare variables for ending x and y coordinates
     temp_x = lines[idx].x + (random(50) * lines[idx].dx);
     temp_y = lines[idx].y + (random(50) * lines[idx].dy);
 
-    strokeWeight(random(5));
+    //set stroke weight to random
+    strokeWeight(random(7));
+    // set stroke color
     stroke( lines[idx].color );
-    line(lines[idx].x, lines[idx].y, temp_x, temp_y);
+    // draw line function. values taken from array 'lines'
+    line(lines[idx].x, lines[idx].y, temp_x + random(15), temp_y + random(15));
 
     lines[idx].x = temp_x;
     lines[idx].y  = temp_y;
