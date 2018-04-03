@@ -6,10 +6,10 @@ let lines = [];
 
 // create canvas
 //set background color
-//set if statement to iterate to push variables into lines array using an object.
+//set if statement to iterate to push variables into lines array using an object. Will push in 10 objects with 4 key: value pairs.
 function setup() {
     createCanvas( windowWidth, 600 );
-    frameRate(30);
+    frameRate(60);
 
     background(221, 244, 251);
 
@@ -27,9 +27,9 @@ function setup() {
 }
 
 function draw() {
-    //second array to iterate number of lines generated (10)
+    //second for loop to iterate number of lines generated (10)
     //set frameRate
-    //call both functions
+    //call drawLine function
     for ( let i = 0; i < lines.length; i++) {
         //
         drawLine(i);
@@ -43,7 +43,6 @@ function drawLine(idx) {
 
     temp_x = lines[idx].x + (random(50) * lines[idx].dx);
     temp_y = lines[idx].y + (random(50) * lines[idx].dy);
-
 
     strokeWeight(random(5));
     stroke( lines[idx].color );
