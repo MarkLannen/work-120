@@ -1,12 +1,12 @@
 /*jshint esversion: 6 */
-// set both global variables
+// set global variable in array 'lines'
 let lines = [];
 
 
 
 // create canvas
 //set background color
-//set up first array to iterate the number of lines
+//set if statement to iterate to push variables into lines array using an object.
 function setup() {
     createCanvas( windowWidth, 600 );
     frameRate(30);
