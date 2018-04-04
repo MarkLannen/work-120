@@ -16,9 +16,11 @@ The biggest frustration I had was trying to get the lines to bounce off the edge
 
 ## Conclusions
 
-Unfortunately, I was largely disappointed with my sketch this week. What I really wanted to have it do was to have these lines grow and move around the screen as if they were a bush growing or something like that, but I'm afraid writing code for something like that is beyond me at the moment. I'm hoping next week's content on objects and classes will help me make something like that work. 
+Unfortunately, I was largely disappointed with my sketch this week. What I really wanted to have it do was to have these lines grow and move around the screen as if they were a bush growing or something like that, but I'm afraid writing code for something like that is beyond me at the moment. I'm hoping next week's content on objects and classes will help me make something like that work.
 
 
 ## Final sketch
 
 [Final Sketch](https://marklannenum.github.io/work-120/hw-10/)
+
+Test
