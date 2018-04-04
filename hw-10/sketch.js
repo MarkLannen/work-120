@@ -11,7 +11,7 @@ function setup() {
 
     background(221, 244, 251);
 
-    for (var i = 0; i < 10; i++) {
+    for (var i = 0; i < 7; i++) {
         lines.push(
             {
                 x: 0,
