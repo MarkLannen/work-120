@@ -2,14 +2,12 @@
 // set global variable in array 'lines'
 let lines = [];
 
-
-
 // create canvas
 //set background color
 //set if statement to iterate to push variables into lines array using an object. Will push in 10 objects with 4 key: value pairs.
 function setup() {
     createCanvas( windowWidth, 600 );
-    frameRate(60);
+    frameRate(30);
 
     background(221, 244, 251);
 
@@ -39,8 +37,11 @@ function draw() {
 
 // define drawLine function
 function drawLine(idx) {
-    let temp_x, temp_y;
     //declare variables for ending x and y coordinates
+    let temp_x, temp_y;
+    // initialize variables so that their values take on random #
+    // between 0 and 50 and are then multiplied by the value of dx and dy
+    // from the array 'lines'
     temp_x = lines[idx].x + (random(50) * lines[idx].dx);
     temp_y = lines[idx].y + (random(50) * lines[idx].dy);
 
@@ -49,7 +50,7 @@ function drawLine(idx) {
     // set stroke color
     stroke( lines[idx].color );
     // draw line function. values taken from array 'lines'
-    line(lines[idx].x, lines[idx].y, temp_x + random(15), temp_y + random(15));
+    line(lines[idx].x, lines[idx].y, temp_x, temp_y);
 
     lines[idx].x = temp_x;
     lines[idx].y  = temp_y;
