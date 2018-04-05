@@ -10,7 +10,9 @@
 3. The last issue I had I was never able to solve. I wanted to write a function that gave the same color to every line that was generated from a particular index point in the array. I tried dozens of variations of writing the function, but could just not get it to work.
 
 ## Conclusions
-All in all I'm very happy with this sketch though getting it to work, and completely understanding what is going on is pushing my skill and understanding at the moment. I left code of the function commented out. 
+All in all I'm very happy with this sketch though getting it to work, and completely understanding what is going on is pushing my skill and understanding at the moment. I left code of the function commented out.
+
+My favorite part of the sketch is that the colors are randomized every time one refreshes the page. I have spent quite a bit of time refreshing the page repeatedly to see if any good color schemes randomly arise.
 
 ## Final sketch
 
