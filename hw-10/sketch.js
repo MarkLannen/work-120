@@ -8,10 +8,10 @@ let lines = [];
 function setup() {
     createCanvas( windowWidth, 600 );
     frameRate(30);
-
     background(221, 244, 251);
-
+    // for loop to push 7 objects in to array 'lines'
     for (var i = 0; i < 7; i++) {
+        // push objects with begininng x and ending x and color into array.
         lines.push(
             {
                 x: 0,
@@ -31,6 +31,7 @@ function draw() {
     for ( let i = 0; i < lines.length; i++) {
         //
         drawLine(i);
+        // pinkLine(i);
     }
 
 }
@@ -46,7 +47,7 @@ function drawLine(idx) {
     temp_y = lines[idx].y + (random(50) * lines[idx].dy);
 
     //set stroke weight to random
-    strokeWeight(random(7));
+    strokeWeight(random(10));
     // set stroke color
     stroke( lines[idx].color );
     // draw line function. values taken from array 'lines'
@@ -67,4 +68,11 @@ function drawLine(idx) {
     // set constraints on both variables so that they stay within the screen
     lines[idx].x = constrain(lines[idx].x, 0, windowWidth);
     lines[idx].y = constrain(lines[idx].y, 0, 600);
+        
 }
+
+// function pinkLine(idx) {
+//     if (lines[idx] === 3) {
+//         lines.color == (rgb(255, 0, 255));
+//     }
+// }
