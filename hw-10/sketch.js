@@ -53,6 +53,9 @@ function drawLine(idx) {
     // draw line function. values taken from array 'lines'
     line(lines[idx].x, lines[idx].y, temp_x, temp_y);
 
+    // After each line is draw, this code resets the starting x coordinate
+    // where the previous ending x coordinate is. Gives the illusion of a
+    // continuous line.
     lines[idx].x = temp_x;
     lines[idx].y  = temp_y;
 
