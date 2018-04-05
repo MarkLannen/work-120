@@ -56,7 +56,6 @@ function drawLine(idx) {
     lines[idx].x = temp_x;
     lines[idx].y  = temp_y;
 
-
     // bounce lines back across screen
     if (lines[idx].x > windowWidth || lines[idx].x < 0) {
         lines[idx].dx = lines[idx].dx * -1;
