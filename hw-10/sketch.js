@@ -29,9 +29,9 @@ function draw() {
     //set frameRate
     //call drawLine function
     for ( let i = 0; i < lines.length; i++) {
-        //
+        // Call draw function
         drawLine(i);
-        // pinkLine(i);
+
     }
 
 }
@@ -68,7 +68,7 @@ function drawLine(idx) {
     // set constraints on both variables so that they stay within the screen
     lines[idx].x = constrain(lines[idx].x, 0, windowWidth);
     lines[idx].y = constrain(lines[idx].y, 0, 600);
-        
+
 }
 
 // function pinkLine(idx) {
