@@ -29,7 +29,7 @@ function draw() {
     //set frameRate
     //call drawLine function
     for ( let i = 0; i < lines.length; i++) {
-        // Call draw function
+        // Call drawLine function
         drawLine(i);
 
     }
