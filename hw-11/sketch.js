@@ -10,7 +10,9 @@ function setup() {
     createCanvas( windowWidth, 600 );
     frameRate(30);
     background(221, 244, 251);
-    let lines = new Lines[];
+    for (let i = 0; i < num_of_lines; i++) {
+    lines.push( new Lines() );
+}
 
 }
 
