@@ -34,7 +34,7 @@ class Lines {
     createLines() {
         stroke(200);
         strokeWeight(8);
-        line(this.x, this.y, this.end_x, this.end_y);
+        line(this.x, this.y, this.end_x += random(10, 50), this.end_y += random(10, 50));
     }
     // method for moving lines
     moveLines1() {
