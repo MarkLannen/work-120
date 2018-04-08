@@ -1,14 +1,12 @@
 /*jshint esversion: 6 */
 // set global variable in array 'lines'
-let lines = [];
-
+let lines;
 
 // create canvas
 //set background color
-
 function setup() {
     createCanvas( windowWidth, 600 );
-    frameRate(30);
+    frameRate(1);
     background(221, 244, 251);
     lines = new Lines();
 
@@ -16,7 +14,7 @@ function setup() {
 // draw function
 function draw() {
 
-
+    lines.createLine();
 }
 
 /////////////////////////////////////////
@@ -24,20 +22,30 @@ function draw() {
 /////////////////////////////////////////
 class Lines {
     constructor() {
-        this.x = 100;
-        this.y = 100;
-        this.dx = 150;
-        this.dy = 150;
-        this.color(random(255, 10));
+        this.x = 50;
+        this.y = 50;
+        this.end_x = 250;
+        this.end_y = 250;
+        // this.color(random(255, 10));
         // this.move_x = this.x += 25;
         // this.move_y = this.y += 25;
         // this.move_dx = this.dx;
         // this.move_dy = this.dy;
     }
 
+    // method for creating first lines
+    createLine() {
+        stroke(200);
+        strokeWeight(8);
+        line(this.x, this.y, this.end_x, this.end_y);
 
-// call this method once per frame to start and then generate new lines.
+
+
+    }
+
+
+
+    // method to create second new line segment
+
 
 }
-
-// method to create second new line segment
