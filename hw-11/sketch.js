@@ -42,8 +42,8 @@ class Lines {
         strokeWeight(3);
         this.x = this.end_x;
         this.y = this.end_y;
-        this.end_x = this.end_x += 100;
-        this.end_y = this.end_x += 100;
+        this.end_x = this.end_x += random(25, 75);
+        this.end_y = this.end_x += random(25, 75);
     }
 
 
