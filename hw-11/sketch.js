@@ -36,7 +36,7 @@ class Lines {
 
     // method for creating first lines
     createLines() {
-        stroke('rgb(random(200), random(255), random(100))');
+        stroke(color(random(200), random(255), random(100)));
         strokeWeight(random(8));
         line(this.x, this.y, this.end_x += random(10, 50), this.end_y += random(10, 50));
     }
