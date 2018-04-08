@@ -1,7 +1,7 @@
 /*jshint esversion: 6 */
 // set global variable in array 'lines'
 let lines = [];
-let num_of_lines = 25;
+
 
 // create canvas
 //set background color

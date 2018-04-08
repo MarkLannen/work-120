@@ -29,30 +29,35 @@ function draw() {
 //      Lines class
 /////////////////////////////////////////
 class Lines {
-    constructor(x, y, dx, dy) {
+    constructor() {
         this.x = 100;
         this.y = 100;
         this.dx = 150;
         this.dy = 150;
         this.color(random(255, 10));
+        // this.move_x = this.x += 25;
+        // this.move_y = this.y += 25;
+        // this.move_dx = this.dx;
+        // this.move_dy = this.dy;
     }
 }
 
 // call this method once per frame to start and then generate new lines.
 growLines() {
     this.startLine();
-    this.moveLine();
+    this.moveLine1();
+    this.moveLine2();
 }
 
 // method to start lines
 startline() {
     stroke(this.color);
     line(x, y, dx, dy);
-
 }
 
+// method to create first new line segment
+moveLine1() {
+    this.x +=
+}
 
-
-
-// method to move lines
-moveLine();
+// method to create second new line segment
