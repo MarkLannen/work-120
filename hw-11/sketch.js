@@ -6,7 +6,7 @@ let lines = [];
 //set background color
 function setup() {
     createCanvas( windowWidth, 600 );
-    frameRate(1);
+    frameRate(10);
     background(221, 244, 251);
     // for loop that adds objects to array 'Lines'
     for (let i = 0; i < 11; i ++) {
