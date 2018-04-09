@@ -42,7 +42,7 @@ class Lines {
     createLines() {
         stroke(color(random(200), random(255), random(100)));
         strokeWeight(random(1,8));
-        line(this.x, this.y, this.end_x += random(-50, 50), this.end_y += random(-50, 50));
+        line(this.x, this.y, this.end_x += random(-200, 50), this.end_y += random(-200, 50));
     }
     // method for moving lines
     moveLines() {
