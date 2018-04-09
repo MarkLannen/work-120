@@ -2,13 +2,13 @@
 // set global variable in array 'lines'
 let lines = [];
 
-
 // create canvas
 //set background color
 function setup() {
     createCanvas( windowWidth, 600 );
-    frameRate(1);
+    frameRate(4);
     background(221, 244, 251);
+    // for loop that adds objects to array 'Lines'
     for (let i = 0; i < 40; i ++) {
     lines[i] = new Lines(25, 25, 100, 100);
 }
@@ -16,7 +16,8 @@ function setup() {
 }
 // draw function
 function draw() {
-    // for loop to iterate new indices to the array
+    // for loop to enacts all methods each draw loop
+    // and create specified # of new lines each loop.
     for (let i = 0; i < 40; i ++) {
         lines[i].createLines();
         lines[i].moveLines();
@@ -58,7 +59,7 @@ class Lines {
             this.end_x = this.end_x * -1;
         }
         if (this.y > 600 || this.y < 0) {
-            this.end_y = this.end_y * -1;
+            this.end_y = this._end_y * -1;
         }
     }
     constrainLines() {
