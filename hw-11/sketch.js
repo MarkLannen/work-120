@@ -9,8 +9,8 @@ function setup() {
     frameRate(1);
     background(221, 244, 251);
     // for loop that adds objects to array 'Lines'
-    for (let i = 0; i < 10; i ++) {
-    lines[i] = new Lines (1200, 600, 50, 50);
+    for (let i = 0; i < 11; i ++) {
+    lines[i] = new Lines (0, 0, 50, 50);
 }
 
 }
@@ -18,7 +18,7 @@ function setup() {
 function draw() {
     // for loop to enacts all methods each draw loop
     // and create specified # of new lines each loop.
-    for (let i = 0; i < 10; i ++) {
+    for (let i = 0; i < 11; i ++) {
         lines[i].createLines();
         lines[i].moveLines();
         lines[i].edgeLines();
@@ -31,8 +31,8 @@ function draw() {
 /////////////////////////////////////////
 class Lines {
     constructor(temp_x, temp_y, temp_end_x, temp_end_y) {
-        this.x = temp_x;
-        this.y = temp_y;
+        this.x = temp_x += (random(1200));
+        this.y = temp_y += (random(600));
         this.end_x = temp_end_x;
         this.end_y = temp_end_y;
         // this.color(random(255, 10));
