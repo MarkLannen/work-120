@@ -9,7 +9,7 @@ function setup() {
     frameRate(60);
     background(221, 244, 251);
     // for loop that adds objects to array 'Lines'
-    for (let i = 0; i < 20; i ++) {
+    for (let i = 0; i < 40; i ++) {
     lines[i] = new Lines (0, 0, 50, 50);
     }
 
