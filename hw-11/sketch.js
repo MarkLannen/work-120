@@ -11,7 +11,6 @@ function setup() {
     background(221, 244, 251);
     for (let i = 0; i < 40; i ++) {
     lines[i] = new Lines(25, 25, 100, 100);
-    // lines2 = new Lines(50, 50, 150, 150);
 }
 
 }
@@ -21,6 +20,7 @@ function draw() {
     for (let i = 0; i < 40; i ++) {
         lines[i].createLines();
         lines[i].moveLines();
+        lines[i].constrainLines();
     }
 }
 
@@ -61,8 +61,8 @@ class Lines {
             this.end_y = this.end_y * -1;
         }
     }
+    constrainLines() {
+    this.x = constrain(this.x, 0, windowWidth);
+    this.y = constrain(this.y, 0, 600);
+    }
 }
-// // constrainLines() {
-// this.x = constrain(this.x, 0, windowWidth);
-// this.y = constrain(this.y, 0, 600);
-// // }
