@@ -33,16 +33,16 @@ class Lines {
     constructor(temp_x, temp_y, temp_end_x, temp_end_y) {
         this.x = temp_x += (random(1200));
         this.y = temp_y += (random(600));
-        this.end_x = temp_end_x;
-        this.end_y = temp_end_y;
+        this.end_x = temp_end_x += (random(1200));
+        this.end_y = temp_end_y += (random(600));
         // this.color(random(255, 10));
     }
 
     // method for creating first lines
     createLines() {
         stroke(color(random(200), random(255), random(100)));
-        strokeWeight(random(8));
-        line(this.x, this.y, this.end_x += random(250), this.end_y += random(250));
+        strokeWeight(random(1,8));
+        line(this.x, this.y, this.end_x += random(-50, 50), this.end_y += random(-50, 50));
     }
     // method for moving lines
     moveLines() {
