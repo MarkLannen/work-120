@@ -9,7 +9,7 @@ function setup() {
     frameRate(10);
     background(221, 244, 251);
     // for loop that adds objects to array 'Lines'
-    for (let i = 0; i < 11; i ++) {
+    for (let i = 0; i < 20; i ++) {
     lines[i] = new Lines (0, 0, 50, 50);
 }
 
@@ -18,10 +18,14 @@ function setup() {
 function draw() {
     // for loop to enacts all methods each draw loop
     // and create specified # of new lines each loop.
-    for (let i = 0; i < 11; i ++) {
+    for (let i = 0; i < lines.length; i ++) {
+        // calls method to create line
         lines[i].createLines();
+        // calls method to move x and y coordinates of new line to end of previous line
         lines[i].moveLines();
+        // calls method to redirect lines that go off-screen
         lines[i].edgeLines();
+        // calls method that constrains lines to stay within specified window width and height
         lines[i].constrainLines();
     }
 }
