@@ -3,7 +3,7 @@
 let lines = [];
 
 // create canvas
-//set background color
+// set background color
 function setup() {
     createCanvas( windowWidth, 600 );
     frameRate(10);
@@ -11,7 +11,7 @@ function setup() {
     // for loop that adds objects to array 'Lines'
     for (let i = 0; i < 20; i ++) {
     lines[i] = new Lines (0, 0, 50, 50);
-}
+    }
 
 }
 // draw function
