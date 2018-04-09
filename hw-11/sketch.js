@@ -6,7 +6,7 @@ let lines = [];
 // set background color
 function setup() {
     createCanvas( windowWidth, 600 );
-    frameRate(10);
+    frameRate(60);
     background(221, 244, 251);
     // for loop that adds objects to array 'Lines'
     for (let i = 0; i < 20; i ++) {
@@ -16,6 +16,7 @@ function setup() {
 }
 // draw function
 function draw() {
+    background(221, 244, 251, 70)
     // for loop to enacts all methods each draw loop
     // and create specified # of new lines each loop.
     for (let i = 0; i < lines.length; i ++) {
@@ -35,10 +36,10 @@ function draw() {
 /////////////////////////////////////////
 class Lines {
     constructor(temp_x, temp_y, temp_end_x, temp_end_y) {
-        this.x = temp_x += (random(1200));
-        this.y = temp_y += (random(600));
-        this.end_x = temp_end_x += (random(1200));
-        this.end_y = temp_end_y += (random(600));
+        this.x = temp_x + (random(1200));
+        this.y = temp_y + (random(600));
+        this.end_x = temp_end_x + (random(1200));
+        this.end_y = temp_end_y + (random(600));
         // this.color(random(255, 10));
     }
 
@@ -46,7 +47,8 @@ class Lines {
     createLines() {
         stroke(color(random(200), random(255), random(100)));
         strokeWeight(random(1,8));
-        line(this.x, this.y, this.end_x += random(-200, 50), this.end_y += random(-200, 50));
+        // line(this.x, this.y, this.end_x += random(-200, 50), this.end_y += random(-200, 50));
+        line(this.x, this.y, this.end_x, this.end_y);
     }
     // method for moving lines
     moveLines() {
@@ -54,21 +56,35 @@ class Lines {
         strokeWeight(3);
         this.x = this.end_x;
         this.y = this.end_y;
-        this.end_x = this.end_x += random(25, 75);
-        this.end_y = this.end_x += random(25, 75);
+        this.end_x += random(-75, 75);
+        this.end_y += random(-75, 75);
     }
 
     // method for keeping lines in view window
     edgeLines() {
-        if (this.x > windowWidth || this.x < 0) {
-            this.end_x = this.end_x * -1;
+        if( this.end_x < 0){
+            this.end_x = abs(this.end_x);
         }
-        if (this.y > 600 || this.y < 0) {
-            this.end_y = this.end_y * -1;
+        if( this.end_x > width ){
+            this.end_x  = width - abs(width - this.end_x);
         }
+        if( this.end_y < 0){
+            this.end_y = abs(this.end_y);
+        }
+        if( this.end_y > height ){
+            this.end_y  = height - abs(height - this.end_y);
+        }
+        // if (this.x > windowWidth || this.x < 0) {
+        //     this.x = this.x * -1;
+        // }
+        // if (this.y > 600 || this.y < 0) {
+        //     this.end_y = this.end_y * -1;
+        // }
     }
     constrainLines() {
     this.x = constrain(this.x, 0, windowWidth);
     this.y = constrain(this.y, 0, 600);
     }
 }
+
+//delta
