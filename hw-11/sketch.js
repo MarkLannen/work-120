@@ -10,7 +10,7 @@ function setup() {
     background(221, 244, 251);
     // for loop that adds objects to array 'Lines'
     for (let i = 0; i < 11; i ++) {
-    lines[i] = new Lines (0, 0, 50, 50);
+    lines[i] = new Lines (0, 0, 50, 50, random(255));
     }
 
 }
@@ -35,17 +35,18 @@ function draw() {
 //      Lines class
 /////////////////////////////////////////
 class Lines {
-    constructor(temp_x, temp_y, temp_end_x, temp_end_y) {
+    constructor(temp_x, temp_y, temp_end_x, temp_end_y, temp_color) {
         this.x = temp_x + (random(1200));
         this.y = temp_y + (random(600));
         this.end_x = temp_end_x + (random(1200));
         this.end_y = temp_end_y + (random(600));
+        this.color = temp_color;
         // this.color(random(255, 10));
     }
 
     // method for creating first lines
     createLines() {
-        stroke(color(random(200), random(255), random(100)));
+        stroke(this.color);
         strokeWeight(random(1,8));
         // line(this.x, this.y, this.end_x += random(-200, 50), this.end_y += random(-200, 50));
         line(this.x, this.y, this.end_x, this.end_y);
