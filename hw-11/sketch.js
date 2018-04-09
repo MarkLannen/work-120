@@ -60,7 +60,7 @@ class Lines {
             this.end_x = this.end_x * -1;
         }
         if (this.y > 600 || this.y < 0) {
-            this.end_y = this._end_y * -1;
+            this.end_y = this.end_y * -1;
         }
     }
     constrainLines() {
