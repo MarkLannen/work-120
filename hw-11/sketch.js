@@ -6,11 +6,11 @@ let lines = [];
 //set background color
 function setup() {
     createCanvas( windowWidth, 600 );
-    frameRate(4);
+    frameRate(1);
     background(221, 244, 251);
     // for loop that adds objects to array 'Lines'
     for (let i = 0; i < 40; i ++) {
-    lines[i] = new Lines(25, 25, 100, 100);
+    lines[i] = new Lines(random(1200), random(600), random(1200), random(600));
 }
 
 }
@@ -21,6 +21,7 @@ function draw() {
     for (let i = 0; i < 40; i ++) {
         lines[i].createLines();
         lines[i].moveLines();
+        lines[i].edgeLines();
         lines[i].constrainLines();
     }
 }
@@ -41,7 +42,7 @@ class Lines {
     createLines() {
         stroke(color(random(200), random(255), random(100)));
         strokeWeight(random(8));
-        line(this.x, this.y, this.end_x += random(10, 50), this.end_y += random(10, 50));
+        line(this.x, this.y, this.end_x += random(10, 505), this.end_y += random(10, 500));
     }
     // method for moving lines
     moveLines() {
