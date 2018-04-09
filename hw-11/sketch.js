@@ -9,7 +9,7 @@ function setup() {
     createCanvas( windowWidth, 600 );
     frameRate(1);
     background(221, 244, 251);
-    for (let i = 0; i < 10; i ++) {
+    for (let i = 0; i < 40; i ++) {
     lines[i] = new Lines(25, 25, 100, 100);
     // lines2 = new Lines(50, 50, 150, 150);
 }
@@ -18,7 +18,7 @@ function setup() {
 // draw function
 function draw() {
     // for loop to iterate new indices to the array
-    for (let i = 0; i < 10; i ++) {
+    for (let i = 0; i < 40; i ++) {
         lines[i].createLines();
         lines[i].moveLines();
     }
