@@ -1,7 +1,7 @@
 /*jshint esversion: 6 */
 // set global variable in array 'lines'
-let lines1;
-let lines2;
+let lines = [];
+
 
 // create canvas
 //set background color
@@ -9,17 +9,19 @@ function setup() {
     createCanvas( windowWidth, 600 );
     frameRate(1);
     background(221, 244, 251);
-    lines1 = new Lines(25, 25, 100, 100);
-    lines2 = new Lines(50, 50, 150, 150);
+    for (let i = 0; i < 10; i ++) {
+    lines[i] = new Lines(25, 25, 100, 100);
+    // lines2 = new Lines(50, 50, 150, 150);
+}
 
 }
 // draw function
 function draw() {
-
-    lines1.createLines();
-    lines1.moveLines1();
-    lines2.createLines();
-    lines2.moveLines1();
+    // for loop to iterate new indices to the array
+    for (let i = 0; i < 10; i ++) {
+        lines[i].createLines();
+        lines[i].moveLines();
+    }
 }
 
 /////////////////////////////////////////
@@ -41,7 +43,7 @@ class Lines {
         line(this.x, this.y, this.end_x += random(10, 50), this.end_y += random(10, 50));
     }
     // method for moving lines
-    moveLines1() {
+    moveLines() {
         stroke(200);
         strokeWeight(3);
         this.x = this.end_x;
@@ -50,4 +52,17 @@ class Lines {
         this.end_y = this.end_x += random(25, 75);
     }
 
+    // method for keeping lines in view window
+    edgeLines() {
+        if (this.x > windowWidth || this.x < 0) {
+            this.end_x = this.end_x * -1;
+        }
+        if (this.y > 600 || this.y < 0) {
+            this.end_y = this.end_y * -1;
+        }
+    }
 }
+// // constrainLines() {
+// this.x = constrain(this.x, 0, windowWidth);
+// this.y = constrain(this.y, 0, 600);
+// // }
