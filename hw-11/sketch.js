@@ -9,7 +9,7 @@ function setup() {
     frameRate(1);
     background(221, 244, 251);
     // for loop that adds objects to array 'Lines'
-    for (let i = 0; i < 40; i ++) {
+    for (let i = 0; i < 10; i ++) {
     lines[i] = new Lines (1200, 600, 50, 50);
 }
 
@@ -18,7 +18,7 @@ function setup() {
 function draw() {
     // for loop to enacts all methods each draw loop
     // and create specified # of new lines each loop.
-    for (let i = 0; i < 40; i ++) {
+    for (let i = 0; i < 10; i ++) {
         lines[i].createLines();
         lines[i].moveLines();
         lines[i].edgeLines();
@@ -42,7 +42,7 @@ class Lines {
     createLines() {
         stroke(color(random(200), random(255), random(100)));
         strokeWeight(random(8));
-        line(this.x, this.y, this.end_x += random(10, 500), this.end_y += random(10, 505));
+        line(this.x, this.y, this.end_x += random(250), this.end_y += random(250));
     }
     // method for moving lines
     moveLines() {
