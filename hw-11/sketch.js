@@ -6,10 +6,10 @@ let lines = [];
 // set background color
 function setup() {
     createCanvas( windowWidth, 600 );
-    frameRate(30);
+    frameRate(40);
     background(221, 244, 251);
     // for loop that adds objects to array 'Lines'
-    for (let i = 0; i < 10; i ++) {
+    for (let i = 0; i < 15; i ++) {
     lines[i] = new Lines (0, 0, 50, 50, (color(random(255), random(255), random(255),)));
     }
 
@@ -53,7 +53,7 @@ class Lines {
     }
     // method for moving lines
     moveLines() {
-        stroke(200);
+        stroke(this.color);
         strokeWeight(3);
         this.x = this.end_x;
         this.y = this.end_y;
@@ -75,12 +75,7 @@ class Lines {
         if( this.end_y > height ){
             this.end_y  = height - abs(height - this.end_y);
         }
-        // if (this.x > windowWidth || this.x < 0) {
-        //     this.x = this.x * -1;
-        // }
-        // if (this.y > 600 || this.y < 0) {
-        //     this.end_y = this.end_y * -1;
-        // }
+
     }
     constrainLines() {
     this.x = constrain(this.x, 0, windowWidth);
