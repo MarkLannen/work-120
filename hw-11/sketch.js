@@ -9,14 +9,14 @@ function setup() {
     frameRate(40);
     background(221, 244, 251);
     // for loop that adds objects to array 'Lines'
-    for (let i = 0; i < 13; i ++) {
+    for (let i = 0; i < 40; i ++) {
     lines[i] = new Lines (0, 0, 50, 50, (color(random(255), random(255), random(255),)));
     }
 
 }
 // draw function
 function draw() {
-    background(221, 244, 251, 90)
+    // background(221, 244, 251, 90)
     // for loop to enacts all methods each draw loop
     // and create specified # of new lines each loop.
     for (let i = 0; i < lines.length; i ++) {
