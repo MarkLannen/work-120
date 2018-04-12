@@ -15,4 +15,8 @@ I built this week's assignment partly off of last week's. I again created severa
 
 ## Issues
 
-The code 'worked,' but was not doing what I wanted it to do. I took it in to Michael Musick and he talked me through where I had written some inefficient code as well as helped me think through why I wasn't getting the functionality that I wanted. The main issue was that I couldn't get the lines to stay in bounds, and so we changed that edgeLines method to do a different mathematical computation on the lines and that finally worked. The part of the process still confuses me at times and I need to make sure I really understand what is going wrong, and how to fix it, so that I can build the sketch I have in mind for next week.
+The code sort of 'worked,' but was not doing exactly what I wanted it to do. I took it in to Michael Musick and he talked me through where I had written some inefficient code as well as helped me think through why I wasn't getting the functionality that I wanted. The main issue was that I couldn't get the lines to stay in bounds, and so we changed the edgeLines method to do a different mathematical computation on the lines and that finally worked. that part of the process still confuses me at times and I need to make sure I really understand what is going wrong, and how to fix it, so that I can build the sketch I have in mind for next week.
+
+## Conclusions
+
+I enjoyed this project and am starting to see some of the possibilities of working with Object Oriented Programming. I still need to more deeply understand the mechanics of it but am looking forward to learning more how to structure code this way. 
