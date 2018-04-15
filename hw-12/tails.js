@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 class Tails {
     constructor(temp_x, temp_y, temp_end_x, temp_end_y, temp_color) {
         this.x = temp_x + (random(1200));
@@ -12,14 +13,13 @@ class Tails {
         stroke(this.color);
         strokeWeight(random(1,8));
         fill(this.color);
-        ellipse(this.end_x, this.end_y, 25);
+        ellipse(this.end_x, this.end_y, 50);
         line(this.x, this.y, this.end_x, this.end_y);
 
     }
     // method for moving tails
     moveLines() {
         stroke(this.color);
-        strokeWeight(3);
         this.x = this.end_x;
         this.y = this.end_y;
         this.end_x += random(-75, 75);
@@ -41,7 +41,25 @@ class Tails {
             this.end_y  = height - abs(height - this.end_y);
         }
 
+    // method checking whether heads are intersecting
+    headCheck(otherHeads, me) {
+        for (let j = 0; j < otherHeads.length; j++) {
+            // if j != myId, then check for intersecting
+           // otherwise, its ME and skip to next index in array
+           if (j != me) {
+               let d = dist(this.end_x, this.end_y, otherHeads[j].end_x, otherHeads[j].end_y);
+               if (d <= 50) {
+                   this.end_x *= -1;
+                   this.end_y *= -1;
+                   this.color = (white);
+               }
+
+
+            }
+        }
     }
+
+}
     constrainLines() {
     this.x = constrain(this.x, 0, windowWidth);
     this.y = constrain(this.y, 0, 600);

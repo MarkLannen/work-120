@@ -54,7 +54,6 @@ class Lines {
     // method for moving lines
     moveLines() {
         stroke(this.color);
-        strokeWeight(3);
         this.x = this.end_x;
         this.y = this.end_y;
         this.end_x += random(-75, 75);

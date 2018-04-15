@@ -1,7 +1,6 @@
 /*jshint esversion: 6 */
 // set global variable in array 'tails'
 let tails = [];
-let heads = [];
 
 // create canvas
 // set background color
@@ -17,10 +16,12 @@ function setup() {
 }
 // draw function
 function draw() {
-    background(221, 244, 251, 150);
-    // for loop to enacts all methods each draw loop
+    background(221, 244, 251, 220);
+    // for loop to enact all methods each draw loop
     // and create specified # of new tails each loop.
-    for (let i = 0; i < tails.length; i ++) {
+    for (let i = 0; i < tails.length; i++) {
+        // check if heads are contacting each other
+        tails[i].headCheck(tails, i);
         // calls method to create tail
         tails[i].createLines();
         // calls method to move x and y coordinates of new tail to end of previous tail
