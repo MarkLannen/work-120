@@ -5,15 +5,16 @@ class Tails {
         this.end_x = temp_end_x + (random(1200));
         this.end_y = temp_end_y + (random(600));
         this.color = temp_color;
-        // this.color(random(255, 10));
     }
 
     // method for creating first tails
     createLines() {
         stroke(this.color);
         strokeWeight(random(1,8));
-        // line(this.x, this.y, this.end_x += random(-200, 50), this.end_y += random(-200, 50));
+        fill(this.color);
+        ellipse(this.end_x, this.end_y, 25);
         line(this.x, this.y, this.end_x, this.end_y);
+
     }
     // method for moving tails
     moveLines() {
