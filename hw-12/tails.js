@@ -42,7 +42,7 @@ class Tails {
         }
 
     // method checking whether heads are intersecting
-    headCheck(otherHeads, me) {
+    headCheck(otherHeads, me); {
         for (let j = 0; j < otherHeads.length; j++) {
             // if j != myId, then check for intersecting
            // otherwise, its ME and skip to next index in array
