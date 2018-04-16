@@ -42,22 +42,21 @@ class Tails {
         }
 
     // method checking whether heads are intersecting
-    // collisionCheck(); {
-    //     for (let i = 0; i < tails.length; i++) {
-    //         // if i != me, then check for intersecting
-    //        // otherwise, its ME and skip to next index in array
-    //        if (i != me) {
-    //            let d = dist(this.end_x, this.end_y, tails[i].end_x, tails[i].end_y);
-    //            if (d <= 50) {
-    //                this.end_x *= -1;
-    //                this.end_y *= -1;
-    //                this.color = (white);
-    //            }
-    //
-    //
-    //         }
-    //     }
-    // }
+    collisionCheck(); {
+        for (let i = 0; i < tails.length; i++) {
+          for (let j = 0; j < tails.length; j++) {
+            if (i != j) {
+               let d = dist(this.end_x, this.end_y, tails[i].end_x, tails[i].end_y);
+               if (d <= 50) {
+                   this.end_x *= -1;
+                   this.end_y *= -1;
+                   this.color = (white);
+               }
+              }
+
+            }
+        }
+    }
 
 }
     constrainLines() {
