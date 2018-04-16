@@ -16,13 +16,13 @@ function setup() {
 }
 // draw function
 function draw() {
-    background(221, 244, 251, 220);
+    background(221, 244, 251, 250);
     // for loop to enact all methods each draw loop
     // and create specified # of new tails each loop.
     for (let i = 0; i < tails.length; i++) {
         // check if heads are contacting each other
-        tails[i].headCheck(tails, i);
-        // calls method to create tail
+        // tails[i].headCheck(tails, i);
+        // // calls method to create tail
         tails[i].createLines();
         // calls method to move x and y coordinates of new tail to end of previous tail
         tails[i].moveLines();
