@@ -42,12 +42,12 @@ class Tails {
         }
 
     // method checking whether heads are intersecting
-    // headCheck(otherHeads, me); {
-    //     for (let j = 0; j < otherHeads.length; j++) {
-    //         // if j != myId, then check for intersecting
+    // collisionCheck(); {
+    //     for (let i = 0; i < tails.length; i++) {
+    //         // if i != me, then check for intersecting
     //        // otherwise, its ME and skip to next index in array
-    //        if (j != me) {
-    //            let d = dist(this.end_x, this.end_y, otherHeads[j].end_x, otherHeads[j].end_y);
+    //        if (i != me) {
+    //            let d = dist(this.end_x, this.end_y, tails[i].end_x, tails[i].end_y);
     //            if (d <= 50) {
     //                this.end_x *= -1;
     //                this.end_y *= -1;
