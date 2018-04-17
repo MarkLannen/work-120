@@ -16,7 +16,7 @@ function setup() {
 }
 // draw function
 function draw() {
-    background(221, 244, 251, 250);
+    background(221, 244, 251, 2350);
     // for loop to enact all methods each draw loop
     // and create specified # of new tails each loop.
     for (let i = 0; i < tails.length; i++) {
@@ -29,7 +29,7 @@ function draw() {
         // calls method that constrains tails to stay within specified window width and height
         tails[i].constrainLines();
         // check if heads are contacting each other
-        // tails[i].collisionCheck();
+        tails[i].collisionCheck(heads, i);
 
     }
 }
