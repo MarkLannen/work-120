@@ -46,16 +46,18 @@ class Tails {
         for (let i = 0; i < tails.length; i++) {
           for (let j = 0; j < tails.length; j++) {
             if (i != j) {
-               let d = dist(this.end_x, this.end_y, tails[i].end_x, tails[i].end_y);
+               let d = dist(tails[i].end_x, tails[i].end_y, this.end_x, this.end_y);
                if (d <= 50) {
+
                    this.end_x *= -1;
                    this.end_y *= -1;
                    this.color = (white);
                }
-              }
+
 
             }
-        }
+          }
+      }
     }
 
 }
