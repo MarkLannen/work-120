@@ -29,7 +29,7 @@ function draw() {
         // calls method that constrains tails to stay within specified window width and height
         tails[i].constrainLines();
         // check if heads are contacting each other
-        tails[i].collisionCheck(heads, i);
+        // tails[i].collisionCheck(heads, i);
 
     }
 }

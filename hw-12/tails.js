@@ -43,23 +43,23 @@ class Tails {
     }
 
     // method checking whether heads are intersecting
-    collisionCheck( otherHeads, me ) {
-        for (let j = 0; j < otherHeads.length; j++) {
-            if (j != me) {
-                let d = dist(tails[i].end_x, tails[i].end_y, this.end_x, this.end_y);
-                           if (d <= 50) {
-                               this.end_x *= -1;
-                               this.end_y *= -1;
-                               this.color = (white);
-                           }
-
-
-
-           }
-
-
-       }
-    }
+    // collisionCheck( otherHeads, me ) {
+    //     for (let j = 0; j < otherHeads.length; j++) {
+    //         if (j != me) {
+    //             let d = dist(tails[i].end_x, tails[i].end_y, this.end_x, this.end_y);
+    //                        if (d <= 50) {
+    //                            this.end_x *= -1;
+    //                            this.end_y *= -1;
+    //                            this.color = (white);
+    //                        }
+    //
+    //
+    //
+    //        }
+    //
+    //
+    //    }
+    // }
     // collisionCheck(); {
     //     for (let i = 0; i < tails.length; i++) {
     //       for (let j = 0; j < tails.length; j++) {
