@@ -6,7 +6,7 @@ let tails = [];
 // set background color
 function setup() {
     createCanvas( windowWidth, 600 );
-    frameRate(5);
+    // frameRate(5);
     background(221, 244, 251);
     // for loop that adds objects to array 'Tails'
     for (let i = 0; i < 10; i ++) {
@@ -29,7 +29,7 @@ function draw() {
         // calls method that constrains tails to stay within specified window width and height
         tails[i].constrainLines();
         // check if heads are contacting each other
-        // tails[i].collisionCheck(tails, i);
+        tails[i].collisionCheck(tails, i);
 
     }
 }
