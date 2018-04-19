@@ -4,7 +4,7 @@ As always this was a challenging assignment. I used some of the functionality fr
 ## Steps
 1. My first step was to move my class to a seperate js file, which was easy enough.
 2. Then I had to work through how to add a head to the tails that I had already created. After some experimenting I managed to make the tail trail behind the head.
-2. Next I Next I created a new method to control what happens when the tadpoles collided. This turned out to be the most challenging aspect of the project. I tried several methods to get it to work, none of them successful.
+2. Next I created a new method to control what happens when the tadpoles collided. This turned out to be the most challenging aspect of the project. I tried several methods to get it to work, none of them successful.
     a. if statement that checked distance between tadpoles
     b. Making a new array called heads that checked distance based on the examples from the Shiffman videos.
     c. Many others that I can no longer remember.  :)

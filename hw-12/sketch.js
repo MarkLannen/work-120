@@ -9,7 +9,7 @@ function setup() {
     frameRate(60);
     background(221, 244, 251);
     // for loop that adds objects to array 'Tails'
-    for (let i = 0; i < 10; i ++) {
+    for (let i = 0; i < 20; i ++) {
     tails[i] = new Tails (0, 0, 50, 50, (color(200, 0, 100)));
     }
 
