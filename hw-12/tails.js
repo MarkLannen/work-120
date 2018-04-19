@@ -9,12 +9,14 @@ class Tails {
         this.y_delta = random([-1, 1]);
         this.color = temp_color;
         this.tail_len = 50;
+        this.stroke = color('white');
+        this.strokeWeight = 0;
     }
 
     // method for creating first tails
     createLines() {
-        stroke(this.color);
-        strokeWeight(5);
+        stroke(this.stroke);
+        strokeWeight(this.strokeWeight);
         fill(this.color);
         ellipse(this.head_x, this.head_y, 50);
         line(this.x, this.y, this.head_x, this.head_y);
@@ -58,11 +60,12 @@ class Tails {
                 if (d <= 50) {
                     this.x_delta *= -1;
                     this.y_delta *= -1;
-                    this.color = ('white');
+                    this.color = ('red');
+                    this.strokeWeight = 5;
                 }
-                  // else {
-                  // this.color = color(50, 200, 100)));
-                  // }
+                  else {
+                  this.color = color(50, 200, 100);
+                  }
 
             }
         }
