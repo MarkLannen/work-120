@@ -19,4 +19,4 @@ Eye - I got one eye to work, but it only work if it the tadpole is going from to
 
 ## Conclusions
 
-I enjoyed this project and am starting to see some of the possibilities of working with Object Oriented Programming. I still need to more deeply understand the mechanics of it but am looking forward to learning more how to structure code this way.
+It was good to increase my skills a bit this week. As always, I don't have much of a problem with the syntax, or with what any individual line of code does, but I have to work very hard to make sense of an entire example sketch, or build a complete sketch on my own. My biggest victories this week were getting the tails and eyes to switch sides, even if the eyes aren't completely working!
