@@ -10,14 +10,17 @@ class Tails {
         this.color = temp_color;
         this.tail_len = 50;
         this.stroke = color('white');
-        this.strokeWeight = 0;
-    }
+        this.strokeWeight = 1;
+        // this.leftEye_x = this.head_x + 25;
+        // this.leftEye_y = this.head_y + 25;
+            }
 
     // method for creating first tails
     createLines() {
         stroke(this.stroke);
         strokeWeight(this.strokeWeight);
         fill(this.color);
+        ellipse(this.leftEye_x, this.leftEye_y, 15);
         ellipse(this.head_x, this.head_y, 50);
         line(this.x, this.y, this.head_x, this.head_y);
 
@@ -30,6 +33,10 @@ class Tails {
 
         this.head_x += this.x_delta;
         this.head_y += this.y_delta;
+
+        this.leftEye_x = this.head_x + 25;
+        this.leftEye_y = this.head_y + 25;
+        // this.rightEye_y += this.y_delta;
     }
 
     // method for keeping lines in view window
@@ -63,9 +70,10 @@ class Tails {
                     this.color = ('red');
                     this.strokeWeight = 5;
                 }
-                  else {
-                  this.color = color(50, 200, 100);
-                  }
+                  // else {
+                  // this.color = color(50, 100, 200);
+                  // this.strokeWeight = 5;
+                  // }
 
             }
         }
