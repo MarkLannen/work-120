@@ -43,21 +43,21 @@ class Tails {
     }
 
     //method checking whether heads are intersecting
-    // collisionCheck( otherHeads, me ) {
+    // collisionCheck( otherHeads, myIdx ) {
     //     for (let j = 0; j < otherHeads.length; j++) {
-    //         if (j != me) {
+    //         if (j != myIdx) {
     //             let d = dist(tails[i].end_x, tails[i].end_y, this.end_x, this.end_y);
-    //                        if (d <= 50) {
-    //                            this.end_x *= -1;
-    //                            this.end_y *= -1;
-    //                            this.color = (white);
-    //                         }
+    //             if (d <= 50) {
+    //                 this.end_x *= -1;
+    //                 this.end_y *= -1;
+    //                 this.color = (white);
+    //             }
     //         }
     //     }
     // }
 
     constrainLines() {
-    this.x = constrain(this.x, 0, windowWidth);
-    this.y = constrain(this.y, 0, 600);
+        this.x = constrain(this.x, 0, windowWidth);
+        this.y = constrain(this.y, 0, 600);
     }
 }
