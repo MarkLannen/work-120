@@ -69,11 +69,7 @@ class Tails {
                     this.color = ('red');
                     this.strokeWeight = 4;
                 }
-                  // else {
-                  // this.color = color(50, 100, 200);
-                  // this.strokeWeight = 5;
-                  // }
-
+                
             }
         }
     }

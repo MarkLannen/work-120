@@ -1,21 +1,21 @@
 ## Overview
-As always this was a challenging assignment. I used some of the functionality from last week, but instead of lines moving across the screen, I wanted to make a very simple 'tadpole' that 'swam' across the screen and changed direction when it encountered another tadpole. 
+As always this was a challenging assignment. I used some of the functionality from last week, but instead of lines moving across the screen, I wanted to make a very simple 'tadpole' that 'swam' across the screen and changed direction when it encountered another tadpole.
 
 ## Steps
-1. Because of the complexity of working with classes and objects, I built up the sketch step by step and did not move on to the next step until I was sure the current step was working. I fixed any errors and bugs before moving on.
-2. I created the class for 'Lines' and added variables for the beginning and ending coordinates and a variable for color. I then wrote the methods that would:
-    a. Create each line.
-    b. Move the beginning coordinates of the next line to the ending coordinates of the previous line so as to make it look as if the lines were growing by sections.
-    c. Check to see if the line had gone off the edge and then move it back in to the window.
-    d. Created a constrain method to keep the line from moving off the edge. Still not entirely sure why I have to do both c. and d., but it only works if I include both functions.
-3. Called all the methods in the draw function.
-4. Built an array using a variable.
-5. Created a for loop to add objects in to the array in the setup function.
-6. Created a for loop in the draw function that added the parameters I put in the 'Lines' class in to all the methods.
+1. My first step was to move my class to a seperate js file, which was easy enough.
+2. Then I had to work through how to add a head to the tails that I had already created. After some experimenting I managed to make the tail trail behind the head.
+2. Next I Next I created a new method to control what happens when the tadpoles collided. This turned out to be the most challenging aspect of the project. I tried several methods to get it to work, none of them successful.
+    a. if statement that checked distance between tadpoles
+    b. Making a new array called heads that checked distance based on the examples from the Shiffman videos.
+    c. Many others that I can no longer remember.  :)
+
+3. I finally went in and talked through some of the logic with Dr. Musick and he set me in the right direction. I think the main issue for me was not creating a seperate variable to control movement.
+4. After getting the collisionCheck method to work, I wanted to have two eyes that would move from one side of the tadpole to the other to give the impression that it was always facing the way it was swimming. In the end, I could only get one eye to work, but I did manage to have it move from one side to the other based on the direction.
 
 ## Issues
+CollisionCheck - I really struggled getting this to work. I understand the general concept, but struggled when I tried to make it work with my particular sketch.
 
-The code sort of 'worked,' but was not doing exactly what I wanted it to do. I took it in to Michael Musick and he talked me through where I had written some inefficient code as well as helped me think through why I wasn't getting the functionality that I wanted. The main issue was that I couldn't get the lines to stay in bounds, and so we changed the edgeLines method to do a different mathematical computation on the lines and that finally worked. that part of the process still confuses me at times and I need to make sure I really understand what is going wrong, and how to fix it, so that I can build the sketch I have in mind for next week.
+Eye - I got one eye to work, but it only work if it the tadpole is going from top left to bottom right and vice versa. If going from top right to bottom left then it doesn't work. I'm sure given enough time, and a bit of help, I could get it done but I just ran out of time this week.
 
 ## Conclusions
 
