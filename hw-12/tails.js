@@ -14,7 +14,7 @@ class Tails {
     // method for creating first tails
     createLines() {
         stroke(this.color);
-        strokeWeight(random(1,8));
+        strokeWeight(5);
         fill(this.color);
         ellipse(this.head_x, this.head_y, 50);
         line(this.x, this.y, this.head_x, this.head_y);
@@ -60,6 +60,10 @@ class Tails {
                     this.y_delta *= -1;
                     this.color = ('white');
                 }
+                  // else {
+                  // this.color = color(50, 200, 100)));
+                  // }
+
             }
         }
     }

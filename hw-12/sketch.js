@@ -6,11 +6,11 @@ let tails = [];
 // set background color
 function setup() {
     createCanvas( windowWidth, 600 );
-    // frameRate(5);
+    frameRate(60);
     background(221, 244, 251);
     // for loop that adds objects to array 'Tails'
     for (let i = 0; i < 10; i ++) {
-    tails[i] = new Tails (0, 0, 50, 50, (color(random(255), random(255), random(255))));
+    tails[i] = new Tails (0, 0, 50, 50, (color(200, 0, 100)));
     }
 
 }
