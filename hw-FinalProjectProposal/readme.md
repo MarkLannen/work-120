@@ -22,4 +22,5 @@ Another challenge I see is coming up with an effective way of moving all the ele
 
 1. Create a background in photoshop and then add it to the background using the loadImage function. I also might consider making several backgrounds and then calling them randomly, though I'm not sure if this is possible.
 2. Pick a Kandinsky picture to model my sketch after. I've selected two possibilities: ![Kandinsky - Composition VIII](https://github.com/MarkLannenUM/work-120/blob/master/hw-FinalProjectProposal/Kandinsky_2.jpg) and ![Kandinsky - Soft Hard](https://github.com/MarkLannenUM/work-120/blob/master/hw-FinalProjectProposal/Kandinsky_1.jpg). The latter will be easier as it is less complex, so I will probably start with that one and see how it goes. If it turns out to not be too difficult I may try the more complex composition.
-3.
+3. The next step will be to create all the visual elements using object oriented programming. So I think I will create a class for all similar objects, and then code arrays that will produce a selected number of each object, with varied appearances, and place them on the canvas. I will want to come up a way of adding colored stroke and fill that will have some randomness to it, but that is not completely random as I want the colors to loosely fit in to a palate.
+4. 
