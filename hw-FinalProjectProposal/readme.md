@@ -19,3 +19,6 @@ A challenge I envision having is that I would prefer to not create elements that
 Another challenge I see is coming up with an effective way of moving all the elements. Coding movement hasn't been easy for me, which is partly why I wanted to include a strong element of it in my final project so that I could finally get my head around how to do it. I'm wondering if I will have to move all the coordinates individually, or if there is a way of moving an entire object with just one computation.
 
 ## Work Plan
+
+1. Create a background in photoshop and then add it to the background using the loadImage function. I also might consider making several backgrounds and then calling them randomly, though I'm not sure if this is possible.
+2. Pick a Kandinsky picture to model my sketch after. 
