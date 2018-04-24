@@ -21,4 +21,5 @@ Another challenge I see is coming up with an effective way of moving all the ele
 ## Work Plan
 
 1. Create a background in photoshop and then add it to the background using the loadImage function. I also might consider making several backgrounds and then calling them randomly, though I'm not sure if this is possible.
-2. Pick a Kandinsky picture to model my sketch after. 
+2. Pick a Kandinsky picture to model my sketch after. I've selected two possibilities: ![Kandinsky - Composition VIII](https://github.com/MarkLannenUM/work-120/blob/master/hw-FinalProjectProposal/Kandinsky_1.jpg) and ![Kandinsky - Soft Hard](https://github.com/MarkLannenUM/work-120/blob/master/hw-FinalProjectProposal/Kandinsky_1.jpg). The latter will be easier as it is less complex, so I will probably start with that one and see how it goes. If it turns out to not be too difficult I may try the more complex composition.
+3.  
