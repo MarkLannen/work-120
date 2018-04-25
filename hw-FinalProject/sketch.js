@@ -2,7 +2,7 @@
 let bgimg;
 
 function preload() {
-  bgimg = loadImage('/images/kandinsky_background-1.jpg');
+  bgimg = loadImage('./images/Kandinsky_background-1.jpg');
 }
 
 let cWidth = 985;
@@ -13,7 +13,7 @@ function setup() {
 }
 
 function draw() {
-  image(bgimg, 0, 0);
+  background(bgimg);
 
 
 
