@@ -1,6 +1,8 @@
 // backgound image variable
 let bgimg;
 
+let firstGroup = [];
+
 function preload() {
   bgimg = loadImage('./images/Kandinsky_background-1.jpg');
 }
