@@ -35,4 +35,4 @@ I will finish this readme proposal and upload to the submission site today.
 
 ## Conclusions
 
-I chose this project as I think it could produce some interesting results and will utilize almost all, if not all, of the techniques we have been introduced to this semester. I'm hoping that by working through all those techniques and getting the whole project to 'work' that I will consolidate and 'digest' the contents of this semester's course.  :)
+I chose this project as I think it could produce some interesting results and will utilize almost all, if not all, of the techniques we have been introduced to this semester. I'm hoping that by working through all those techniques and getting the whole project to 'work' that I will consolidate and 'digest' the contents of this semester's course. 
