@@ -11,10 +11,11 @@ class Circle {
         this.r_Delta = random([-1, 1]);
         this.c_Color = c_tempColor;
 
-      ellipse(this.x, this.y, this.r, this.c_Color);
+    }
 
-
-
+    show() {
+      fill(this.c_Color);
+      ellipse(this.x, this.y, this.r);
     }
 
 }
