@@ -2,8 +2,8 @@
 
 // backgound image variable
 let bgimg;
-
-let firstGroup = [];
+// declare variable and array for ellipses
+let circleGroup = [];
 
 function preload() {
   bgimg = loadImage('./images/Kandinsky_background-1.jpg');
