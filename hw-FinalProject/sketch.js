@@ -2,18 +2,25 @@
 
 // backgound image variable
 let bgimg;
-// declare variable and array for ellipses
-let circleGroup = [];
+let cWidth = 985;
+let cHeight = 759;
+let circle;
 
 function preload() {
   bgimg = loadImage('./images/Kandinsky_background-1.jpg');
+
+
 }
 
-let cWidth = 985;
-let cHeight = 759;
 
 function setup() {
     createCanvas( cWidth, cHeight );
+
+
+
+    circle = new Circle (100, 100, 50, (color(200, 0, 100)));
+
+
 }
 
 function draw() {
