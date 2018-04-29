@@ -6,10 +6,10 @@ class Circle {
         this.x = c_tempX;
         this.y = c_tempY;
         this.r = c_tempR;
+        this.c_Color = c_tempColor;
         this.x_Delta = random([-1, 1]);
         this.y_Delta = random([-1, 1]);
-        this.r_Delta = random([-1, 1]);
-        this.c_Color = c_tempColor;
+
 
     }
 
