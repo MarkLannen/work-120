@@ -46,6 +46,9 @@ function setup() {
     triangle3 = new Triangle (375, 465, 430, 365, 488, 465, (color(23, 22, 22, 150)));
     triangle4 = new Triangle (390, 565, 431, 463, 479, 566, (color(23, 22, 22, 150)));
     triangle5 = new Triangle (398, 670, 435, 567, 469, 669, (color(23, 22, 22, 150)));
+    triangle6 = new Triangle (509, 485, 741, 47, 742, 480, (color(149, 30, 46, 150)));
+    triangle7 = new Triangle (769, 677, 597, 501, 945, 494, (color(173, 75, 46, 150)));
+    triangle8 = new Triangle (743, 456, 744, 424, 795, 422, (color(226, 191, 70, 150)));
 
 
 
@@ -69,6 +72,9 @@ function draw() {
   triangle3.show();
   triangle4.show();
   triangle5.show();
+  triangle6.show();
+  triangle7.show();
+  triangle8.show();
 
 
 
