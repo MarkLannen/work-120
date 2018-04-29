@@ -14,7 +14,7 @@ let circle3;
 
 //triangle variables
 let triangle1;
-// let triangle2;
+let triangle2;
 // let triangle3;
 // let triangle4;
 // let triangle5;
@@ -41,7 +41,8 @@ function setup() {
     circle3 = new Circle (239, 369, 120, (color(47, 35, 94)));
 
     // create triangle objects
-    triangle1 = new Triangle (100, 150, 385, 150, 236, 365, (color(200, 100, 50, 150)));
+    triangle1 = new Triangle (100, 150, 385, 150, 236, 365, (color(23, 22, 22, 150)));
+    triangle2 = new Triangle (161, 695, 238, 370, 318, 695, (color(23, 22, 22, 150)));
 
 
 
@@ -59,9 +60,11 @@ function draw() {
   // circle3.collapse();
 
   //draw triangles
-  push();
+
   triangle1.show();
-  pop();
+  triangle2.show();
+
+
 
 
 
