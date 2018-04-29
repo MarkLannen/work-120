@@ -20,7 +20,7 @@ function setup() {
     background(bgimg);
 
     // create circle objects
-    circle1 = new Circle (100, 100, 50, (color(200, 0, 100)));
+    circle1 = new Circle (239, 369, 60, (color(47, 35, 94)));
     circle2 = new Circle (500, 400, 150, (color(100, 0, 200)));
     circle3 = new Circle (700, 500, 250, (color(50, 200, 100)));
 
