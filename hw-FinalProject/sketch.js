@@ -31,6 +31,11 @@ let rect1;
 let rect2;
 let rect3;
 
+// create arc variables
+let arc1;
+let arc2;
+let arc3;
+
 
 function preload() {
     bgimg = loadImage('./images/Kandinsky_background-1.jpg');
@@ -67,8 +72,9 @@ function setup() {
     rect2 = new Rectangle (744, 392, 187, 18, (color(241, 238, 223, 150)));
     rect3 = new Rectangle (548, 146, 61, 61, (color(150, 29, 42, 150)));
 
-
-
+    // create arc objects
+    arc1 = new Arc (603, 710, 604, 711, 768, 595, 922, 711, 764, 639, 604, 711,
+    603, 710, (color(30, 29, 48, 150)));
 
 
 
@@ -107,6 +113,9 @@ function draw() {
   rotate(radians(30));
   rect3.show();
   pop();
+
+  // draw arcs
+  arc1.show();
 
 
 }
