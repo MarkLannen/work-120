@@ -41,7 +41,7 @@ function setup() {
     circle3 = new Circle (239, 369, 120, (color(47, 35, 94)));
 
     // create triangle objects
-    triangle1 = new Triangle (100, 150, 385, 154, 238, 366, (color(47, 35, 94)));
+    triangle1 = new Triangle (100, 365, 236, 100, 385, 365, (color(47, 35, 94, 200)));
 
 
 

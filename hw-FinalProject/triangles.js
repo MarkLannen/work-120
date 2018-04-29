@@ -7,9 +7,9 @@ class Triangle {
         this.x1 = t_tempX1;
         this.y1 = t_tempY1;
         this.x2 = t_tempX2;
-        this.x2 = t_tempX2;
+        this.y2 = t_tempX2;
         this.x3 = t_tempX3;
-        this.x3 = t_tempX3;
+        this.y3 = t_tempX3;
         this.t_Color =t_tempColor;
 
     }
