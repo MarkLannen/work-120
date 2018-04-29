@@ -15,14 +15,14 @@ let circle3;
 //triangle variables
 let triangle1;
 let triangle2;
-// let triangle3;
-// let triangle4;
-// let triangle5;
-// let triangle6;
-// let triangle7;
-// let triangle8;
-// let triangle9;
-// let triangle10;
+let triangle3;
+let triangle4;
+let triangle5;
+let triangle6;
+let triangle7;
+let triangle8;
+let triangle9;
+let triangle10;
 
 function preload() {
   bgimg = loadImage('./images/Kandinsky_background-1.jpg');
@@ -43,6 +43,9 @@ function setup() {
     // create triangle objects
     triangle1 = new Triangle (100, 150, 385, 150, 236, 365, (color(23, 22, 22, 150)));
     triangle2 = new Triangle (161, 695, 238, 370, 318, 695, (color(23, 22, 22, 150)));
+    triangle3 = new Triangle (375, 465, 430, 365, 488, 465, (color(23, 22, 22, 150)));
+    triangle4 = new Triangle (390, 565, 431, 463, 479, 566, (color(23, 22, 22, 150)));
+    triangle5 = new Triangle (398, 670, 435, 567, 469, 669, (color(23, 22, 22, 150)));
 
 
 
@@ -63,6 +66,9 @@ function draw() {
 
   triangle1.show();
   triangle2.show();
+  triangle3.show();
+  triangle4.show();
+  triangle5.show();
 
 
 
