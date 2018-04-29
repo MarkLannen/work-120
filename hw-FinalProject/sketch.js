@@ -23,9 +23,11 @@ let triangle7;
 let triangle8;
 let triangle9;
 let triangle10;
+let triangle11;
+let triangle12;
 
 function preload() {
-  bgimg = loadImage('./images/Kandinsky_background-1.jpg');
+    bgimg = loadImage('./images/Kandinsky_background-1.jpg');
 
 
 }
@@ -51,6 +53,8 @@ function setup() {
     triangle8 = new Triangle (743, 456, 744, 424, 795, 422, (color(226, 191, 70, 150)));
     triangle9 = new Triangle (744, 478, 744, 458, 779, 457, (color(150, 23, 28, 150)));
     triangle10 = new Triangle (855, 493, 816, 430, 889, 431, (color(17, 17, 17, 150)));
+    triangle11 = new Triangle (742, 378, 741, 292, 885, 377, (color(17, 17, 17, 150)));
+    triangle12 = new Triangle (743, 293, 884, 293, 884, 377, (color(148, 40, 44, 150)));
 
 
 
@@ -79,6 +83,8 @@ function draw() {
   triangle8.show();
   triangle9.show();
   triangle10.show();
+  triangle11.show();
+  triangle12.show();
 
 
 
