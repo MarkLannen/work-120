@@ -65,6 +65,8 @@ function setup() {
     // create rectangle objects
     rect1 = new Rectangle (52, 49, 130, 21, (color(204, 176, 67, 150)));
     rect2 = new Rectangle (744, 392, 187, 18, (color(241, 238, 223, 150)));
+    rect3 = new Rectangle (548, 146, 61, 61, (color(150, 29, 42, 150)));
+
 
 
 
@@ -100,11 +102,11 @@ function draw() {
   // draw rectangles
   rect1.show();
   rect2.show();
-
-
-
-
-
+  push();
+  translate(170, -280);
+  rotate(radians(30));
+  rect3.show();
+  pop();
 
 
 }
