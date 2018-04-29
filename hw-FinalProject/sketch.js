@@ -40,6 +40,9 @@ function setup() {
     circle2 = new Circle (239, 369, 280, (color(180, 173, 131)));
     circle3 = new Circle (239, 369, 120, (color(47, 35, 94)));
 
+    // create triangle objects
+    triangle1 = new Triangle (100, 150, 385, 154, 238, 366, (color(47, 35, 94)));
+
 
 
 
@@ -47,13 +50,16 @@ function setup() {
 }
 
 function draw() {
-
+ //draw circles
   circle1.show();
   // circle1.collapse();
   circle2.show();
   // circle2.collapse();
   circle3.show();
   // circle3.collapse();
+
+  //draw triangles
+  triangle1.show();
 
 
 
