@@ -26,6 +26,12 @@ let triangle10;
 let triangle11;
 let triangle12;
 
+//rectangle variables
+let rect1;
+let rect2;
+let rect3;
+
+
 function preload() {
     bgimg = loadImage('./images/Kandinsky_background-1.jpg');
 
@@ -56,6 +62,10 @@ function setup() {
     triangle11 = new Triangle (742, 378, 741, 292, 885, 377, (color(17, 17, 17, 150)));
     triangle12 = new Triangle (743, 293, 884, 293, 884, 377, (color(148, 40, 44, 150)));
 
+    // create rectangle objects
+    rect1 = new Rectangle (52, 49, 130, 21, (color(204, 176, 67, 150)));
+    rect2 = new Rectangle (744, 392, 187, 18, (color(241, 238, 223, 150)));
+
 
 
 
@@ -63,6 +73,7 @@ function setup() {
 }
 
 function draw() {
+
  //draw circles
   circle1.show();
   // circle1.collapse();
@@ -71,8 +82,8 @@ function draw() {
   circle3.show();
   // circle3.collapse();
 
-  //draw triangles
 
+  //draw triangles
   triangle1.show();
   triangle2.show();
   triangle3.show();
@@ -85,6 +96,12 @@ function draw() {
   triangle10.show();
   triangle11.show();
   triangle12.show();
+
+  // draw rectangles
+  rect1.show();
+  rect2.show();
+
+
 
 
 
