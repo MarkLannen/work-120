@@ -14,7 +14,7 @@ class Circle {
     }
 
     show() {
-      fill(this.c_Color);
+      //fill(this.c_Color);
       ellipse(this.x, this.y, this.r);
     }
 
@@ -24,12 +24,12 @@ class Circle {
       this.x += this.x_Delta;
       this.y += this.y_Delta;
 
-      if (this.x  > width || this.x < 0) {
+      if (this.x >= width || this.x <= 0) {
         this.x = this.x * -1;
-      }
-      if (this.y > height || this.y < 0) {
+    }
+      if (this.y >= height || this.y <= 0) {
         this.y = this.y * -1;
       }
-    }
+  }
 
 }
