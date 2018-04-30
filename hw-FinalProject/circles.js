@@ -14,7 +14,7 @@ class Circle {
     }
 
     show() {
-      //fill(this.c_Color);
+      fill(this.c_Color);
       ellipse(this.x, this.y, this.r);
     }
 
