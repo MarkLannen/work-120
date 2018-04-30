@@ -25,10 +25,10 @@ class Circle {
       this.y += this.y_Delta;
 
       if (this.x >= width || this.x <= 0) {
-        this.x = this.x * -1;
+        this.x_Delta = this.x_Delta * -1;
     }
       if (this.y >= height || this.y <= 0) {
-        this.y = this.y * -1;
+        this.y_Delta = this.y_Delta * -1;
       }
   }
 
