@@ -7,8 +7,8 @@ class Circle {
         this.y = c_tempY;
         this.r = c_tempR;
         this.c_Color = c_tempColor;
-        this.x_Delta = random([1, -1]);
-        this.y_Delta = random([1, -1]);
+        this.x_Delta = random(-1, 1);
+        this.y_Delta = random(-1, 1);
 
 
     }
@@ -18,9 +18,16 @@ class Circle {
       ellipse(this.x, this.y, this.r);
     }
 
+
+
     disperse() {
       this.x += this.x_Delta;
       this.y += this.y_Delta;
     }
+    // if (this.x > width || this.x < 0) {
+    //   this.x = this.x * -1;
+    // }
+
+
 
 }
