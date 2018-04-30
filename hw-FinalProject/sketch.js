@@ -75,6 +75,9 @@ function setup() {
     // create arc objects
     arc1 = new Arc (603, 710, 604, 711, 768, 595, 922, 711, 764, 639, 604, 711,
     603, 710, (color(30, 29, 48, 150)));
+    arc2 = new Arc (736, 216, 740, 219, 799, 227, 915, 68, 808, 211, 741,
+    202, 738, 202, (color(124, 30, 47, 150)));
+
 
 
 
@@ -116,6 +119,7 @@ function draw() {
 
   // draw arcs
   arc1.show();
+  arc2.show();
 
 
 }
