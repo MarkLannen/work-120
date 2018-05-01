@@ -114,6 +114,7 @@ function draw() {
 
   // draw rectangles
   rect1.show();
+  rect1.disperse();
   rect2.show();
   push();
   translate(170, -280);

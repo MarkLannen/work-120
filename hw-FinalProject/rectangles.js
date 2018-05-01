@@ -9,10 +9,16 @@ class Rectangle {
         this.rw = r_tempW;
         this.rh = r_tempH;
         this.r_color = r_tempColor;
+        this.rx_Delta = random(-3, 3);
+        this.ry_Delta = random(-3, 3);
     }
 
     show() {
       fill(this.r_color);
       rect(this.rx, this.ry, this.rw, this.rh);
     }
+    disperse() {
+      this.rx += this.rx_Delta;
+      this.ry += this.ry_Delta;
+  }
 }
