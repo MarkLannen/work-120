@@ -26,7 +26,7 @@ class Circle {
 
       if (this.x >= width || this.x <= 0) {
         this.x_Delta = this.x_Delta * -1;
-    }
+      }
       if (this.y >= height || this.y <= 0) {
         this.y_Delta = this.y_Delta * -1;
       }

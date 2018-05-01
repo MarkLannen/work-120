@@ -20,5 +20,12 @@ class Rectangle {
     disperse() {
       this.rx += this.rx_Delta;
       this.ry += this.ry_Delta;
+
+      if (this.rx >= width || this.rx <=0) {
+        this.rx_Delta = this.rx_Delta * -1;
+      }
+
+      if (this.ry >= width || this.ry <=0) {
+        this.ry_Delta = this.ry_Delta * -1;
   }
 }
