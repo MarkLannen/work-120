@@ -25,7 +25,8 @@ class Rectangle {
         this.rx_Delta = this.rx_Delta * -1;
       }
 
-      if (this.ry >= width || this.ry <=0) {
+      if (this.ry >= height || this.ry <=0) {
         this.ry_Delta = this.ry_Delta * -1;
-  }
+      }
+    }  
 }
