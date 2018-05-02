@@ -87,6 +87,7 @@ function setup() {
 
 function draw() {
   background(bgimg);
+  background('rgba(0, 0, 255, 0.1)');
 
 
  //draw circles
@@ -119,7 +120,9 @@ function draw() {
   push();
   translate(170, -280);
   rotate(radians(30));
+  rect2.disperse();
   rect3.show();
+  rect3.disperse();
   pop();
 
   // draw arcs
