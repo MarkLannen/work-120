@@ -28,13 +28,34 @@ class Triangle {
       this.tx3 += this.tx_Delta;
       this.ty3 += this.ty_Delta;
 
-      if (this.rx >= width - this.rw || this.rx <= 0) {
-        this.rx_Delta = this.rx_Delta * -1;
+
+      // edge detection on x axis
+      if (this.tx1 >= width || this.tx1 <= 0) {
+        this.tx_Delta = this.tx_Delta * -1;
       }
 
-      if (this.ry >= height - this.rh || this.ry <= 0) {
-        this.ry_Delta = this.ry_Delta * -1;
+      if (this.tx2 >= width || this.tx2 <= 0) {
+        this.tx_Delta = this.tx_Delta * -1;
       }
+
+      if (this.tx3 >= width || this.tx3 <= 0) {
+        this.tx_Delta = this.tx_Delta * -1;
+      }
+
+      // edge detection on y axis
+      if (this.ty1 >= height || this.ty1 <= 0) {
+        this.ty_Delta = this.ty_Delta * -1;
+      }
+
+      if (this.ty2 >= height || this.ty2 <= 0) {
+        this.ty_Delta = this.ty_Delta * -1;
+      }
+
+      if (this.ty3 >= height || this.ty3 <= 0) {
+        this.ty_Delta = this.ty_Delta * -1;
+      }
+
     }
+
 
 }
