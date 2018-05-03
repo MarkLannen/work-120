@@ -20,8 +20,10 @@ class Arc {
         this.x7 = a_tempX7;
         this.y7 = a_tempY7;
         this.a_color = a_tempColor;
+        this.x_Delta = random (-3, 3);
+        this.y_Delta = random (-3, 3);
     }
-
+    //show arcs
     show() {
         fill(this.a_color);
         beginShape();
@@ -33,7 +35,24 @@ class Arc {
         curveVertex(this.x6, this.y6);
         curveVertex(this.x7, this.y7);
         endShape();
+    }
 
+    // disperse arcs
+    disperse() {
+        this.x1 += this.x_Delta;
+        this.y1 += this.y_Delta;
+        this.x2 += this.x_Delta;
+        this.y2 += this.y_Delta;
+        this.x3 += this.x_Delta;
+        this.y3 += this.y_Delta;
+        this.x4 += this.x_Delta;
+        this.y4 += this.y_Delta;
+        this.x5 += this.x_Delta;
+        this.y5 += this.y_Delta;
+        this.x6 += this.x_Delta;
+        this.y6 += this.y_Delta;
+        this.x7 += this.x_Delta;
+        this.y7 += this.y_Delta;
     }
 
 

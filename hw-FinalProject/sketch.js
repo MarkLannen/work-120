@@ -134,6 +134,8 @@ function draw() {
 
 
 
+
+
   // draw rectangles
   rect1.show();
   rect2.show();
@@ -155,6 +157,11 @@ function draw() {
   arc1.show();
   arc2.show();
   arc3.show();
+
+  //disperse arcs
+  arc1.disperse();
+  arc2.disperse();
+  arc3.disperse();
 
 
 }
