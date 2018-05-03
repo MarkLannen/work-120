@@ -30,6 +30,6 @@ class Circle {
       if (this.y >= height - this.d/2 || this.y <= 0 + this.d/2) {
         this.y_Delta = this.y_Delta * -1;
       }
-  }
+    }
 
 }
