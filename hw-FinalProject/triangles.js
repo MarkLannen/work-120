@@ -21,39 +21,42 @@ class Triangle {
       triangle(this.tx1, this.ty1, this.tx2, this.ty2, this.tx3, this.ty3);
     }
     disperse() {
-      this.tx1 += this.tx_Delta;
-      this.ty1 += this.ty_Delta;
-      this.tx2 += this.tx_Delta;
-      this.ty2 += this.ty_Delta;
-      this.tx3 += this.tx_Delta;
-      this.ty3 += this.ty_Delta;
+        if(imgMove){
+
+            this.tx1 += this.tx_Delta;
+            this.ty1 += this.ty_Delta;
+            this.tx2 += this.tx_Delta;
+            this.ty2 += this.ty_Delta;
+            this.tx3 += this.tx_Delta;
+            this.ty3 += this.ty_Delta;
 
 
-      // edge detection on x axis
-      if (this.tx1 >= width || this.tx1 <= 0) {
-        this.tx_Delta = this.tx_Delta * -1;
-      }
+            // edge detection on x axis
+            if (this.tx1 >= width || this.tx1 <= 0) {
+                this.tx_Delta = this.tx_Delta * -1;
+            }
 
-      if (this.tx2 >= width || this.tx2 <= 0) {
-        this.tx_Delta = this.tx_Delta * -1;
-      }
+            if (this.tx2 >= width || this.tx2 <= 0) {
+                this.tx_Delta = this.tx_Delta * -1;
+            }
 
-      if (this.tx3 >= width || this.tx3 <= 0) {
-        this.tx_Delta = this.tx_Delta * -1;
-      }
+            if (this.tx3 >= width || this.tx3 <= 0) {
+                this.tx_Delta = this.tx_Delta * -1;
+            }
 
-      // edge detection on y axis
-      if (this.ty1 >= height || this.ty1 <= 0) {
-        this.ty_Delta = this.ty_Delta * -1;
-      }
+            // edge detection on y axis
+            if (this.ty1 >= height || this.ty1 <= 0) {
+                this.ty_Delta = this.ty_Delta * -1;
+            }
 
-      if (this.ty2 >= height || this.ty2 <= 0) {
-        this.ty_Delta = this.ty_Delta * -1;
-      }
+            if (this.ty2 >= height || this.ty2 <= 0) {
+                this.ty_Delta = this.ty_Delta * -1;
+            }
 
-      if (this.ty3 >= height || this.ty3 <= 0) {
-        this.ty_Delta = this.ty_Delta * -1;
-      }
+            if (this.ty3 >= height || this.ty3 <= 0) {
+                this.ty_Delta = this.ty_Delta * -1;
+            }
+        }
 
     }
 

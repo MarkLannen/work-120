@@ -36,6 +36,10 @@ let arc1;
 let arc2;
 let arc3;
 
+// global move flag
+let imgMove = false;
+
+let btn;
 
 function preload() {
     bgimg = loadImage('./images/Kandinsky_background-1.jpg');
@@ -49,10 +53,25 @@ function setup() {
     // background(bgimg);
 
 
+
+
+
     // create circle objects
     circle1 = new Circle (239, 369, 314, (color(23, 22, 22)));
     circle2 = new Circle (239, 369, 280, (color(207, 208, 213)));
     circle3 = new Circle (239, 369, 120, (color(47, 35, 94)));
+
+    //setTimeout function - delays disperse 3 seconds after browser refreshed
+    setTimeout(function(){
+        imgMove = true;
+        // setTimeout( ()=> imgMove=false, 3000 );
+    }, 3000);
+    btn = createButton('start');
+    btn.mousePressed( changeImgMove );
+
+
+    // setTimeout(function(){circle2.disperse()}, 3000);
+    // setTimeout(function(){circle3.disperse()}, 3000);
 
     // create triangle objects
     triangle1 = new Triangle (100, 150, 385, 150, 236, 365, (color(23, 22, 22)));
@@ -99,10 +118,6 @@ function draw() {
   circle2.disperse();
   circle3.disperse();
 
-  //setTimeout function - delays disperse 3 seconds after browser refreshed
-  setTimeout(function(){circle1.disperse}, 3000);
-  setTimeout(function(){circle2.disperse}, 3000);
-  setTimeout(function(){circle3.disperse}, 3000);
 
 
   //draw triangles
@@ -162,4 +177,9 @@ function draw() {
   arc3.disperse();
 
 
+}
+
+
+function changeImgMove(){
+    imgMove = !imgMove;
 }

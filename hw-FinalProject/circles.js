@@ -10,7 +10,6 @@ class Circle {
         this.x_Delta = random(-3, 3);
         this.y_Delta = random(-3, 3);
 
-
     }
 
     show() {
@@ -21,15 +20,18 @@ class Circle {
 
 
     disperse() {
-      this.x += this.x_Delta;
-      this.y += this.y_Delta;
+        if(imgMove){
+            this.x += this.x_Delta;
+            this.y += this.y_Delta;
 
-      if (this.x >= width - this.d/2 || this.x <= 0 + this.d/2) {
-        this.x_Delta = this.x_Delta * -1;
-      }
-      if (this.y >= height - this.d/2 || this.y <= 0 + this.d/2) {
-        this.y_Delta = this.y_Delta * -1;
-      }
+            if (this.x >= width - this.d/2 || this.x <= 0 + this.d/2) {
+                this.x_Delta = this.x_Delta * -1;
+            }
+            if (this.y >= height - this.d/2 || this.y <= 0 + this.d/2) {
+                this.y_Delta = this.y_Delta * -1;
+            }
+
+        }
     }
 
 }
