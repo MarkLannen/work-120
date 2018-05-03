@@ -81,9 +81,7 @@ function setup() {
     arc3 = new Arc (733, 163, 740, 164, 804, 146, 854, 88, 797, 137, 739,
     147, 732, 147, (color(180, 139, 48)));
 
-    setTimeout(circle1.disperse, 3000);
-    setTimeout(circle2.disperse, 3000);
-    setTimeout(circle3.disperse, 3000);
+
 }
 
 function draw() {
@@ -91,21 +89,20 @@ function draw() {
   // background('rgba(50, 0, 150, 0.1)');
 
 
-
-
  //draw circles
   circle1.show();
   circle2.show();
   circle3.show();
 
-  // disperse circles
+    // disperse circles
   circle1.disperse();
   circle2.disperse();
   circle3.disperse();
 
-
-
-
+  //setTimeout function - delays disperse 3 seconds after browser refreshed
+  setTimeout(function(){circle1.disperse}, 3000);
+  setTimeout(function(){circle2.disperse}, 3000);
+  setTimeout(function(){circle3.disperse}, 3000);
 
 
   //draw triangles
