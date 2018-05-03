@@ -92,10 +92,12 @@ function draw() {
 
  //draw circles
   circle1.show();
-  circle1.disperse();
   circle2.show();
-  circle2.disperse();
   circle3.show();
+
+  // disperse circles
+  circle1.disperse();
+  circle2.disperse();
   circle3.disperse();
 
 
@@ -113,17 +115,41 @@ function draw() {
   triangle11.show();
   triangle12.show();
 
+  //disperse triangles
+  triangle1.disperse();
+  triangle2.disperse();
+  triangle3.disperse();
+  triangle4.disperse();
+  triangle5.disperse();
+  triangle6.disperse();
+  triangle7.disperse();
+  triangle8.disperse();
+  triangle9.disperse();
+  triangle10.disperse();
+  triangle11.disperse();
+  triangle12.disperse();
+
+
+
+
+
+
   // draw rectangles
   rect1.show();
-  rect1.disperse();
   rect2.show();
+
+  // rectangle three - translate
   push();
   translate(170, -280);
   rotate(radians(30));
-  rect2.disperse();
   rect3.show();
   rect3.disperse();
   pop();
+
+  // disperse rectangles
+  rect1.disperse();
+  rect2.disperse();
+
 
   // draw arcs
   arc1.show();

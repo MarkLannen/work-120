@@ -11,12 +11,30 @@ class Triangle {
         this.tx3 = t_tempX3;
         this.ty3 = t_tempY3;
         this.t_Color =t_tempColor;
+        this.tx_Delta = random(-3, 3);
+        this.ty_Delta = random(-3, 3);
 
     }
 
     show() {
       fill(this.t_Color);
       triangle(this.tx1, this.ty1, this.tx2, this.ty2, this.tx3, this.ty3);
+    }
+    disperse() {
+      this.tx1 += this.tx_Delta;
+      this.ty1 += this.ty_Delta;
+      this.tx2 += this.tx_Delta;
+      this.ty2 += this.ty_Delta;
+      this.tx3 += this.tx_Delta;
+      this.ty3 += this.ty_Delta;
+
+      if (this.rx >= width - this.rw || this.rx <= 0) {
+        this.rx_Delta = this.rx_Delta * -1;
+      }
+
+      if (this.ry >= height - this.rh || this.ry <= 0) {
+        this.ry_Delta = this.ry_Delta * -1;
+      }
     }
 
 }
