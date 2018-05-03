@@ -55,5 +55,15 @@ class Arc {
         this.y7 += this.y_Delta;
     }
 
+    // // edge detection on x axis
+    // if (this.x1 >= width || this.x1 <= 0) {
+    //     this.x_Delta = this.x_Delta * -1;
+    // }
+    //
+    // // edge detection on y axis
+    // if (this.y1 >= height || this.y1 <= 0) {
+    //     this.y_Delta = this.y_Delta * -1;
+    // }
+
 
 }
