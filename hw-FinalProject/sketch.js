@@ -46,7 +46,7 @@ function preload() {
 
 function setup() {
     createCanvas( cWidth, cHeight );
-    // background(bgimg);
+    background(bgimg);
 
     // create circle objects
     circle1 = new Circle (239, 369, 314, (color(23, 22, 22)));
@@ -86,8 +86,8 @@ function setup() {
 }
 
 function draw() {
-  background(bgimg);
-  background('rgba(0, 0, 255, 0.1)');
+  // background(bgimg);
+  background('rgba(0, 0, 255, 0.35)');
 
 
  //draw circles
