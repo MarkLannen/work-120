@@ -48,6 +48,7 @@ function setup() {
     createCanvas( cWidth, cHeight );
     // background(bgimg);
 
+
     // create circle objects
     circle1 = new Circle (239, 369, 314, (color(23, 22, 22)));
     circle2 = new Circle (239, 369, 280, (color(207, 208, 213)));
@@ -80,14 +81,16 @@ function setup() {
     arc3 = new Arc (733, 163, 740, 164, 804, 146, 854, 88, 797, 137, 739,
     147, 732, 147, (color(180, 139, 48)));
 
-
-
-
+    setTimeout(circle1.disperse, 3000);
+    setTimeout(circle2.disperse, 3000);
+    setTimeout(circle3.disperse, 3000);
 }
 
 function draw() {
   background(bgimg);
   // background('rgba(50, 0, 150, 0.1)');
+
+
 
 
  //draw circles
@@ -99,6 +102,10 @@ function draw() {
   circle1.disperse();
   circle2.disperse();
   circle3.disperse();
+
+
+
+
 
 
   //draw triangles
@@ -128,12 +135,6 @@ function draw() {
   triangle10.disperse();
   triangle11.disperse();
   triangle12.disperse();
-
-
-
-
-
-
 
 
   // draw rectangles
