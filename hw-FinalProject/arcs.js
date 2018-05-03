@@ -82,5 +82,26 @@ class Arc {
     if (this.y1 >= height || this.y1 <= 0) {
         this.y_Delta = this.y_Delta * -1;
     }
+    if (this.y2 >= height || this.y2 <= 0) {
+        this.y_Delta = this.y_Delta * -1;
+    }
+    if (this.y3 >= height || this.y3 <= 0) {
+        this.y_Delta = this.y_Delta * -1;
+    }
+    if (this.y4 >= height || this.y4 <= 0) {
+        this.y_Delta = this.y_Delta * -1;
+    }
+    if (this.y5 >= height || this.y5 <= 0) {
+        this.y_Delta = this.y_Delta * -1;
+    }
+    if (this.y6 >= height || this.y6 <= 0) {
+        this.y_Delta = this.y_Delta * -1;
+    }
+    if (this.y7 >= height || this.y7 <= 0) {
+        this.y_Delta = this.y_Delta * -1;
+    }
+
+
+
     }
 }
