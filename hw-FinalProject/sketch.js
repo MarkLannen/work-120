@@ -66,7 +66,7 @@ function setup() {
         imgMove = true;
         // setTimeout( ()=> imgMove=false, 3000 );
     }, 3000);
-    btn = createButton('start');
+    btn = createButton('start/stop');
     btn.mousePressed( changeImgMove );
 
 

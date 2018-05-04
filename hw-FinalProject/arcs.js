@@ -39,69 +39,70 @@ class Arc {
 
     // disperse arcs
     disperse() {
-        this.x1 += this.x_Delta;
-        this.y1 += this.y_Delta;
-        this.x2 += this.x_Delta;
-        this.y2 += this.y_Delta;
-        this.x3 += this.x_Delta;
-        this.y3 += this.y_Delta;
-        this.x4 += this.x_Delta;
-        this.y4 += this.y_Delta;
-        this.x5 += this.x_Delta;
-        this.y5 += this.y_Delta;
-        this.x6 += this.x_Delta;
-        this.y6 += this.y_Delta;
-        this.x7 += this.x_Delta;
-        this.y7 += this.y_Delta;
+        if(imgMove){
+            this.x1 += this.x_Delta;
+            this.y1 += this.y_Delta;
+            this.x2 += this.x_Delta;
+            this.y2 += this.y_Delta;
+            this.x3 += this.x_Delta;
+            this.y3 += this.y_Delta;
+            this.x4 += this.x_Delta;
+            this.y4 += this.y_Delta;
+            this.x5 += this.x_Delta;
+            this.y5 += this.y_Delta;
+            this.x6 += this.x_Delta;
+            this.y6 += this.y_Delta;
+            this.x7 += this.x_Delta;
+            this.y7 += this.y_Delta;
 
 
-    // edge detection on x axis
-    if (this.x1 >= width || this.x1 <= 0) {
-        this.x_Delta = this.x_Delta * -1;
-    }
-    if (this.x2 >= width || this.x2 <= 0) {
-        this.x_Delta = this.x_Delta * -1;
-    }
-    if (this.x3 >= width || this.x3 <= 0) {
-        this.x_Delta = this.x_Delta * -1;
-    }
-    if (this.x4 >= width || this.x4 <= 0) {
-        this.x_Delta = this.x_Delta * -1;
-    }
-    if (this.x5 >= width || this.x5 <= 0) {
-        this.x_Delta = this.x_Delta * -1;
-    }
-    if (this.x6 >= width || this.x6 <= 0) {
-        this.x_Delta = this.x_Delta * -1;
-    }
-    if (this.x7 >= width || this.x7 <= 0) {
-        this.x_Delta = this.x_Delta * -1;
-    }
+            // edge detection on x axis
+            if (this.x1 >= width || this.x1 <= 0) {
+                this.x_Delta = this.x_Delta * -1;
+            }
+            if (this.x2 >= width || this.x2 <= 0) {
+                this.x_Delta = this.x_Delta * -1;
+            }
+            if (this.x3 >= width || this.x3 <= 0) {
+                this.x_Delta = this.x_Delta * -1;
+            }
+            if (this.x4 >= width || this.x4 <= 0) {
+                this.x_Delta = this.x_Delta * -1;
+            }
+            if (this.x5 >= width || this.x5 <= 0) {
+                this.x_Delta = this.x_Delta * -1;
+            }
+            if (this.x6 >= width || this.x6 <= 0) {
+                this.x_Delta = this.x_Delta * -1;
+            }
+            if (this.x7 >= width || this.x7 <= 0) {
+                this.x_Delta = this.x_Delta * -1;
+            }
 
-    // edge detection on y axis
-    if (this.y1 >= height || this.y1 <= 0) {
-        this.y_Delta = this.y_Delta * -1;
-    }
-    if (this.y2 >= height || this.y2 <= 0) {
-        this.y_Delta = this.y_Delta * -1;
-    }
-    if (this.y3 >= height || this.y3 <= 0) {
-        this.y_Delta = this.y_Delta * -1;
-    }
-    if (this.y4 >= height || this.y4 <= 0) {
-        this.y_Delta = this.y_Delta * -1;
-    }
-    if (this.y5 >= height || this.y5 <= 0) {
-        this.y_Delta = this.y_Delta * -1;
-    }
-    if (this.y6 >= height || this.y6 <= 0) {
-        this.y_Delta = this.y_Delta * -1;
-    }
-    if (this.y7 >= height || this.y7 <= 0) {
-        this.y_Delta = this.y_Delta * -1;
-    }
+            // edge detection on y axis
+            if (this.y1 >= height || this.y1 <= 0) {
+                this.y_Delta = this.y_Delta * -1;
+            }
+            if (this.y2 >= height || this.y2 <= 0) {
+                this.y_Delta = this.y_Delta * -1;
+            }
+            if (this.y3 >= height || this.y3 <= 0) {
+                this.y_Delta = this.y_Delta * -1;
+            }
+            if (this.y4 >= height || this.y4 <= 0) {
+                this.y_Delta = this.y_Delta * -1;
+            }
+            if (this.y5 >= height || this.y5 <= 0) {
+                this.y_Delta = this.y_Delta * -1;
+            }
+            if (this.y6 >= height || this.y6 <= 0) {
+                this.y_Delta = this.y_Delta * -1;
+            }
+            if (this.y7 >= height || this.y7 <= 0) {
+                this.y_Delta = this.y_Delta * -1;
+            }
 
-
+        }
 
     }
 }
