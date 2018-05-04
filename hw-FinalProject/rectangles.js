@@ -11,11 +11,17 @@ class Rectangle {
         this.r_color = r_tempColor;
         this.rx_Delta = random(-3, 3);
         this.ry_Delta = random(-3, 3);
+        this.rangle = 0;
     }
 
     show() {
+
       fill(this.r_color);
+      // push();
+      // rotate(radians(this.rangle));
+      // this.rangle += 1;
       rect(this.rx, this.ry, this.rw, this.rh);
+
     }
     disperse() {
         if(imgMove){
