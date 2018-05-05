@@ -65,7 +65,7 @@ function setup() {
     setTimeout(function(){
         imgMove = true;
         // setTimeout( ()=> imgMove=false, 3000 );
-    }, 2000);
+    }, 3000);
     btn = createButton('start/stop');
     btn.mousePressed( changeImgMove );
 
@@ -105,7 +105,7 @@ function setup() {
 
 function draw() {
   // background(bgimg);
-  background('rgba(200, 200, 255, 0.1)');
+  background('rgba(200, 200, 255, 0.05)');
 
 
  //draw circles
@@ -166,7 +166,7 @@ function draw() {
   rect2.disperse();
 
   // rotate rectangles
-  
+
 
 
   // draw arcs
