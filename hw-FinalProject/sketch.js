@@ -180,3 +180,8 @@ function changeImgMove(){
     imgMove = !imgMove;
     song.stop();
 }
+
+// function changeImgMove(){
+//     imgMove == imgMove;
+//     song.play();
+// }
