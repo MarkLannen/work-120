@@ -41,9 +41,6 @@ let imgMove = false;
 
 let btn;
 
-// let song;
-
-
 // preload background image and sound
 function preload() {
     bgimg = loadImage('./images/Kandinsky_background-1.jpg');
@@ -56,6 +53,7 @@ function setup() {
     // call background image
     background(bgimg);
     //call function to play song
+
     song.play();
 
     //setTimeout function - delays disperse 3 seconds after browser refreshed
@@ -107,7 +105,6 @@ function setup() {
 function draw() {
   // background(bgimg);
   background('rgba(200, 200, 255, 0.035)');
-
 
  //draw circles
   circle1.show();
@@ -181,4 +178,5 @@ function draw() {
 // define function to turn off image move
 function changeImgMove(){
     imgMove = !imgMove;
+    song.stop();
 }
