@@ -41,15 +41,13 @@ let imgMove = false;
 
 let btn;
 
-let song;
+// let song;
 
-// preload sound file
-function preLoad() {
-    song = loadSound('dream.mp3');
-}
-// preload background image
+
+// preload background image and sound
 function preload() {
     bgimg = loadImage('./images/Kandinsky_background-1.jpg');
+    song = loadSound('dream.mp3');
 }
 
 function setup() {
@@ -58,7 +56,7 @@ function setup() {
     // call background image
     background(bgimg);
     //call function to play song
-    // song.play();
+    song.play();
 
     //setTimeout function - delays disperse 3 seconds after browser refreshed
     setTimeout(function(){
