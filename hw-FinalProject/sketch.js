@@ -43,37 +43,37 @@ let btn;
 
 let song;
 
-function preload() {
-    bgimg = loadImage('./images/Kandinsky_background-1.jpg');
-
-
+function preLoad() {
+    song = loadSound("last-sky-dream.mp3");
 }
 
+function preload() {
+    bgimg = loadImage('./images/Kandinsky_background-1.jpg');
+}
 
 function setup() {
     createCanvas( cWidth, cHeight );
-    // background(bgimg);
 
 
+    background(bgimg);
 
 
-
-    // create circle objects
-    circle1 = new Circle (239, 369, 314, (color(23, 22, 22)));
-    circle2 = new Circle (239, 369, 280, (color(207, 208, 213)));
-    circle3 = new Circle (239, 369, 120, (color(47, 35, 94)));
 
     //setTimeout function - delays disperse 3 seconds after browser refreshed
     setTimeout(function(){
         imgMove = true;
         // setTimeout( ()=> imgMove=false, 3000 );
-    }, 3000);
+    }, 2000);
     btn = createButton('start/stop');
     btn.mousePressed( changeImgMove );
 
-
     // setTimeout(function(){circle2.disperse()}, 3000);
     // setTimeout(function(){circle3.disperse()}, 3000);
+
+    // create circle objects
+    circle1 = new Circle (239, 369, 314, (color(23, 22, 22)));
+    circle2 = new Circle (239, 369, 280, (color(207, 208, 213)));
+    circle3 = new Circle (239, 369, 120, (color(47, 35, 94)));
 
     // create triangle objects
     triangle1 = new Triangle (100, 150, 385, 150, 236, 365, (color(23, 22, 22)));
@@ -167,9 +167,6 @@ function draw() {
   rect1.disperse();
   rect2.disperse();
 
-  // rotate rectangles
-
-
 
   // draw arcs
   arc1.show();
@@ -180,11 +177,12 @@ function draw() {
   arc1.disperse();
   arc2.disperse();
   arc3.disperse();
-
-
 }
 
-
+// define function to turn off image move
 function changeImgMove(){
     imgMove = !imgMove;
 }
+
+//call function to play song
+song.play();
