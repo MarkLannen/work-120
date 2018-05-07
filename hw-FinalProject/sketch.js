@@ -43,10 +43,11 @@ let btn;
 
 let song;
 
+// preload sound file
 function preLoad() {
-    song = loadSound("last-sky-dream.mp3");
+    song = loadSound('dream.mp3');
 }
-
+// preload background image
 function preload() {
     bgimg = loadImage('./images/Kandinsky_background-1.jpg');
 }
@@ -54,10 +55,10 @@ function preload() {
 function setup() {
     createCanvas( cWidth, cHeight );
 
-
+    // call background image
     background(bgimg);
-
-
+    //call function to play song
+    // song.play();
 
     //setTimeout function - delays disperse 3 seconds after browser refreshed
     setTimeout(function(){
@@ -107,7 +108,7 @@ function setup() {
 
 function draw() {
   // background(bgimg);
-  background('rgba(200, 200, 255, 0.05)');
+  background('rgba(200, 200, 255, 0.035)');
 
 
  //draw circles
@@ -183,6 +184,3 @@ function draw() {
 function changeImgMove(){
     imgMove = !imgMove;
 }
-
-//call function to play song
-song.play();
