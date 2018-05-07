@@ -41,6 +41,8 @@ let imgMove = false;
 
 let btn;
 
+let song;
+
 function preload() {
     bgimg = loadImage('./images/Kandinsky_background-1.jpg');
 
